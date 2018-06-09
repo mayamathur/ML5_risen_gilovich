@@ -1,0 +1,136 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,likelihood_1,likelihood_1,end.num,effort.split_1,difficulty_1,effort.count_1,likelihood_1,likelihood_1,academic.pressure_1,negativity_1,mTurkCode,load,had.read
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,"Start with the number:      564
+
+	 
+
+	While counting backwards, read the following scenario.
+
+	
+
+	
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have done the reading and feel confident that the professor would like your answer, but prefer not to volunteer answers in large classes. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+
+	 
+
+	 
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.","Start with the number:      564
+
+	 
+
+	While counting backwards, read the following scenario.
+
+	 
+
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have not done the reading and feel confident that you would not be able to answer the question. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+	
+
+	 
+
+	 
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.",STOP COUNTING! What number did you end on?,"It
+is often very difficult to complete two tasks simultaneously. Please indicate
+how much effort you believe you put into each of the two tasks by choosing the
+appropriate number.",How difficult was the counting task?,How much effort did the counting task require?,"Please read the following scenario carefully.
+
+	
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have done the reading and feel confident that the professor would like your answer, but prefer not to volunteer answers in large classes. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+	 
+
+
+	 
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.","Please read the following scenario carefully.
+
+	 
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have not done the reading and feel confident that you would not be able to answer the question. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+	 
+
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.","If you were a student in the class you just read about, how important would it be to you to answer questions correctly in class?","If
+ you were a student in the class, how bad would you feel if you were 
+called on by the professor, but couldn’t answer the question?",mTurkCode,load,had.read
+"{""ImportId"":""startDate""}","{""ImportId"":""endDate""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""QID44_1""}","{""ImportId"":""QID45_1""}","{""ImportId"":""QID28_TEXT""}","{""ImportId"":""QID29_1""}","{""ImportId"":""QID52_1""}","{""ImportId"":""QID53_1""}","{""ImportId"":""QID11_1""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID56_1""}","{""ImportId"":""QID58_1""}","{""ImportId"":""mTurkCode""}","{""ImportId"":""load""}","{""ImportId"":""had.read""}"
+2016-11-28 09:34:37,2016-11-28 09:36:33,IP Address,68.65.174.224,100,115,True,2016-11-28 09:36:34,R_3fGZ45IO9Zkbbdm,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,1,2,10,423884,0,0
+2016-11-28 09:53:02,2016-11-28 09:55:34,IP Address,171.66.210.7,100,151,True,2016-11-28 09:55:35,R_2VygCcPFnivnrzR,,,,,37.41780090332,-122.17199707031,anonymous,5,,537,4,4,6,,,7,7,423502,1,1
+2016-11-28 10:11:47,2016-11-28 10:13:06,IP Address,171.66.208.10,100,78,True,2016-11-28 10:13:07,R_RaWOqVPDM9iezMl,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,7,10,9,423314,0,0
+2016-11-28 10:43:43,2016-11-28 10:45:41,IP Address,171.66.210.7,100,118,True,2016-11-28 10:45:42,R_UgVWcFP9vky1Uzv,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,1,,4,8,423988,0,1
+2016-11-28 10:48:59,2016-11-28 10:50:31,IP Address,171.66.210.7,100,91,True,2016-11-28 10:50:32,R_3qqFka0iY1Z2k6F,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,3,7,7,423600,0,0
+2016-11-28 11:14:29,2016-11-28 11:16:51,IP Address,171.66.208.10,100,141,True,2016-11-28 11:16:52,R_wO9PqhoLXVRdm81,,,,,37.41780090332,-122.17199707031,anonymous,,2,525,4,1,3,,,3,6,423703,1,0
+2016-11-28 11:30:36,2016-11-28 11:34:52,IP Address,171.66.210.7,100,255,True,2016-11-28 11:34:53,R_3hcOgjkyyo3UGx8,,,,,37.41780090332,-122.17199707031,anonymous,3,,530,4,8,10,,,6,5,423015,1,1
+2016-11-28 11:36:53,2016-11-28 11:38:45,IP Address,171.66.208.5,100,112,True,2016-11-28 11:38:46,R_2P84XkJAGfpf5XB,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,0,,1,6,423440,0,1
+2016-11-28 12:11:51,2016-11-28 12:14:26,IP Address,171.66.208.10,100,154,True,2016-11-28 12:14:27,R_u9qqSoDUwHrtuil,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,2,5,3,423571,0,0
+2016-11-28 10:10:07,2016-11-28 10:11:42,IP Address,171.66.208.10,8,94,False,2016-11-28 14:11:55,R_ylHh9P4aS22zX0t,,,,,,,anonymous,,,,,,,,,,,423689,1,1
+2016-11-28 15:31:16,2016-11-28 15:34:32,IP Address,68.65.174.224,100,196,True,2016-11-28 15:34:33,R_1PaXcwBxkoUUWOV,,,,,37.41780090332,-122.17199707031,anonymous,,1,552,1,9,8,,,10,9,423826,1,0
+2016-11-28 16:11:07,2016-11-28 16:13:18,IP Address,171.66.208.10,100,131,True,2016-11-28 16:13:19,R_28MyXep9T6DZxZa,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,1,7,9,423675,0,0
+2016-11-28 16:31:41,2016-11-28 16:33:14,IP Address,171.66.208.10,100,93,True,2016-11-28 16:33:15,R_2dW7sPG5mqSHhBo,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,2,,10,9,423611,0,1
+2016-11-28 16:46:31,2016-11-28 16:49:35,IP Address,171.66.208.5,100,184,True,2016-11-28 16:49:36,R_30jjvPnLW9yqfuE,,,,,37.41780090332,-122.17199707031,anonymous,,5,525,4,5,7,,,6,9,423517,1,0
+2016-11-29 09:34:25,2016-11-29 09:35:25,IP Address,171.66.208.5,100,60,True,2016-11-29 09:35:26,R_2VxNsj3inBMSABY,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,3,8,9,423118,0,0
+2016-11-29 09:57:46,2016-11-29 09:59:16,IP Address,68.65.174.224,100,89,True,2016-11-29 09:59:16,R_3jd3O22iyEqCROp,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,6,,9,8,423763,0,1
+2016-11-29 10:10:24,2016-11-29 10:14:50,IP Address,171.66.208.10,100,265,True,2016-11-29 10:14:51,R_D7Wkvp5E1amFeBb,,,,,37.41780090332,-122.17199707031,anonymous,5,,534,4,7,8,,,9,8,423328,1,1
+2016-11-29 10:30:19,2016-11-29 10:33:01,IP Address,171.66.208.5,100,162,True,2016-11-29 10:33:02,R_1FEvU2HFTuy5R1A,,,,,37.41780090332,-122.17199707031,anonymous,3,,561,0,10,10,,,10,10,423996,1,1
+2016-11-29 10:47:27,2016-11-29 10:48:28,IP Address,171.66.208.5,100,61,True,2016-11-29 10:48:29,R_pmkll7mNhaJWHlf,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,3,,7,9,423637,0,1
+2016-11-29 11:07:13,2016-11-29 11:08:40,IP Address,171.66.208.10,100,87,True,2016-11-29 11:08:41,R_0B6ltyIXr9aYY25,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,1,8,6,423814,0,0
+2016-11-29 09:30:50,2016-11-29 09:30:53,IP Address,171.66.208.5,8,3,False,2016-11-29 13:31:03,R_Zf79erkhkiPRrFL,,,,,,,anonymous,,,,,,,,,,,423072,1,1
+2016-11-29 09:53:43,2016-11-29 09:57:49,IP Address,68.65.174.224,31,245,False,2016-11-29 13:58:48,R_1LZEYqXEzGmYV1g,,,,,,,anonymous,,10,,,,,,,,,423276,1,0
+2016-11-29 15:35:41,2016-11-29 15:38:37,IP Address,171.66.208.5,100,175,True,2016-11-29 15:38:37,R_qxYcBwEheLPCO1H,,,,,37.41780090332,-122.17199707031,anonymous,,3,555,4,8,9,,,6,10,423242,1,0
+2016-11-29 15:58:04,2016-11-29 15:59:20,IP Address,171.66.208.5,100,75,True,2016-11-29 15:59:22,R_1C9l90hnlFRMNlX,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,4,0,10,423990,0,0
+2016-11-29 16:26:12,2016-11-29 16:28:17,IP Address,171.66.208.10,100,125,True,2016-11-29 16:28:18,R_87B7u8zPispsnw5,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,2,,8,4,423787,0,1
+2016-11-29 16:52:06,2016-11-29 16:55:33,IP Address,171.66.208.5,100,206,True,2016-11-29 16:55:33,R_Dwdv8pKDrlLj0OZ,,,,,37.41780090332,-122.17199707031,anonymous,1,,552,5,9,9,,,8,7,423008,1,1
+2016-11-29 17:09:30,2016-11-29 17:13:00,IP Address,171.66.208.10,100,209,True,2016-11-29 17:13:01,R_1n2cjpQOVLszuaS,,,,,37.41780090332,-122.17199707031,anonymous,2,,523,4,6,6,,,4,8,423947,1,1
+2016-11-29 17:34:29,2016-11-29 17:35:45,IP Address,171.66.210.7,100,76,True,2016-11-29 17:35:46,R_31shPGUEsR4UsfE,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,2,7,6,423119,0,0
+2016-11-29 17:56:24,2016-11-29 17:57:22,IP Address,68.65.174.224,100,57,True,2016-11-29 17:57:23,R_1M4zqC3ffKcMhKQ,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,1,,5,7,423647,0,1
+2016-11-29 18:04:57,2016-11-29 18:11:19,IP Address,171.66.208.10,100,381,True,2016-11-29 18:11:20,R_2WCEjPFC6WTbehW,,,,,37.41780090332,-122.17199707031,anonymous,,2,528,4,9,8,,,5,7,423273,1,0
+2016-11-29 15:55:17,2016-11-29 15:56:34,IP Address,171.66.208.10,23,76,False,2016-11-29 19:56:51,R_2feBtiMs9MxHLJJ,,,,,,,anonymous,,,,,,,,,,,423196,1,0
+2016-11-30 09:32:54,2016-11-30 09:33:41,IP Address,171.66.208.10,100,47,True,2016-11-30 09:33:42,R_31cKBhwEm2Ncbx0,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,4,8,6,423213,0,0
+2016-11-30 09:50:09,2016-11-30 09:51:36,IP Address,171.66.208.10,100,87,True,2016-11-30 09:51:37,R_1QyoMNsPQqCyKcI,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,1,,7,9,423779,0,1
+2016-11-30 10:06:27,2016-11-30 10:09:48,IP Address,171.66.208.10,100,201,True,2016-11-30 10:09:49,R_QagWvN9w1tRuFzP,,,,,37.41780090332,-122.17199707031,anonymous,2,,504,5,7,7,,,4,8,423548,1,1
+2016-11-30 10:28:48,2016-11-30 10:29:55,IP Address,171.66.208.10,100,67,True,2016-11-30 10:29:56,R_3oLbaI26VzT6EsC,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,2,,6,8,423497,0,1
+2016-11-30 11:16:39,2016-11-30 11:19:00,IP Address,68.65.174.224,100,140,True,2016-11-30 11:19:00,R_2BwH2iqwklENJIA,,,,,37.41780090332,-122.17199707031,anonymous,,1,543,3,8,7,,,8,8,423496,1,0
+2016-11-30 09:29:33,2016-11-30 09:31:24,IP Address,171.66.208.10,15,110,False,2016-11-30 13:31:30,R_1q82wQqNdmK8Gbv,,,,,,,anonymous,,,,,,,,,,,423338,1,1
+2016-11-30 09:46:51,2016-11-30 09:48:39,Spam,171.66.208.10,23,107,False,2016-11-30 13:49:12,R_1EgK0Em11rRK3VN,,,,,,,anonymous,,,,,,,,,,,423390,1,0
+2016-11-30 15:26:59,2016-11-30 15:28:37,IP Address,171.66.210.7,100,98,True,2016-11-30 15:28:38,R_2e9d0ABRfYIWxee,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,1,7,9,423094,0,0
+2016-11-30 15:51:32,2016-11-30 15:53:07,IP Address,171.66.208.5,100,94,True,2016-11-30 15:53:08,R_Og8aM1nPuMmg1Lb,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,2,,6,8,423904,0,1
+2016-11-30 16:06:35,2016-11-30 16:08:06,IP Address,171.66.208.5,100,91,True,2016-11-30 16:08:07,R_2CIZjipDN3oQvCh,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,0,4,3,423859,0,0
+2016-11-30 16:22:35,2016-11-30 16:26:24,IP Address,171.66.210.7,100,229,True,2016-11-30 16:26:25,R_6tizOK8Ttcvyksp,,,,,37.41780090332,-122.17199707031,anonymous,,6,486,3,8,8,,,8,10,423666,1,0
+2016-11-30 16:50:00,2016-11-30 16:52:43,IP Address,171.66.208.10,100,162,True,2016-11-30 16:52:44,R_2CjJ317l95slkDU,,,,,37.41780090332,-122.17199707031,anonymous,2,,474,1,7,6,,,1,5,423596,1,1
+2016-11-30 17:08:57,2016-11-30 17:10:45,IP Address,171.66.208.10,100,108,True,2016-11-30 17:10:46,R_0GTGG0vMXFDDiGV,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,2,6,8,423956,0,0
+2016-12-01 10:10:59,2016-12-01 10:13:57,IP Address,171.66.208.10,100,177,True,2016-12-01 10:13:58,R_BKcdE1rek6y7boJ,,,,,37.41780090332,-122.17199707031,anonymous,,2,543,5,7,6,,,4,9,423062,1,0
+2016-12-01 10:31:19,2016-12-01 10:33:31,IP Address,171.66.208.10,100,131,True,2016-12-01 10:33:31,R_3P5lv7Hco3WVzub,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,1,,7,6,423650,0,1
+2016-12-01 10:53:39,2016-12-01 10:56:29,IP Address,171.66.210.130,100,170,True,2016-12-01 10:56:30,R_2QhqNVrCXq9BDWL,,,,,37.41780090332,-122.17199707031,anonymous,8,,552,6,9,10,,,10,10,423022,1,1
+2016-12-01 11:09:13,2016-12-01 11:14:34,IP Address,171.66.208.5,100,320,True,2016-12-01 11:14:35,R_VLjjyiQGHToNblT,,,,,37.41780090332,-122.17199707031,anonymous,,1,507,2,3,4,,,6,6,423919,1,0
+2016-12-01 11:32:56,2016-12-01 11:36:30,IP Address,171.66.208.10,100,213,True,2016-12-01 11:36:30,R_1rIC0sKdiFPAYKC,,,,,37.41780090332,-122.17199707031,anonymous,2,,519,4,5,6,,,3,3,423047,1,1
+2016-12-01 11:43:43,2016-12-01 11:45:47,IP Address,171.66.208.10,100,123,True,2016-12-01 11:45:48,R_1I6kN3u53Vu8T2z,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,0,6,4,423593,0,0
+2016-12-01 12:32:01,2016-12-01 12:34:05,IP Address,68.65.174.224,100,123,True,2016-12-01 12:34:06,R_3Qs7CZaJ4131HBD,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,2,,6,8,423543,0,1
+2016-12-01 12:57:54,2016-12-01 12:59:47,IP Address,171.66.208.5,100,113,True,2016-12-01 12:59:48,R_OCeMaOQLUznE2gp,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,5,,8,7,423464,0,1
+2016-12-01 13:06:06,2016-12-01 13:09:27,IP Address,68.65.169.6,100,200,True,2016-12-01 13:09:28,R_3KHNW8z8WkLB73N,,,,,37.41780090332,-122.17199707031,anonymous,,5,540,4,2,2,,,7,8,423638,1,0
+2016-12-01 14:00:56,2016-12-01 14:03:24,IP Address,171.66.208.10,100,148,True,2016-12-01 14:03:25,R_3RapjWkV6HK4678,,,,,37.41780090332,-122.17199707031,anonymous,0,,507,4,4,6,,,8,7,423937,1,1
+2016-12-01 14:08:50,2016-12-01 14:10:14,IP Address,171.66.210.7,100,84,True,2016-12-01 14:10:15,R_2vkzYyo70KTHLyg,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,1,6,7,423889,0,0
+2016-12-01 14:35:39,2016-12-01 14:37:50,IP Address,171.66.208.5,100,131,True,2016-12-01 14:37:51,R_85MLg4XG2d87kVb,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,1,,7,7,423549,0,1
+2016-12-01 15:10:15,2016-12-01 15:11:52,IP Address,171.66.208.5,100,96,True,2016-12-01 15:11:52,R_2s6VU6mXrb2ZArx,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,5,8,8,423044,0,0
+2016-12-01 15:29:17,2016-12-01 15:31:45,IP Address,171.66.208.134,100,147,True,2016-12-01 15:31:46,R_3MRrJo372xr4us6,,,,,37.41780090332,-122.17199707031,anonymous,,4,543,5,7,9,,,2,3,423698,1,0
+2016-12-01 15:49:34,2016-12-01 15:54:25,IP Address,171.66.210.7,100,291,True,2016-12-01 15:54:26,R_b9NzZM9XA0woCgp,,,,,37.41780090332,-122.17199707031,anonymous,0,,532,5,8,8,,,7,7,423381,1,1
+2016-12-01 16:09:26,2016-12-01 16:10:37,IP Address,171.66.208.10,100,71,True,2016-12-01 16:10:38,R_2YrlTQIKZwbpyPE,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,4,9,8,423777,0,0
+2016-12-01 16:27:32,2016-12-01 16:29:25,IP Address,171.66.208.10,100,112,True,2016-12-01 16:29:26,R_1MNaoIvBvI6LTUu,,,,,37.41780090332,-122.17199707031,anonymous,,1,534,4,6,7,,,5,8,423785,1,0
+2016-12-01 16:48:13,2016-12-01 16:54:24,IP Address,171.66.208.5,100,371,True,2016-12-01 16:54:25,R_21ARnkAWac7iufE,,,,,37.41780090332,-122.17199707031,anonymous,3,,543,6,7,9,,,10,10,423039,1,1
+2016-12-01 17:04:07,2016-12-01 17:05:59,IP Address,171.66.208.10,100,112,True,2016-12-01 17:06:00,R_yyVu0QsRFPDvchH,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,1,,4,6,423246,0,1
+2016-12-01 17:29:44,2016-12-01 17:32:18,IP Address,171.66.210.7,100,154,True,2016-12-01 17:32:19,R_xyYMGM0YIaHTmhz,,,,,37.41780090332,-122.17199707031,anonymous,,0,429,4,7,6,,,3,7,423206,1,0
+2016-12-01 17:49:43,2016-12-01 17:53:27,IP Address,171.66.208.5,100,223,True,2016-12-01 17:53:28,R_T0KsINlG79nhPNv,,,,,37.41780090332,-122.17199707031,anonymous,2,,555,4,7,7,,,5,1,423400,1,1
+2016-12-02 10:04:05,2016-12-02 10:05:06,IP Address,171.66.208.10,100,61,True,2016-12-02 10:05:07,R_2CIJtiEPazVwxFB,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,3,6,7,423819,0,0
+2016-12-02 10:07:31,2016-12-02 10:09:19,IP Address,171.66.210.7,100,107,True,2016-12-02 10:09:20,R_3EWmvRlbasUt8P3,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,1,,8,8,423712,0,1
+2016-12-02 10:30:06,2016-12-02 10:33:48,IP Address,171.66.210.7,100,222,True,2016-12-02 10:33:49,R_31jG2lm5ZN0Vxy6,,,,,37.41780090332,-122.17199707031,anonymous,,4,537,5,5,7,,,6,8,423510,1,0
+2016-12-02 10:48:51,2016-12-02 10:52:29,IP Address,171.66.210.7,100,217,True,2016-12-02 10:52:30,R_3hiPweNpsrfoMLj,,,,,37.41780090332,-122.17199707031,anonymous,2,,522,2,9,10,,,2,9,423729,1,1
+2016-12-02 11:13:44,2016-12-02 11:15:03,IP Address,68.65.174.224,100,79,True,2016-12-02 11:15:04,R_3D6F8bElAsk7N9f,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,1,,4,6,423836,0,1
+2016-12-02 11:28:14,2016-12-02 11:29:26,IP Address,171.66.208.5,100,72,True,2016-12-02 11:29:27,R_1Kkhd4VpWIe1IhJ,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,4,9,10,423562,0,0
+2016-12-02 12:11:27,2016-12-02 12:13:11,IP Address,171.66.208.10,100,104,True,2016-12-02 12:13:12,R_31nMwjiT3dsjM8K,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,,2,6,3,423585,0,0
+2016-12-02 15:45:20,2016-12-02 15:46:50,IP Address,171.66.210.7,100,89,True,2016-12-02 15:46:50,R_1I6i0Q3cpThmxPW,,,,,37.41780090332,-122.17199707031,anonymous,,,,,,,1,,8,5,423179,0,1
+2016-12-02 16:14:54,2016-12-02 16:18:06,IP Address,171.66.208.10,100,192,True,2016-12-02 16:18:07,R_1qf9zWnypIJn2mU,,,,,37.41780090332,-122.17199707031,anonymous,3,,512,4,5,7,,,9,8,423609,1,1

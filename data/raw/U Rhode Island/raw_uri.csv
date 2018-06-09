@@ -1,0 +1,152 @@
+StartDate,EndDate,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,L1.R1.scenario_1,L1.R0.scenario_1,Q28,Q29_1,Q21_1,Q22_1,L0.R1.text_1,L0.R0.text_1,Q26_1,Q14_1,mTurkCode,load,had.read
+Start Date,End Date,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,"Start with the number:      564
+
+	 
+
+	While counting backwards, read the following scenario.
+
+	
+
+	
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have done the reading and feel confident that the professor would like your answer, but prefer not to volunteer answers in large classes. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+
+	 
+
+	 
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.","Start with the number:      564
+
+	 
+
+	While counting backwards, read the following scenario.
+
+	 
+
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have not done the reading and feel confident that you would not be able to answer the question. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+	
+
+	 
+
+	 
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.",STOP COUNTING! What number did you end on?,"It
+is often very difficult to complete two tasks simultaneously. Please indicate
+how much effort you believe you put into each of the two tasks by choosing the
+appropriate number.",How difficult was the counting task?,How much effort did the counting task require?,"Please read the following scenario carefully.
+
+	
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have done the reading and feel confident that the professor would like your answer, but prefer not to volunteer answers in large classes. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+	 
+
+
+	 
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.","Please read the following scenario carefully.
+
+	 
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have not done the reading and feel confident that you would not be able to answer the question. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+	 
+
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.","If you were a student in the class you just read about, how important would it be to you to answer questions correctly in class?","If
+ you were a student in the class, how bad would you feel if you were 
+called on by the professor, but couldn’t answer the question?",mTurkCode,load,had.read
+"{""ImportId"":""startDate""}","{""ImportId"":""endDate""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""QID44_1""}","{""ImportId"":""QID45_1""}","{""ImportId"":""QID28_TEXT""}","{""ImportId"":""QID29_1""}","{""ImportId"":""QID52_1""}","{""ImportId"":""QID53_1""}","{""ImportId"":""QID11_1""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID56_1""}","{""ImportId"":""QID58_1""}","{""ImportId"":""mTurkCode""}","{""ImportId"":""load""}","{""ImportId"":""had.read""}"
+2/7/2017 7:13,2/7/2017 7:22,100,568,TRUE,2/7/2017 7:22,R_9Rk3p8c1pP4sXUl,,,,,41.47729492,-71.52079773,anonymous,,2,534,4,9,9,,,8,6,423114,1,0
+2/7/2017 7:27,2/7/2017 7:44,100,1059,TRUE,2/7/2017 7:44,R_cNl8jW2wxRmzUzf,,,,,41.47729492,-71.52079773,anonymous,,3,559,0,3,6,,,2,10,423039,1,0
+2/7/2017 7:51,2/7/2017 7:52,100,49,TRUE,2/7/2017 7:52,R_ZrRMYV4n7am3g3f,,,,,41.47729492,-71.52079773,anonymous,,,,,,,1,,10,9,423956,0,1
+2/7/2017 7:26,2/7/2017 7:53,100,1596,TRUE,2/7/2017 7:53,R_1dKX6mhf7lK5mPE,,,,,41.47729492,-71.52079773,anonymous,5,,534,2,3,2,,,5,6,423982,1,1
+2/7/2017 7:56,2/7/2017 8:23,100,1621,TRUE,2/7/2017 8:23,R_1LFfyqTCqEPppd2,,,,,41.47729492,-71.52079773,anonymous,,,,,,,1,,7,9,423894,0,1
+2/10/2017 10:53,2/10/2017 11:00,100,369,TRUE,2/10/2017 11:00,R_2EgcOdK8KY8T1c2,,,,,41.47729492,-71.52079773,anonymous,,4,443,3,9,7,,,7,8,423171,1,0
+2/10/2017 10:53,2/10/2017 11:45,100,3146,TRUE,2/10/2017 11:45,R_3EiggowsV8TjAcL,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,1,1,4,423378,0,0
+2/10/2017 11:49,2/10/2017 11:55,100,398,TRUE,2/10/2017 11:55,R_DpMLKqSzZhXclW1,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,3,7,9,423986,0,0
+2/10/2017 11:03,2/10/2017 11:57,100,3225,TRUE,2/10/2017 11:57,R_1FwXpPA11apaNZi,,,,,41.47729492,-71.52079773,anonymous,,3,555,0,9,8,,,7,8,423761,1,0
+2/10/2017 11:59,2/10/2017 12:21,100,1297,TRUE,2/10/2017 12:21,R_STRWufIwCnIQnKh,,,,,41.47729492,-71.52079773,anonymous,,5,530,3,4,2,,,8,6,423484,1,0
+2/10/2017 11:59,2/10/2017 12:22,100,1369,TRUE,2/10/2017 12:22,R_2R4fRhS43haQWqs,,,,,41.47729492,-71.52079773,anonymous,3,,536,1,9,9,,,6,8,423823,1,1
+2/10/2017 11:59,2/10/2017 12:22,100,1433,TRUE,2/10/2017 12:22,R_2aELoDtrFzzqLZ1,,,,,41.47729492,-71.52079773,anonymous,,,,,,,3,,9,10,423022,0,1
+2/10/2017 12:26,2/10/2017 12:45,100,1171,TRUE,2/10/2017 12:45,R_3HzgLIisF7v4NYW,,,,,41.47729492,-71.52079773,anonymous,,,,,,,4,,4,8,423920,0,1
+2/10/2017 12:46,2/10/2017 12:51,100,314,TRUE,2/10/2017 12:51,R_1Ia9bhZFoBKNsqK,,,,,41.47729492,-71.52079773,anonymous,,6,561,3,6,7,,,4,1,423235,1,0
+2/10/2017 12:55,2/10/2017 12:59,100,224,TRUE,2/10/2017 12:59,R_31mCwxA2IB7cTQS,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,3,9,8,423757,0,0
+2/10/2017 12:26,2/14/2017 7:01,100,326097,TRUE,2/14/2017 7:01,R_3Jw4N7L7y6nK5xa,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,2,7,6,423262,0,0
+2/14/2017 6:58,2/14/2017 7:02,100,250,TRUE,2/14/2017 7:02,R_2rOTbgpyjxz3Djb,,,,,41.47729492,-71.52079773,anonymous,5,,561,1,10,10,,,5,10,423258,1,1
+2/14/2017 7:03,2/14/2017 7:24,100,1248,TRUE,2/14/2017 7:24,R_DeQ7snP0H0F3MXf,,,,,41.47729492,-71.52079773,anonymous,,1,532,1,4,6,,,9,10,423807,1,0
+2/14/2017 7:03,2/14/2017 7:52,100,2959,TRUE,2/14/2017 7:52,R_QiD5rXOCPZho4wh,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,5,8,8,423914,0,0
+2/14/2017 7:57,2/14/2017 8:32,100,2145,TRUE,2/14/2017 8:32,R_1plEkzi9Byt9A26,,,,,41.47729492,-71.52079773,anonymous,,,,,,,2,,9,8,423922,0,1
+2/14/2017 7:25,2/15/2017 10:52,100,98793,TRUE,2/15/2017 10:52,R_3qsu6GDlSNEqJ92,,,,,41.47729492,-71.52079773,anonymous,0,,542,2,9,8,,,10,8,423504,1,1
+2/10/2017 13:02,2/15/2017 11:14,100,425519,TRUE,2/15/2017 11:14,R_O2buPWhrs1aBVU5,,,,,41.47729492,-71.52079773,anonymous,,,,,,,5,,9,9,423520,0,1
+2/15/2017 10:58,2/15/2017 11:18,100,1199,TRUE,2/15/2017 11:18,R_1ig6kJ1s3IySFDy,,,,,41.47729492,-71.52079773,anonymous,3,,525,5,8,8,,,3,7,423744,1,1
+2/15/2017 11:06,2/15/2017 11:49,100,2588,TRUE,2/15/2017 11:49,R_3im065Lloomsvjk,,,,,41.47729492,-71.52079773,anonymous,,1,298,1,6,4,,,8,8,423343,1,0
+2/23/2017 6:54,2/23/2017 6:59,100,294,TRUE,2/23/2017 6:59,R_1gdTlvojcSodIlx,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,2,8,6,423516,0,0
+2/23/2017 8:51,2/23/2017 8:52,100,66,TRUE,2/23/2017 8:52,R_ekEVYsFSKVDATjH,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,5,10,8,423504,0,0
+2/23/2017 9:06,2/23/2017 9:16,100,603,TRUE,2/23/2017 9:16,R_2e2O9DIS7U7H2Cu,,,,,41.47729492,-71.52079773,anonymous,5,,540,5,10,10,,,10,10,423409,1,1
+2/24/2017 10:59,2/24/2017 11:04,100,280,TRUE,2/24/2017 11:04,R_b961pMPNyb4mqA1,,,,,41.47729492,-71.52079773,anonymous,,,,,,,3,,8,3,423593,0,1
+2/15/2017 10:49,2/24/2017 11:04,100,778538,TRUE,2/24/2017 11:05,R_vHmsIKLpOpHBB9D,,,,,41.47729492,-71.52079773,anonymous,,,,,,,3,,10,10,423278,0,1
+2/24/2017 11:00,2/24/2017 11:05,100,273,TRUE,2/24/2017 11:05,R_3G1Gjdm3QfHiuUg,,,,,41.47729492,-71.52079773,anonymous,,5,2,3,,0,,,9,10,423146,1,0
+2/24/2017 11:06,2/24/2017 11:13,100,465,TRUE,2/24/2017 11:13,R_3hg6YECHfl0mivl,,,,,41.47729492,-71.52079773,anonymous,,,,,,,5,,8,7,423830,0,1
+3/7/2017 8:30,3/7/2017 8:32,100,134,TRUE,3/7/2017 8:32,R_2TTWaEOqrQ09bEc,,,,,41.47729492,-71.52079773,anonymous,,2,534,5,8,9,,,2,10,423589,1,0
+3/7/2017 8:23,3/7/2017 8:29,25,369,FALSE,3/7/2017 12:30,R_d6DDdWQ3UH5X6DL,,,,,,,anonymous,2,,,,,,,,,,423426,1,1
+3/9/2017 7:27,3/9/2017 7:32,100,280,TRUE,3/9/2017 7:32,R_24dR2g1uOKhxW9P,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,2,8,9,423616,0,0
+3/21/2017 7:21,3/21/2017 7:39,100,1060,TRUE,3/21/2017 7:39,R_3mn4uIqJB6cZ13w,,,,,41.47729492,-71.52079773,anonymous,,,,,,,3,,6,2,423726,0,1
+3/9/2017 7:27,3/21/2017 7:52,100,1034719,TRUE,3/21/2017 7:52,R_3G98v73zz2jF1jo,,,,,41.47729492,-71.52079773,anonymous,,,,,,,2,,6,7,423637,0,1
+3/21/2017 7:51,3/21/2017 7:56,100,298,TRUE,3/21/2017 7:56,R_zeWo4Kubk2GlXG1,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,3,10,8,423545,0,0
+3/23/2017 7:25,3/23/2017 7:34,100,505,TRUE,3/23/2017 7:34,R_Uu9BC7SLZbj5djr,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,3,5,2,423984,0,0
+3/23/2017 7:26,3/23/2017 7:35,100,513,TRUE,3/23/2017 7:35,R_To2LVij0aZCw38l,,,,,41.47729492,-71.52079773,anonymous,,2,559,2,9,8,,,3,3,423046,1,0
+3/23/2017 7:36,3/23/2017 7:44,100,470,TRUE,3/23/2017 7:44,R_1KqDIXhAM67BhXk,,,,,41.47729492,-71.52079773,anonymous,,,,,,,2,,5,10,423656,0,1
+3/23/2017 7:36,3/23/2017 7:47,100,668,TRUE,3/23/2017 7:47,R_3efx4tM4QEgTveH,,,,,41.47729492,-71.52079773,anonymous,,,,,,,1,,1,7,423176,0,1
+3/23/2017 7:44,3/23/2017 7:50,100,313,TRUE,3/23/2017 7:50,R_xlbjLseEhXcAUsF,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,4,9,10,423414,0,0
+3/23/2017 7:51,3/23/2017 7:57,100,348,TRUE,3/23/2017 7:57,R_2saKVU0L3EMDdfY,,,,,41.47729492,-71.52079773,anonymous,,,,,,,4,,10,7,423769,0,1
+3/23/2017 7:48,3/23/2017 8:02,100,832,TRUE,3/23/2017 8:02,R_239pQoEI2KKX1hf,,,,,41.47729492,-71.52079773,anonymous,,6,561,3,,1,,,10,9,423217,1,0
+3/23/2017 7:58,3/23/2017 8:14,100,935,TRUE,3/23/2017 8:14,R_1Qyj8j1dyFnDE8v,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,1,1,9,423835,0,0
+3/23/2017 8:15,3/23/2017 8:34,100,1163,TRUE,3/23/2017 8:34,R_1Ca4SXZz9hzUm1F,,,,,41.47729492,-71.52079773,anonymous,,4,531,4,5,5,,,6,6,423685,1,0
+3/23/2017 8:03,3/23/2017 8:58,100,3267,TRUE,3/23/2017 8:58,R_3JJe1cWha1DO7ak,,,,,41.47729492,-71.52079773,anonymous,7,,545,5,5,4,,,6,4,423034,1,1
+3/23/2017 8:34,3/23/2017 8:58,100,1427,TRUE,3/23/2017 8:58,R_1gBhQVpjla8uUhs,,,,,41.47729492,-71.52079773,anonymous,3,,540,0,9,9,,,6,10,423831,1,1
+3/23/2017 7:26,3/23/2017 9:03,100,5855,TRUE,3/23/2017 9:03,R_1Ov3ooXsZ8yXBK3,,,,,41.47729492,-71.52079773,anonymous,5,,564,1,,1,,,4,1,423391,1,1
+3/23/2017 9:05,3/23/2017 9:19,100,795,TRUE,3/23/2017 9:19,R_2V7pILLnHdG2jap,,,,,41.47729492,-71.52079773,anonymous,,7,539,1,5,6,,,8,3,423236,1,0
+3/23/2017 9:06,3/23/2017 9:21,100,880,TRUE,3/23/2017 9:21,R_Cfr0epH5SLVPlER,,,,,41.47729492,-71.52079773,anonymous,,,,,,,3,,3,5,423416,0,1
+3/23/2017 9:20,3/24/2017 11:00,100,92404,TRUE,3/24/2017 11:00,R_5jtMmK31oxcovPr,,,,,41.47729492,-71.52079773,anonymous,,,,,,,4,,10,10,423128,0,1
+3/23/2017 9:06,3/24/2017 11:12,100,94008,TRUE,3/24/2017 11:12,R_2q8xf7V0x8CnGrx,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,3,4,6,423052,0,0
+3/24/2017 11:35,3/24/2017 11:36,100,62,TRUE,3/24/2017 11:36,R_2pPtgqP8ihSKbIQ,,,,,41.47729492,-71.52079773,anonymous,,,,,,,1,,10,9,423782,0,1
+3/24/2017 11:21,3/24/2017 11:47,100,1553,TRUE,3/24/2017 11:47,R_WuLJxmamhue2maZ,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,2,4,6,423520,0,0
+3/24/2017 11:38,3/24/2017 12:04,100,1517,TRUE,3/24/2017 12:04,R_264KI0nU7KWs3KK,,,,,41.47729492,-71.52079773,anonymous,4,,549,2,7,7,,,8,8,423282,1,1
+3/24/2017 10:55,3/24/2017 12:06,100,4256,TRUE,3/24/2017 12:06,R_2xAb0e3I950dGbo,,,,,41.47729492,-71.52079773,anonymous,,7,507,5,8,7,,,5,5,423013,1,0
+3/24/2017 12:07,3/24/2017 12:47,100,2396,TRUE,3/24/2017 12:47,R_27US17QLBE9a1nB,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,1,7,4,423697,0,0
+3/28/2017 7:19,3/28/2017 7:23,100,274,TRUE,3/28/2017 7:23,R_yPweFSKwBCpDOQp,,,,,41.47729492,-71.52079773,anonymous,,,,,,,2,,3,7,423080,0,1
+3/28/2017 7:18,3/28/2017 7:25,100,404,TRUE,3/28/2017 7:25,R_21EpVIFSxxVrbg0,,,,,41.47729492,-71.52079773,anonymous,,1,561,3,10,7,,,8,5,423827,1,0
+3/28/2017 7:19,3/28/2017 7:25,100,405,TRUE,3/28/2017 7:25,R_agBzuYp6IIQ7IJP,,,,,41.47729492,-71.52079773,anonymous,1,,867,2,6,4,,,10,3,423883,1,1
+3/28/2017 7:27,3/28/2017 7:44,100,1012,TRUE,3/28/2017 7:44,R_2SIdkssYG5DdOjC,,,,,41.47729492,-71.52079773,anonymous,,2,528,4,5,7,,,4,3,423605,1,0
+3/28/2017 7:45,3/28/2017 8:27,100,2543,TRUE,3/28/2017 8:27,R_3RkNYX0wwwaBwRL,,,,,41.47729492,-71.52079773,anonymous,,,,,,,7,,6,9,423180,0,1
+3/28/2017 8:31,3/28/2017 8:45,100,870,TRUE,3/28/2017 8:45,R_so0HYdwdBAHE0Uh,,,,,41.47729492,-71.52079773,anonymous,,,,,,,4,,4,8,423625,0,1
+3/28/2017 7:26,3/30/2017 7:46,100,173944,TRUE,3/30/2017 7:46,R_yKNyNUyrEZnyWtz,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,1,6,3,423186,0,0
+3/28/2017 7:27,3/30/2017 7:54,100,174450,TRUE,3/30/2017 7:54,R_STsaxy6zy4s0NSV,,,,,41.47729492,-71.52079773,anonymous,2,,531,4,5,5,,,8,8,423907,1,1
+3/30/2017 8:06,3/30/2017 8:09,100,160,TRUE,3/30/2017 8:09,R_1hzecepViVKcAW9,,,,,41.47729492,-71.52079773,anonymous,3,,549,3,5,4,,,10,5,423773,1,1
+3/30/2017 8:12,3/30/2017 8:19,100,440,TRUE,3/30/2017 8:19,R_25ZTyImuhYTE6wA,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,6,9,10,423671,0,0
+3/30/2017 8:12,3/30/2017 8:44,100,1873,TRUE,3/30/2017 8:44,R_1E9VoM7LzwnMUzg,,,,,41.47729492,-71.52079773,anonymous,,6,542,1,8,9,,,10,8,423267,1,0
+3/30/2017 8:46,3/30/2017 9:04,100,1040,TRUE,3/30/2017 9:04,R_1KeDFWThmat5UFG,,,,,41.47729492,-71.52079773,anonymous,,2,530,1,6,4,,,10,10,423123,1,0
+3/30/2017 8:13,3/30/2017 9:06,100,3208,TRUE,3/30/2017 9:06,R_e3OsJQ5VJ1vT61z,,,,,41.47729492,-71.52079773,anonymous,1,,498,1,7,4,,,7,6,423891,1,1
+3/30/2017 9:00,3/30/2017 9:09,100,533,TRUE,3/30/2017 9:09,R_2aVtJZq5jbYheD1,,,,,41.47729492,-71.52079773,anonymous,,1,530,1,6,6,,,5,10,423934,1,0
+3/30/2017 9:05,3/30/2017 9:10,100,301,TRUE,3/30/2017 9:10,R_BunqsH2Z571nMhX,,,,,41.47729492,-71.52079773,anonymous,7,,533,1,9,5,,,9,10,423319,1,1
+3/30/2017 9:09,3/30/2017 9:24,100,929,TRUE,3/30/2017 9:24,R_5jcndkD4KjbkXdf,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,3,2,3,423188,0,0
+3/30/2017 8:46,3/30/2017 8:55,75,516,FALSE,3/30/2017 12:56,R_24BE14vrCDJET0L,,,,,,,anonymous,,,,,,,,2,,,423086,0,0
+3/30/2017 9:26,3/31/2017 10:59,100,91975,TRUE,3/31/2017 10:59,R_bDGUBxnJxLfjXd7,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,5,8,10,423469,0,0
+4/4/2017 7:32,4/4/2017 7:40,100,484,TRUE,4/4/2017 7:40,R_27EizxnJm8O4WWh,,,,,41.47729492,-71.52079773,anonymous,,5,555,1,10,5,,,7,9,423680,1,0
+4/4/2017 7:32,4/4/2017 7:53,100,1280,TRUE,4/4/2017 7:53,R_Z30oB4FLySSJ1NT,,,,,41.47729492,-71.52079773,anonymous,3,,555,6,4,2,,,10,4,423798,1,1
+4/4/2017 7:53,4/4/2017 7:57,100,224,TRUE,4/4/2017 7:57,R_4T1uRw2Ak232Iw1,,,,,41.47729492,-71.52079773,anonymous,,,,,,,2,,7,8,423455,0,1
+4/4/2017 7:54,4/4/2017 7:59,100,331,TRUE,4/4/2017 7:59,R_1pnk9vmKzlF7Jgi,,,,,41.47729492,-71.52079773,anonymous,2,,501,3,3,4,,,3,4,423096,1,1
+4/4/2017 7:31,4/4/2017 8:23,100,3116,TRUE,4/4/2017 8:23,R_3jU2SL6pb0PyNEo,,,,,41.47729492,-71.52079773,anonymous,,5,549,2,4,5,,,6,7,423688,1,0
+4/6/2017 7:43,4/6/2017 7:48,100,310,TRUE,4/6/2017 7:48,R_3qIGkvWP3GhBLy4,,,,,41.47729492,-71.52079773,anonymous,,,,,,,1,,9,6,423676,0,1
+4/6/2017 7:44,4/6/2017 7:49,100,325,TRUE,4/6/2017 7:49,R_3HYRdAX0t5dSIKL,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,4,6,6,423726,0,0
+4/6/2017 7:43,4/6/2017 8:57,100,4431,TRUE,4/6/2017 8:57,R_3n2k6r2lvwa4iZm,,,,,41.47729492,-71.52079773,anonymous,,3,528,3,3,3,,,3,5,423838,1,0
+4/4/2017 7:34,4/10/2017 10:33,100,529175,TRUE,4/10/2017 10:33,R_290OF2rszsg6ifI,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,2,4,8,423125,0,0
+4/6/2017 7:50,4/10/2017 11:31,100,358851,TRUE,4/10/2017 11:31,R_1FIL2lCDeoRmZrg,,,,,41.47729492,-71.52079773,anonymous,,,,,,,,4,7,6,423059,0,0
+4/10/2017 11:27,4/10/2017 11:35,100,502,TRUE,4/10/2017 11:35,R_3Kvjhsi4YREZMTk,,,,,41.47729492,-71.52079773,anonymous,,5,1,1,7,8,,,7,7,423643,1,0
+4/10/2017 11:37,4/11/2017 8:02,100,73497,TRUE,4/11/2017 8:02,R_C7kVyDJYXzDSIiB,,,,,41.47729492,-71.52079773,anonymous,7,,543,2,9,10,,,7,6,423386,1,1
+4/10/2017 11:28,4/13/2017 8:09,100,247275,TRUE,4/13/2017 8:09,R_2DMJRVo43hFi4oh,,,,,41.47729492,-71.52079773,anonymous,2,,418,1,7,7,,,9,8,423233,1,1
+4/20/2017 8:00,4/20/2017 8:33,100,1971,TRUE,4/20/2017 8:33,R_1flp628dxRrcLVQ,,,,,41.47729492,-71.52079773,anonymous,5,,545,1,7,9,,,9,10,423157,1,1

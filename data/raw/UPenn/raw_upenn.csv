@@ -1,0 +1,421 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,Q18,Q22,L1.R1.scenario_1,L1.R0.scenario_1,Q28,Q29_1,Q21_1,Q22_1,L0.R1.text_1,L0.R0.text_1,Q26_1,Q14_1,load,had.read
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,Please enter your Wharton Behavorial Lab identification number,"Please select ""I Approve"", if you consent to participate in this study. Please raise your hand, if you wish to withdraw from the study at this time.","Start with the number:      564
+
+	 
+
+	While counting backwards, read the following scenario.
+
+	
+
+	
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have done the reading and feel confident that the professor would like your answer, but prefer not to volunteer answers in large classes. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+
+	 
+
+	 
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.","Start with the number:      564
+
+	 
+
+	While counting backwards, read the following scenario.
+
+	 
+
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have not done the reading and feel confident that you would not be able to answer the question. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+	
+
+	 
+
+	 
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.",STOP COUNTING! What number did you end on?,"It
+is often very difficult to complete two tasks simultaneously. Please indicate
+how much effort you believe you put into each of the two tasks by choosing the
+appropriate number.",How difficult was the counting task?,How much effort did the counting task require?,"Please read the following scenario carefully.
+
+	
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have done the reading and feel confident that the professor would like your answer, but prefer not to volunteer answers in large classes. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+	 
+
+
+	 
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.","Please read the following scenario carefully.
+
+	 
+
+	Imagine that you are in a large lecture with a few hundred students and you are sitting in the middle section, a little more than half-way back in the room. The professor asks a question about the readings, but no one raises his or her hand to answer. You have not done the reading and feel confident that you would not be able to answer the question. The class sits in silence for two minutes before the professor explains that if no one volunteers, he will choose someone.
+
+	 
+
+
+	How likely do you believe it is that the professor will call on you? Mark your answer by choosing the appropriate number below.","If you were a student in the class you just read about, how important would it be to you to answer questions correctly in class?","If
+ you were a student in the class, how bad would you feel if you were 
+called on by the professor, but couldn’t answer the question?",load,had.read
+"{""ImportId"":""startDate""}","{""ImportId"":""endDate""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""QID62_TEXT""}","{""ImportId"":""QID64""}","{""ImportId"":""QID44_1""}","{""ImportId"":""QID45_1""}","{""ImportId"":""QID28_TEXT""}","{""ImportId"":""QID29_1""}","{""ImportId"":""QID52_1""}","{""ImportId"":""QID53_1""}","{""ImportId"":""QID11_1""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID56_1""}","{""ImportId"":""QID58_1""}","{""ImportId"":""load""}","{""ImportId"":""had.read""}"
+3/20/2017 10:05,3/20/2017 10:06,IP Address,128.91.96.127,100,40,TRUE,3/20/2017 10:06,R_1KdMRXffdcx7CRf,,,,,39.95970154,-75.19680023,anonymous,38717,I Approve,,,,,,,,3,10,10,0,0
+3/20/2017 10:05,3/20/2017 10:06,IP Address,128.91.97.134,100,45,TRUE,3/20/2017 10:06,R_2VI86wQWjwVV6Ck,,,,,39.95970154,-75.19680023,anonymous,45757,I Approve,,,,,,,,1,10,10,0,0
+3/20/2017 10:05,3/20/2017 10:06,IP Address,128.91.96.190,100,48,TRUE,3/20/2017 10:06,R_ZEqG5QFujnHKu2Z,,,,,39.95970154,-75.19680023,anonymous,46018,I Approve,,,,,,,,3,10,10,0,0
+3/20/2017 10:05,3/20/2017 10:06,IP Address,128.91.97.136,100,46,TRUE,3/20/2017 10:06,R_VXAPQJMXOwndHLX,,,,,39.95970154,-75.19680023,anonymous,47314,I Approve,,,,,,,5,,6,2,0,1
+3/20/2017 10:05,3/20/2017 10:06,IP Address,128.91.97.39,100,59,TRUE,3/20/2017 10:06,R_3lRivJOaXLpV9WN,,,,,39.95970154,-75.19680023,anonymous,42963,I Approve,,,,,,,0,,3,6,0,1
+3/20/2017 10:01,3/20/2017 10:06,IP Address,128.91.96.204,100,270,TRUE,3/20/2017 10:06,R_3JIV4mSDDRWnGY7,,,,,39.95970154,-75.19680023,anonymous,39619,I Approve,,,,,,,0,,8,8,0,1
+3/20/2017 10:05,3/20/2017 10:06,IP Address,128.91.97.10,100,64,TRUE,3/20/2017 10:06,R_2cBmckE2pubo6Dn,,,,,39.95970154,-75.19680023,anonymous,45091,I Approve,,,,,,,3,,0,10,0,1
+3/20/2017 10:05,3/20/2017 10:06,IP Address,128.91.96.137,100,67,TRUE,3/20/2017 10:06,R_9og32U6HhyRX90R,,,,,39.95970154,-75.19680023,anonymous,40288,I Approve,,,,,,,,6,8,10,0,0
+3/20/2017 10:05,3/20/2017 10:07,IP Address,128.91.96.242,100,95,TRUE,3/20/2017 10:07,R_2X6sVLfUHLgg8HD,,,,,39.95970154,-75.19680023,anonymous,46614,I Approve,5,,555,1,8,9,,,7,9,1,1
+3/20/2017 10:06,3/20/2017 10:07,IP Address,128.91.96.134,100,53,TRUE,3/20/2017 10:07,R_pFVCmf5dUnZ9zrj,,,,,39.95970154,-75.19680023,anonymous,41020,I Approve,,,,,,,,2,3,7,0,0
+3/20/2017 10:05,3/20/2017 10:07,IP Address,128.91.97.22,100,124,TRUE,3/20/2017 10:07,R_7UuVVzjJqm3a6NX,,,,,39.95970154,-75.19680023,anonymous,39254,I Approve,5,,555,2,10,10,,,6,9,1,1
+3/20/2017 10:05,3/20/2017 10:07,IP Address,128.91.96.91,100,125,TRUE,3/20/2017 10:07,R_3OcRlxPYmf1oNV3,,,,,39.95970154,-75.19680023,anonymous,40807,I Approve,,6,552,2,8,9,,,9,10,1,0
+3/20/2017 10:05,3/20/2017 10:07,IP Address,128.91.97.64,100,126,TRUE,3/20/2017 10:07,R_2YE7WvZg1QyjROb,,,,,39.95970154,-75.19680023,anonymous,40166,I Approve,,3,522,1,9,9,,,1,3,1,0
+3/20/2017 10:05,3/20/2017 10:07,IP Address,128.91.97.110,100,125,TRUE,3/20/2017 10:07,R_21dfhE6rRoVdfPw,,,,,39.95970154,-75.19680023,anonymous,38350,I Approve,,3,534,5,10,9,,,7,9,1,0
+3/20/2017 10:05,3/20/2017 10:07,IP Address,128.91.97.143,100,132,TRUE,3/20/2017 10:07,R_2Svobwcixp2NV8X,,,,,39.95970154,-75.19680023,anonymous,47410,I Approve,,5,534,4,6,6,,,6,4,1,0
+3/20/2017 10:05,3/20/2017 10:07,IP Address,128.91.96.105,100,144,TRUE,3/20/2017 10:07,R_1mqpv7jowx5u7zi,,,,,39.95970154,-75.19680023,anonymous,40461,I Approve,7,,549,1,6,9,,,8,10,1,1
+3/20/2017 10:05,3/20/2017 10:08,IP Address,128.91.96.143,100,178,TRUE,3/20/2017 10:08,R_2ysxJYqw3yhv3AV,,,,,39.95970154,-75.19680023,anonymous,45706,I Approve,3,,534,2,7,7,,,9,9,1,1
+3/20/2017 10:05,3/20/2017 10:08,IP Address,128.91.97.1,100,174,TRUE,3/20/2017 10:08,R_07HgC9CFp4Y2d0J,,,,,39.95970154,-75.19680023,anonymous,47172,I Approve,,1,537,1,9,9,,,4,10,1,0
+3/20/2017 10:05,3/20/2017 10:08,IP Address,128.91.96.77,100,179,TRUE,3/20/2017 10:08,R_VIpOSUNU0EBH5SN,,,,,39.95970154,-75.19680023,anonymous,41934,I Approve,,5,541,3,7,7,,,4,10,1,0
+3/20/2017 11:06,3/20/2017 11:07,IP Address,128.91.97.10,100,49,TRUE,3/20/2017 11:07,R_UtJqGNuFAqsqQ5r,,,,,39.95970154,-75.19680023,anonymous,46730,I Approve,,,,,,,1,,7,8,0,1
+3/20/2017 11:06,3/20/2017 11:07,IP Address,128.91.96.242,100,50,TRUE,3/20/2017 11:07,R_pSPUq1McxClfKpP,,,,,39.95970154,-75.19680023,anonymous,45617,I Approve,,,,,,,,4,8,8,0,0
+3/20/2017 11:06,3/20/2017 11:07,IP Address,128.91.97.22,100,55,TRUE,3/20/2017 11:07,R_2uEZ4a74jPOK41D,,,,,39.95970154,-75.19680023,anonymous,38688,I Approve,,,,,,,,1,6,9,0,0
+3/20/2017 11:06,3/20/2017 11:07,IP Address,128.91.96.77,100,54,TRUE,3/20/2017 11:07,R_1N5telpZxHockBP,,,,,39.95970154,-75.19680023,anonymous,45942,I Approve,,,,,,,2,,8,0,0,1
+3/20/2017 11:06,3/20/2017 11:07,IP Address,128.91.97.64,100,57,TRUE,3/20/2017 11:07,R_3lRzP2qsrDlEgbT,,,,,39.95970154,-75.19680023,anonymous,39594,I Approve,,,,,,,,0,9,4,0,0
+3/20/2017 11:06,3/20/2017 11:07,IP Address,128.91.96.190,100,67,TRUE,3/20/2017 11:07,R_1mrY6HvR65FtlpH,,,,,39.95970154,-75.19680023,anonymous,38337,I Approve,,,,,,,1,,2,3,0,1
+3/20/2017 11:06,3/20/2017 11:07,IP Address,128.91.97.134,100,66,TRUE,3/20/2017 11:07,R_ply4YnoYqXy5sUV,,,,,39.95970154,-75.19680023,anonymous,41985,I Approve,,,,,,,,1,3,8,0,0
+3/20/2017 11:06,3/20/2017 11:07,IP Address,128.91.97.143,100,71,TRUE,3/20/2017 11:07,R_2PmTTqnEC9lgDT4,,,,,39.95970154,-75.19680023,anonymous,47398,I Approve,,,,,,,3,,7,9,0,1
+3/20/2017 11:06,3/20/2017 11:07,IP Address,128.91.97.39,100,72,TRUE,3/20/2017 11:07,R_UlsZNFgq44tQ5TX,,,,,39.95970154,-75.19680023,anonymous,40390,I Approve,3,,465,2,7,8,,,7,10,1,1
+3/20/2017 11:06,3/20/2017 11:07,IP Address,128.91.96.143,100,76,TRUE,3/20/2017 11:07,R_ZKuulbg8WMzxIsN,,,,,39.95970154,-75.19680023,anonymous,45646,I Approve,7,,548,4,9,9,,,5,10,1,1
+3/20/2017 11:06,3/20/2017 11:07,IP Address,128.91.96.137,100,92,TRUE,3/20/2017 11:07,R_24ADby9ASpSS5wB,,,,,39.95970154,-75.19680023,anonymous,38560,I Approve,,,,,,,,0,3,7,0,0
+3/20/2017 11:06,3/20/2017 11:08,IP Address,128.91.97.1,100,153,TRUE,3/20/2017 11:08,R_294TSUj8YlozyLd,,,,,39.95970154,-75.19680023,anonymous,46206,I Approve,,6,501,4,7,8,,,7,10,1,0
+3/20/2017 11:06,3/20/2017 11:09,IP Address,128.91.96.204,100,175,TRUE,3/20/2017 11:09,R_UuArl5oY1dWHQLT,,,,,39.95970154,-75.19680023,anonymous,35838,I Approve,2,,543,3,7,8,,,7,9,1,1
+3/20/2017 11:06,3/20/2017 11:09,IP Address,128.91.96.91,100,177,TRUE,3/20/2017 11:09,R_1JLR8nRVRUZpVS7,,,,,39.95970154,-75.19680023,anonymous,37985,I Approve,2,,528,0,7,6,,,0,7,1,1
+3/20/2017 11:06,3/20/2017 11:09,IP Address,128.91.97.136,100,208,TRUE,3/20/2017 11:09,R_eIItucqBYqQMc4F,,,,,39.95970154,-75.19680023,anonymous,39145,I Approve,5,,558,1,8,7,,,5,6,1,1
+3/20/2017 11:06,3/20/2017 11:10,IP Address,128.91.97.110,100,210,TRUE,3/20/2017 11:10,R_C8qmPmGD6UQkMF3,,,,,39.95970154,-75.19680023,anonymous,39969,I Approve,,7,531,2,8,9,,,6,8,1,0
+3/20/2017 11:06,3/20/2017 11:12,IP Address,128.91.96.127,100,331,TRUE,3/20/2017 11:12,R_2YmS4hojFS3birK,,,,,39.95970154,-75.19680023,anonymous,40536,I Approve,,4,431,1,10,10,,,4,6,1,0
+3/20/2017 12:06,3/20/2017 12:06,IP Address,128.91.97.64,100,24,TRUE,3/20/2017 12:06,R_1g0mgwX4Atuwsmd,,,,,39.95970154,-75.19680023,anonymous,40540,I Approve,,,,,,,,3,7,7,0,0
+3/20/2017 12:06,3/20/2017 12:06,IP Address,128.91.96.242,100,45,TRUE,3/20/2017 12:06,R_12xRfyz1i32bIHZ,,,,,39.95970154,-75.19680023,anonymous,46181,I Approve,,,,,,,1,,2,7,0,1
+3/20/2017 12:05,3/20/2017 12:06,IP Address,128.91.97.143,100,54,TRUE,3/20/2017 12:06,R_1GHOLAyQh3zYCcE,,,,,39.95970154,-75.19680023,anonymous,42427,I Approve,,,,,,,3,,8,9,0,1
+3/20/2017 12:06,3/20/2017 12:06,IP Address,128.91.97.134,100,49,TRUE,3/20/2017 12:06,R_3HCC3Ss42a7H4T5,,,,,39.95970154,-75.19680023,anonymous,41262,I Approve,,,,,,,,1,8,9,0,0
+3/20/2017 12:06,3/20/2017 12:06,IP Address,128.91.96.190,100,55,TRUE,3/20/2017 12:06,R_1ds19JIVFEyXVDm,,,,,39.95970154,-75.19680023,anonymous,35340,I Approve,,,,,,,5,,9,7,0,1
+3/20/2017 12:06,3/20/2017 12:07,IP Address,128.91.96.204,100,59,TRUE,3/20/2017 12:07,R_1Nrzi4fV8GXQXv1,,,,,39.95970154,-75.19680023,anonymous,47256,I Approve,,,,,,,,1,4,3,0,0
+3/20/2017 12:06,3/20/2017 12:07,IP Address,128.91.97.10,100,65,TRUE,3/20/2017 12:07,R_cYIQzlry1ILT7Ox,,,,,39.95970154,-75.19680023,anonymous,47603,I Approve,,,,,,,,1,10,9,0,0
+3/20/2017 12:06,3/20/2017 12:07,IP Address,128.91.97.1,100,64,TRUE,3/20/2017 12:07,R_xc32UX7J4xRt1XX,,,,,39.95970154,-75.19680023,anonymous,43991,I Approve,,,,,,,2,,5,7,0,1
+3/20/2017 12:06,3/20/2017 12:07,IP Address,128.91.96.137,100,80,TRUE,3/20/2017 12:07,R_2zcLPhAZDBzSbOB,,,,,39.95970154,-75.19680023,anonymous,40994,I Approve,,6,561,1,9,10,,,6,10,1,0
+3/20/2017 12:06,3/20/2017 12:07,IP Address,128.91.96.91,100,90,TRUE,3/20/2017 12:07,R_2RVu8D3eAtsznlI,,,,,39.95970154,-75.19680023,anonymous,40109,I Approve,5,,561,4,10,10,,,8,10,1,1
+3/20/2017 12:06,3/20/2017 12:08,IP Address,128.91.96.105,100,112,TRUE,3/20/2017 12:08,R_12KN28HTLcm7kgi,,,,,39.95970154,-75.19680023,anonymous,45648,I Approve,4,,542,2,8,9,,,8,8,1,1
+3/20/2017 12:06,3/20/2017 12:08,IP Address,128.91.96.127,100,118,TRUE,3/20/2017 12:08,R_12mBZ9kvMJtRm8Z,,,,,39.95970154,-75.19680023,anonymous,43436,I Approve,,5,561,0,10,10,,,10,7,1,0
+3/20/2017 12:06,3/20/2017 12:08,IP Address,128.91.96.143,100,117,TRUE,3/20/2017 12:08,R_2E3PZbDTBeKRUrc,,,,,39.95970154,-75.19680023,anonymous,45989,I Approve,,,,,,,4,,8,8,0,1
+3/20/2017 12:06,3/20/2017 12:08,IP Address,128.91.96.77,100,127,TRUE,3/20/2017 12:08,R_3nVhqSyoK8NxVls,,,,,39.95970154,-75.19680023,anonymous,43547,I Approve,5,,543,4,8,7,,,6,8,1,1
+3/20/2017 12:06,3/20/2017 12:08,IP Address,128.91.97.22,100,127,TRUE,3/20/2017 12:08,R_1dHsCpoZueh1683,,,,,39.95970154,-75.19680023,anonymous,40586,I Approve,,5,540,3,6,7,,,6,7,1,0
+3/20/2017 12:06,3/20/2017 12:08,IP Address,128.91.97.110,100,130,TRUE,3/20/2017 12:08,R_sdHUjLumYW9DvMt,,,,,39.95970154,-75.19680023,anonymous,40682,I Approve,,3,540,4,7,8,,,10,9,1,0
+3/20/2017 12:06,3/20/2017 12:08,IP Address,128.91.97.39,100,158,TRUE,3/20/2017 12:08,R_2f7FxO6o06a3Eb8,,,,,39.95970154,-75.19680023,anonymous,41498,I Approve,,3,552,4,7,8,,,8,10,1,0
+3/20/2017 12:06,3/20/2017 12:09,IP Address,128.91.97.136,100,192,TRUE,3/20/2017 12:09,R_Wp8xHC4w3C3WpY5,,,,,39.95970154,-75.19680023,anonymous,46074,I Approve,5,,540,1,9,10,,,10,10,1,1
+3/20/2017 12:08,3/20/2017 12:10,IP Address,128.91.96.134,100,157,TRUE,3/20/2017 12:10,R_1QyF5fj7qjZj0xz,,,,,39.95970154,-75.19680023,anonymous,36251,I Approve,,,,,,,,5,10,8,0,0
+3/20/2017 13:05,3/20/2017 13:06,IP Address,128.91.96.134,100,41,TRUE,3/20/2017 13:06,R_1OPJFSo5K0J3pC3,,,,,39.95970154,-75.19680023,anonymous,46837,I Approve,,,,,,,1,,6,6,0,1
+3/20/2017 13:05,3/20/2017 13:06,IP Address,128.91.96.242,100,49,TRUE,3/20/2017 13:06,R_2E6MjMsUVntI3B6,,,,,39.95970154,-75.19680023,anonymous,46239,I Approve,,,,,,,0,,9,10,0,1
+3/20/2017 13:05,3/20/2017 13:06,IP Address,128.91.96.105,100,52,TRUE,3/20/2017 13:06,R_vcTlAjXzoADl4yZ,,,,,39.95970154,-75.19680023,anonymous,41037,I Approve,,,,,,,,1,8,9,0,0
+3/20/2017 13:05,3/20/2017 13:06,IP Address,128.91.97.22,100,54,TRUE,3/20/2017 13:06,R_3G1zJv23fXEwYWF,,,,,39.95970154,-75.19680023,anonymous,40459,I Approve,,,,,,,,4,8,7,0,0
+3/20/2017 13:05,3/20/2017 13:07,IP Address,128.91.97.1,100,66,TRUE,3/20/2017 13:07,R_2ataJHOvbFM93fE,,,,,39.95970154,-75.19680023,anonymous,41708,I Approve,,,,,,,1,,4,9,0,1
+3/20/2017 13:05,3/20/2017 13:07,IP Address,128.91.96.143,100,65,TRUE,3/20/2017 13:07,R_3PaBxcUCgOtXKf8,,,,,39.95970154,-75.19680023,anonymous,29827,I Approve,,,,,,,2,,6,8,0,1
+3/20/2017 13:05,3/20/2017 13:07,IP Address,128.91.96.190,100,65,TRUE,3/20/2017 13:07,R_WksOGZs1esBlp3b,,,,,39.95970154,-75.19680023,anonymous,43619,I Approve,,,,,,,2,,5,8,0,1
+3/20/2017 13:05,3/20/2017 13:07,IP Address,128.91.97.136,100,82,TRUE,3/20/2017 13:07,R_1Cs8CRVHyx2gORR,,,,,39.95970154,-75.19680023,anonymous,45619,I Approve,,,,,,,,2,3,6,0,0
+3/20/2017 13:05,3/20/2017 13:07,IP Address,128.91.97.64,100,82,TRUE,3/20/2017 13:07,R_3HpNZRRmeQgu6Vb,,,,,39.95970154,-75.19680023,anonymous,41890,I Approve,,,,,,,,4,7,8,0,0
+3/20/2017 13:05,3/20/2017 13:07,IP Address,128.91.96.127,100,81,TRUE,3/20/2017 13:07,R_Q610Lq1ZDufAP0R,,,,,39.95970154,-75.19680023,anonymous,38510,I Approve,3,,500,6,10,10,,,10,5,1,1
+3/20/2017 13:05,3/20/2017 13:07,IP Address,128.91.97.39,100,98,TRUE,3/20/2017 13:07,R_rd2LuvGpwYIB3Ql,,,,,39.95970154,-75.19680023,anonymous,42562,I Approve,1,,870,0,10,10,,,8,10,1,1
+3/20/2017 13:05,3/20/2017 13:08,IP Address,128.91.96.204,100,129,TRUE,3/20/2017 13:08,R_24IyBJG3KdvCsNn,,,,,39.95970154,-75.19680023,anonymous,44089,I Approve,,2,543,4,7,7,,,7,7,1,0
+3/20/2017 13:05,3/20/2017 13:08,IP Address,128.91.97.143,100,133,TRUE,3/20/2017 13:08,R_3CQ47JKBPBJCX3z,,,,,39.95970154,-75.19680023,anonymous,37235,I Approve,6,,523,4,7,7,,,4,8,1,1
+3/20/2017 13:05,3/20/2017 13:08,IP Address,128.91.97.110,100,145,TRUE,3/20/2017 13:08,R_2v189dRjIk13byJ,,,,,39.95970154,-75.19680023,anonymous,47169,I Approve,,3,551,2,5,5,,,7,9,1,0
+3/20/2017 13:05,3/20/2017 13:08,IP Address,128.91.97.10,100,154,TRUE,3/20/2017 13:08,R_2zcOJiuGRYAvyng,,,,,39.95970154,-75.19680023,anonymous,44589,I Approve,,7,537,2,5,7,,,8,9,1,0
+3/20/2017 13:06,3/20/2017 13:08,IP Address,128.91.96.137,100,158,TRUE,3/20/2017 13:08,R_3LhfMS6AEighjHj,,,,,39.95970154,-75.19680023,anonymous,47641,I Approve,2,,545,1,10,10,,,9,9,1,1
+3/20/2017 13:05,3/20/2017 13:08,IP Address,128.91.97.134,100,163,TRUE,3/20/2017 13:08,R_2zLVcLqOhqWavAy,,,,,39.95970154,-75.19680023,anonymous,45815,I Approve,1,,522,4,3,7,,,6,7,1,1
+3/20/2017 13:05,3/20/2017 13:08,IP Address,128.91.96.77,100,182,TRUE,3/20/2017 13:08,R_2ab2GAAlZ1LJC4U,,,,,39.95970154,-75.19680023,anonymous,46075,I Approve,1,,525,2,7,7,,,9,6,1,1
+3/20/2017 13:05,3/20/2017 13:09,IP Address,128.91.96.91,100,199,TRUE,3/20/2017 13:09,R_VU1Om3pXL2Z68eJ,,,,,39.95970154,-75.19680023,anonymous,40544,I Approve,,4,534,4,5,4,,,7,6,1,0
+3/21/2017 10:05,3/21/2017 10:06,IP Address,128.91.97.134,100,26,TRUE,3/21/2017 10:06,R_8wbWs1eLyBhgSHv,,,,,39.95970154,-75.19680023,anonymous,42436,I Approve,,,,,,,3,,6,9,0,1
+3/21/2017 10:05,3/21/2017 10:06,IP Address,128.91.97.39,100,41,TRUE,3/21/2017 10:06,R_3hhXf616ARr4rM5,,,,,39.95970154,-75.19680023,anonymous,40318,I Approve,,,,,,,,2,5,9,0,0
+3/21/2017 10:05,3/21/2017 10:06,IP Address,128.91.97.64,100,42,TRUE,3/21/2017 10:06,R_OcYkfUbLuTyvkfn,,,,,39.95970154,-75.19680023,anonymous,41007,I Approve,,,,,,,,1,1,4,0,0
+3/21/2017 10:05,3/21/2017 10:06,IP Address,128.91.96.91,100,48,TRUE,3/21/2017 10:06,R_3dGMK8MnVf5O1YU,,,,,39.95970154,-75.19680023,anonymous,47078,I Approve,,,,,,,3,,9,9,0,1
+3/21/2017 10:05,3/21/2017 10:06,IP Address,128.91.96.137,100,57,TRUE,3/21/2017 10:06,R_Qgk0yZ7R5PSGkPT,,,,,39.95970154,-75.19680023,anonymous,42827,I Approve,,,,,,,,1,9,5,0,0
+3/21/2017 10:06,3/21/2017 10:06,IP Address,128.91.96.204,100,57,TRUE,3/21/2017 10:06,R_1rrGspGAxcNAaoU,,,,,39.95970154,-75.19680023,anonymous,40032,I Approve,,,,,,,1,,2,10,0,1
+3/21/2017 10:05,3/21/2017 10:07,IP Address,128.91.97.143,100,67,TRUE,3/21/2017 10:07,R_12bbnPSjlFNvo5m,,,,,39.95970154,-75.19680023,anonymous,43528,I Approve,,,,,,,1,,9,9,0,1
+3/21/2017 10:05,3/21/2017 10:07,IP Address,128.91.96.77,100,69,TRUE,3/21/2017 10:07,R_22tsUfzvkPjMKdG,,,,,39.95970154,-75.19680023,anonymous,38137,I Approve,,,,,,,,1,1,7,0,0
+3/21/2017 10:05,3/21/2017 10:07,IP Address,128.91.97.136,100,70,TRUE,3/21/2017 10:07,R_3qNxXBBd5pESA7l,,,,,39.95970154,-75.19680023,anonymous,41333,I Approve,,,,,,,,2,7,9,0,0
+3/21/2017 10:05,3/21/2017 10:07,IP Address,128.91.96.143,100,83,TRUE,3/21/2017 10:07,R_xzoRfU3aahxPbSV,,,,,39.95970154,-75.19680023,anonymous,38395,I Approve,,0,552,1,6,5,,,7,8,1,0
+3/21/2017 10:05,3/21/2017 10:07,IP Address,128.91.96.242,100,98,TRUE,3/21/2017 10:07,R_UA4PnR9u6ihNipP,,,,,39.95970154,-75.19680023,anonymous,44090,I Approve,1,,1,3,,1,,,1,10,1,1
+3/21/2017 10:05,3/21/2017 10:08,IP Address,128.91.96.127,100,145,TRUE,3/21/2017 10:08,R_8G5Zgc67RHfvnnb,,,,,39.95970154,-75.19680023,anonymous,41627,I Approve,,7,531,4,6,8,,,7,10,1,0
+3/21/2017 10:06,3/21/2017 10:09,IP Address,128.91.97.110,100,174,TRUE,3/21/2017 10:09,R_qJvnMpweFjKcM0N,,,,,39.95970154,-75.19680023,anonymous,47233,I Approve,1,,540,3,6,6,,,8,8,1,1
+3/21/2017 10:05,3/21/2017 10:09,IP Address,128.91.96.190,100,192,TRUE,3/21/2017 10:09,R_1rrzknjVNwyU3S3,,,,,39.95970154,-75.19680023,anonymous,45598,I Approve,,7,531,2,9,9,,,9,8,1,0
+3/21/2017 10:05,3/21/2017 10:09,IP Address,128.91.97.22,100,197,TRUE,3/21/2017 10:09,R_1ITbQCHh4UFaR5e,,,,,39.95970154,-75.19680023,anonymous,47168,I Approve,2,,534,2,9,8,,,8,9,1,1
+3/21/2017 10:05,3/21/2017 10:09,IP Address,128.91.97.1,100,207,TRUE,3/21/2017 10:09,R_pyeltZ2ao9DBQT7,,,,,39.95970154,-75.19680023,anonymous,38096,I Approve,,1,498,4,5,6,,,6,4,1,0
+3/21/2017 10:05,3/21/2017 10:10,IP Address,128.91.97.10,100,295,TRUE,3/21/2017 10:10,R_2CvlCwGof6ZVZtM,,,,,39.95970154,-75.19680023,anonymous,43263,I Approve,3,,523,3,8,7,,,10,9,1,1
+3/21/2017 11:06,3/21/2017 11:06,IP Address,128.91.96.190,100,45,TRUE,3/21/2017 11:06,R_O6CKFcu2H7OMSZP,,,,,39.95970154,-75.19680023,anonymous,42917,I Approve,,,,,,,,0,6,9,0,0
+3/21/2017 11:06,3/21/2017 11:06,IP Address,128.91.97.64,100,51,TRUE,3/21/2017 11:06,R_1ist48jRy0p65R1,,,,,39.95970154,-75.19680023,anonymous,46477,I Approve,,,,,,,2,,6,7,0,1
+3/21/2017 11:06,3/21/2017 11:07,IP Address,128.91.96.137,100,57,TRUE,3/21/2017 11:07,R_1PTX4CHByAjUjgm,,,,,39.95970154,-75.19680023,anonymous,46689,I Approve,,,,,,,5,,9,10,0,1
+3/21/2017 11:06,3/21/2017 11:07,IP Address,128.91.97.134,100,67,TRUE,3/21/2017 11:07,R_1I5XExphJWcPRsf,,,,,39.95970154,-75.19680023,anonymous,41645,I Approve,,,,,,,,3,7,10,0,0
+3/21/2017 11:06,3/21/2017 11:07,IP Address,128.91.96.242,100,65,TRUE,3/21/2017 11:07,R_2RWIFBmVxj4fuQY,,,,,39.95970154,-75.19680023,anonymous,32386,I Approve,,,,,,,,1,8,10,0,0
+3/21/2017 11:06,3/21/2017 11:07,IP Address,128.91.97.39,100,62,TRUE,3/21/2017 11:07,R_3OyTbQ5TxQLxnQR,,,,,39.95970154,-75.19680023,anonymous,45473,I Approve,,,,,,,0,,2,7,0,1
+3/21/2017 11:06,3/21/2017 11:07,IP Address,128.91.97.10,100,79,TRUE,3/21/2017 11:07,R_1iaFvHoq4yehyx8,,,,,39.95970154,-75.19680023,anonymous,45865,I Approve,,,,,,,1,,0,6,0,1
+3/21/2017 11:06,3/21/2017 11:07,IP Address,128.91.96.91,100,91,TRUE,3/21/2017 11:07,R_3DgfAZL8uXo3FcZ,,,,,39.95970154,-75.19680023,anonymous,45152,I Approve,,7,543,1,10,10,,,10,7,1,0
+3/21/2017 11:06,3/21/2017 11:07,IP Address,128.91.96.204,100,105,TRUE,3/21/2017 11:07,R_1FhSjHh4l2StIkh,,,,,39.95970154,-75.19680023,anonymous,38427,I Approve,5,,655,1,7,7,,,8,8,1,1
+3/21/2017 11:06,3/21/2017 11:08,IP Address,128.91.97.143,100,138,TRUE,3/21/2017 11:08,R_4TKWm37H2fyuRln,,,,,39.95970154,-75.19680023,anonymous,43033,I Approve,,4,534,5,8,8,,,7,10,1,0
+3/21/2017 11:06,3/21/2017 11:08,IP Address,128.91.96.77,100,151,TRUE,3/21/2017 11:08,R_3dYyS39FGiHLq0B,,,,,39.95970154,-75.19680023,anonymous,38108,I Approve,,4,474,4,3,4,,,5,7,1,0
+3/21/2017 11:06,3/21/2017 11:08,IP Address,128.91.97.1,100,173,TRUE,3/21/2017 11:08,R_AczLDWfYHS9t0Yx,,,,,39.95970154,-75.19680023,anonymous,42004,I Approve,0,,525,3,9,9,,,5,3,1,1
+3/21/2017 11:06,3/21/2017 11:09,IP Address,128.91.97.136,100,172,TRUE,3/21/2017 11:09,R_2VdxyJOFuY0HvIo,,,,,39.95970154,-75.19680023,anonymous,44280,I Approve,,2,549,1,10,10,,,4,8,1,0
+3/21/2017 11:06,3/21/2017 11:09,IP Address,128.91.97.22,100,179,TRUE,3/21/2017 11:09,R_2dsjaLQbOW5gMHS,,,,,39.95970154,-75.19680023,anonymous,45260,I Approve,1,,531,2,7,9,,,2,6,1,1
+3/21/2017 11:06,3/21/2017 11:09,IP Address,128.91.96.143,100,194,TRUE,3/21/2017 11:09,R_1d6Kr9bEt4GsBAJ,,,,,39.95970154,-75.19680023,anonymous,46509,I Approve,6,,531,5,8,10,,,6,8,1,1
+3/21/2017 12:05,3/21/2017 12:06,IP Address,128.91.97.110,100,25,TRUE,3/21/2017 12:06,R_214FXu12X6i1Y2y,,,,,39.95970154,-75.19680023,anonymous,40866,I Approve,,,,,,,,3,3,4,0,0
+3/21/2017 12:05,3/21/2017 12:06,IP Address,128.91.97.22,100,34,TRUE,3/21/2017 12:06,R_3KZxhHFTvOALbl7,,,,,39.95970154,-75.19680023,anonymous,42938,I Approve,,,,,,,,1,1,9,0,0
+3/21/2017 12:05,3/21/2017 12:06,IP Address,128.91.96.204,100,39,TRUE,3/21/2017 12:06,R_2Ua77U9Jqe8MvSw,,,,,39.95970154,-75.19680023,anonymous,39943,I Approve,,,,,,,2,,2,7,0,1
+3/21/2017 12:05,3/21/2017 12:06,IP Address,128.91.96.77,100,46,TRUE,3/21/2017 12:06,R_2bPC7OyVt8jDeEL,,,,,39.95970154,-75.19680023,anonymous,38672,I Approve,,,,,,,1,,3,10,0,1
+3/21/2017 12:05,3/21/2017 12:06,IP Address,128.91.96.91,100,51,TRUE,3/21/2017 12:06,R_263WMcyJTu1Uwi2,,,,,39.95970154,-75.19680023,anonymous,37782,I Approve,,,,,,,,1,9,9,0,0
+3/21/2017 12:05,3/21/2017 12:06,IP Address,128.91.96.143,100,57,TRUE,3/21/2017 12:06,R_3MKFSb2hX1SlUWs,,,,,39.95970154,-75.19680023,anonymous,39358,I Approve,,,,,,,1,,8,7,0,1
+3/21/2017 12:05,3/21/2017 12:06,IP Address,128.91.96.137,100,63,TRUE,3/21/2017 12:06,R_cRY0kpEWqGuq0Bb,,,,,39.95970154,-75.19680023,anonymous,45902,I Approve,,,,,,,,9,10,10,0,0
+3/21/2017 12:05,3/21/2017 12:06,IP Address,128.91.96.190,100,68,TRUE,3/21/2017 12:06,R_3RrduQA8oOTChja,,,,,39.95970154,-75.19680023,anonymous,40232,I Approve,,7,479,6,8,9,,,8,10,1,0
+3/21/2017 12:05,3/21/2017 12:06,IP Address,128.91.97.1,100,68,TRUE,3/21/2017 12:06,R_2rx3WfAPPQnrS8i,,,,,39.95970154,-75.19680023,anonymous,40704,I Approve,,5,552,4,4,5,,,5,5,1,0
+3/21/2017 12:05,3/21/2017 12:07,IP Address,128.91.97.136,100,73,TRUE,3/21/2017 12:07,R_O130bEoKIUD6305,,,,,39.95970154,-75.19680023,anonymous,44911,I Approve,,,,,,,1,,3,4,0,1
+3/21/2017 12:05,3/21/2017 12:07,IP Address,128.91.97.39,100,76,TRUE,3/21/2017 12:07,R_27DJXvxyXsHtPaZ,,,,,39.95970154,-75.19680023,anonymous,41467,I Approve,,,,,,,,0,2,9,0,0
+3/21/2017 12:05,3/21/2017 12:07,IP Address,128.91.97.64,100,106,TRUE,3/21/2017 12:07,R_UWvzHSsstBCQO8V,,,,,39.95970154,-75.19680023,anonymous,30086,I Approve,,2,561,0,0,2,,,5,5,1,0
+3/21/2017 12:05,3/21/2017 12:07,IP Address,128.91.97.134,100,129,TRUE,3/21/2017 12:07,R_2Y4TOsXnIvzg0Bd,,,,,39.95970154,-75.19680023,anonymous,43951,I Approve,3,,540,2,9,8,,,9,9,1,1
+3/21/2017 12:05,3/21/2017 12:08,IP Address,128.91.97.10,100,152,TRUE,3/21/2017 12:08,R_30cPlasHrUwiXYn,,,,,39.95970154,-75.19680023,anonymous,45783,I Approve,6,,540,0,9,10,,,10,10,1,1
+3/21/2017 12:05,3/21/2017 12:08,IP Address,128.91.97.143,100,165,TRUE,3/21/2017 12:08,R_3HpDsCyX71lql30,,,,,39.95970154,-75.19680023,anonymous,47201,I Approve,,5,534,4,8,9,,,9,10,1,0
+3/21/2017 12:05,3/21/2017 12:08,IP Address,128.91.96.242,100,190,TRUE,3/21/2017 12:08,R_xFNqlqfGTSqOss9,,,,,39.95970154,-75.19680023,anonymous,38582,I Approve,6,,543,2,6,6,,,7,4,1,1
+3/21/2017 13:06,3/21/2017 13:07,IP Address,128.91.97.110,100,53,TRUE,3/21/2017 13:07,R_3iL3SgBH9UqTQZ5,,,,,39.95970154,-75.19680023,anonymous,43255,I Approve,,,,,,,1,,5,3,0,1
+3/21/2017 13:06,3/21/2017 13:07,IP Address,128.91.96.137,100,60,TRUE,3/21/2017 13:07,R_2QGJrxMkQNbwQYO,,,,,39.95970154,-75.19680023,anonymous,43341,I Approve,,,,,,,,1,7,10,0,0
+3/21/2017 13:06,3/21/2017 13:07,IP Address,128.91.96.204,100,70,TRUE,3/21/2017 13:07,R_1r17z3rPkijiLHb,,,,,39.95970154,-75.19680023,anonymous,40313,I Approve,,9,561,5,7,9,,,5,4,1,0
+3/21/2017 13:06,3/21/2017 13:07,IP Address,128.91.97.1,100,75,TRUE,3/21/2017 13:07,R_1kMFtwDiK5dgplK,,,,,39.95970154,-75.19680023,anonymous,38677,I Approve,,,,,,,,2,6,8,0,0
+3/21/2017 13:06,3/21/2017 13:07,IP Address,128.91.97.136,100,75,TRUE,3/21/2017 13:07,R_2v8NVNJLpvIeX7H,,,,,39.95970154,-75.19680023,anonymous,46976,I Approve,,,,,,,1,,1,1,0,1
+3/21/2017 13:06,3/21/2017 13:07,IP Address,128.91.96.143,100,80,TRUE,3/21/2017 13:07,R_3OkpD4iyzHvAKdk,,,,,39.95970154,-75.19680023,anonymous,47165,I Approve,,,,,,,1,,8,9,0,1
+3/21/2017 13:06,3/21/2017 13:07,IP Address,128.91.97.64,100,74,TRUE,3/21/2017 13:07,R_1ePIoIVrPMZu6vS,,,,,39.95970154,-75.19680023,anonymous,44351,I Approve,,,,,,,,2,3,7,0,0
+3/21/2017 13:06,3/21/2017 13:07,IP Address,128.91.97.22,100,89,TRUE,3/21/2017 13:07,R_1NhulfFx8Wb8om0,,,,,39.95970154,-75.19680023,anonymous,45875,I Approve,,,,,,,4,,9,7,0,1
+3/21/2017 13:03,3/21/2017 13:07,IP Address,128.91.97.10,100,292,TRUE,3/21/2017 13:07,R_1dgI2pqBCIpWFj7,,,,,39.95970154,-75.19680023,anonymous,40614,I Approve,,6,552,3,5,5,,,5,6,1,0
+3/21/2017 13:06,3/21/2017 13:08,IP Address,128.91.96.77,100,112,TRUE,3/21/2017 13:08,R_3iRwaElMxYcQYDy,,,,,39.95970154,-75.19680023,anonymous,45852,I Approve,,3,534,1,7,6,,,6,9,1,0
+3/21/2017 13:06,3/21/2017 13:08,IP Address,128.91.97.143,100,162,TRUE,3/21/2017 13:08,R_0f9Q65U3gCNA3LP,,,,,39.95970154,-75.19680023,anonymous,47491,I Approve,1,,531,5,7,8,,,10,10,1,1
+3/21/2017 13:06,3/21/2017 13:09,IP Address,128.91.96.91,100,166,TRUE,3/21/2017 13:09,R_3NQGC32ElyGHQlB,,,,,39.95970154,-75.19680023,anonymous,45742,I Approve,2,,528,4,6,6,,,7,5,1,1
+3/21/2017 13:06,3/21/2017 13:09,IP Address,128.91.96.190,100,184,TRUE,3/21/2017 13:09,R_2EbLe7CWMupdosL,,,,,39.95970154,-75.19680023,anonymous,43637,I Approve,5,,549,0,9,10,,,10,4,1,1
+3/21/2017 13:06,3/21/2017 13:09,IP Address,128.91.97.134,100,195,TRUE,3/21/2017 13:09,R_3PdXRIKSoXLMxJr,,,,,39.95970154,-75.19680023,anonymous,39249,I Approve,,4,553,1,9,9,,,7,4,1,0
+3/21/2017 13:06,3/21/2017 13:10,IP Address,128.91.97.39,100,230,TRUE,3/21/2017 13:10,R_vIFfdiYYab3mmdP,,,,,39.95970154,-75.19680023,anonymous,46581,I Approve,2,,264,1,10,10,,,6,2,1,1
+3/21/2017 13:06,3/21/2017 13:10,IP Address,128.91.96.242,100,269,TRUE,3/21/2017 13:10,R_33eVdX4RDyxVdyf,,,,,39.95970154,-75.19680023,anonymous,38065,I Approve,1,,528,3,6,4,,,9,7,1,1
+3/22/2017 10:05,3/22/2017 10:06,IP Address,128.91.96.91,100,38,TRUE,3/22/2017 10:06,R_3nkCoPvDJguW7qj,,,,,39.95970154,-75.19680023,anonymous,43264,I Approve,,,,,,,,6,8,7,0,0
+3/22/2017 10:05,3/22/2017 10:06,IP Address,128.91.97.39,100,38,TRUE,3/22/2017 10:06,R_9ZHjkMs9DC5Tlst,,,,,39.95970154,-75.19680023,anonymous,45888,I Approve,,,,,,,,3,7,8,0,0
+3/22/2017 10:05,3/22/2017 10:06,IP Address,128.91.97.136,100,44,TRUE,3/22/2017 10:06,R_08sRI7M3NsluhuF,,,,,39.95970154,-75.19680023,anonymous,47266,I Approve,,,,,,,2,,5,9,0,1
+3/22/2017 10:05,3/22/2017 10:06,IP Address,128.91.96.143,100,53,TRUE,3/22/2017 10:06,R_2PzAysrjgcgGJPX,,,,,39.95970154,-75.19680023,anonymous,43682,I Approve,,,,,,,4,,8,10,0,1
+3/22/2017 10:05,3/22/2017 10:06,IP Address,128.91.96.127,100,66,TRUE,3/22/2017 10:06,R_SOAgqC76wFWpERz,,,,,39.95970154,-75.19680023,anonymous,39151,I Approve,,,,,,,,3,4,2,0,0
+3/22/2017 10:05,3/22/2017 10:06,IP Address,128.91.97.10,100,70,TRUE,3/22/2017 10:06,R_sTMRJaom3Pp09WN,,,,,39.95970154,-75.19680023,anonymous,45810,I Approve,,,,,,,,4,9,9,0,0
+3/22/2017 10:05,3/22/2017 10:07,IP Address,128.91.96.190,100,81,TRUE,3/22/2017 10:07,R_2QgPFjYCO4db0fg,,,,,39.95970154,-75.19680023,anonymous,43590,I Approve,,,,,,,2,,8,8,0,1
+3/22/2017 10:05,3/22/2017 10:07,IP Address,128.91.97.143,100,91,TRUE,3/22/2017 10:07,R_1B6VIoWi122oye5,,,,,39.95970154,-75.19680023,anonymous,43160,I Approve,,1,561,2,7,8,,,10,10,1,0
+3/22/2017 10:05,3/22/2017 10:07,IP Address,128.91.96.242,100,91,TRUE,3/22/2017 10:07,R_3oI9rCSpDk99dhH,,,,,39.95970154,-75.19680023,anonymous,47537,I Approve,,,,,,,3,,6,9,0,1
+3/22/2017 10:05,3/22/2017 10:07,IP Address,128.91.96.204,100,118,TRUE,3/22/2017 10:07,R_OkbJSOtkAB8Jnep,,,,,39.95970154,-75.19680023,anonymous,44927,I Approve,,5,510,4,7,8,,,8,10,1,0
+3/22/2017 10:05,3/22/2017 10:07,IP Address,128.91.97.134,100,134,TRUE,3/22/2017 10:07,R_3iqEV7h5CNRJF94,,,,,39.95970154,-75.19680023,anonymous,38921,I Approve,,1,548,2,10,10,,,10,10,1,0
+3/22/2017 10:05,3/22/2017 10:08,IP Address,128.91.96.77,100,130,TRUE,3/22/2017 10:08,R_2PBxBcEujobAhrc,,,,,39.95970154,-75.19680023,anonymous,46003,I Approve,,,,,,,,1,10,8,0,0
+3/22/2017 10:05,3/22/2017 10:08,IP Address,128.91.96.137,100,143,TRUE,3/22/2017 10:08,R_2PpsJ3tJtKEYZaO,,,,,39.95970154,-75.19680023,anonymous,45684,I Approve,,2,538,1,10,10,,,10,10,1,0
+3/22/2017 10:05,3/22/2017 10:08,IP Address,128.91.97.64,100,151,TRUE,3/22/2017 10:08,R_D63aCOdlD9O9Zmh,,,,,39.95970154,-75.19680023,anonymous,38487,I Approve,3,,461,1,10,10,,,8,9,1,1
+3/22/2017 10:05,3/22/2017 10:08,IP Address,128.91.97.1,100,166,TRUE,3/22/2017 10:08,R_3kjHXoPOYYAanPt,,,,,39.95970154,-75.19680023,anonymous,43135,I Approve,2,,552,1,8,5,,,6,10,1,1
+3/22/2017 10:05,3/22/2017 10:08,IP Address,128.91.97.22,100,169,TRUE,3/22/2017 10:08,R_TtKPg8L0T47h0K5,,,,,39.95970154,-75.19680023,anonymous,46364,I Approve,5,,546,5,7,8,,,6,7,1,1
+3/22/2017 10:07,3/22/2017 10:09,IP Address,128.91.96.105,100,63,TRUE,3/22/2017 10:09,R_25NoWZcInhoeQcS,,,,,39.95970154,-75.19680023,anonymous,41748,I Approve,,,,,,,0,,8,5,0,1
+3/22/2017 10:05,3/22/2017 10:09,IP Address,128.91.97.110,100,223,TRUE,3/22/2017 10:09,R_RmCsg0b0QraLJEB,,,,,39.95970154,-75.19680023,anonymous,37801,I Approve,,0,531,2,6,6,,,5,6,1,0
+3/22/2017 11:07,3/22/2017 11:08,IP Address,128.91.97.134,100,47,TRUE,3/22/2017 11:08,R_122PtrYTOvIzw9U,,,,,39.95970154,-75.19680023,anonymous,43306,I Approve,,,,,,,0,,0,7,0,1
+3/22/2017 11:07,3/22/2017 11:08,IP Address,128.91.96.105,100,52,TRUE,3/22/2017 11:08,R_1OV024Tmc5B0rUY,,,,,39.95970154,-75.19680023,anonymous,45270,I Approve,,,,,,,,1,1,4,0,0
+3/22/2017 11:07,3/22/2017 11:08,IP Address,128.91.96.77,100,61,TRUE,3/22/2017 11:08,R_Wlih0f4RnYd6Gu5,,,,,39.95970154,-75.19680023,anonymous,43952,I Approve,,,,,,,1,,5,10,0,1
+3/22/2017 11:07,3/22/2017 11:08,IP Address,128.91.96.242,100,69,TRUE,3/22/2017 11:08,R_2fxkKTLJoSnrz0c,,,,,39.95970154,-75.19680023,anonymous,47324,I Approve,,,,,,,,2,10,7,0,0
+3/22/2017 11:07,3/22/2017 11:08,IP Address,128.91.97.143,100,72,TRUE,3/22/2017 11:08,R_vOxjpzMyQXqDCff,,,,,39.95970154,-75.19680023,anonymous,47551,I Approve,,,,,,,,2,1,4,0,0
+3/22/2017 11:07,3/22/2017 11:08,IP Address,128.91.96.137,100,76,TRUE,3/22/2017 11:08,R_2wpol6f0a6zZCLo,,,,,39.95970154,-75.19680023,anonymous,45184,I Approve,,,,,,,1,,1,7,0,1
+3/22/2017 11:07,3/22/2017 11:08,IP Address,128.91.97.39,100,75,TRUE,3/22/2017 11:08,R_1LeBLLh1Vdb489s,,,,,39.95970154,-75.19680023,anonymous,46186,I Approve,,,,,,,,1,0,4,0,0
+3/22/2017 11:07,3/22/2017 11:08,IP Address,128.91.96.91,100,85,TRUE,3/22/2017 11:08,R_3fH92nn62xGKknj,,,,,39.95970154,-75.19680023,anonymous,47479,I Approve,,,,,,,,7,7,9,0,0
+3/22/2017 11:07,3/22/2017 11:09,IP Address,128.91.96.204,100,91,TRUE,3/22/2017 11:09,R_QmhLpYSa6E1UHjX,,,,,39.95970154,-75.19680023,anonymous,45820,I Approve,4,,557,2,6,6,,,7,8,1,1
+3/22/2017 11:07,3/22/2017 11:09,IP Address,128.91.97.1,100,97,TRUE,3/22/2017 11:09,R_2uEQoYZ37otDNOf,,,,,39.95970154,-75.19680023,anonymous,41760,I Approve,,,,,,,3,,4,7,0,1
+3/22/2017 11:08,3/22/2017 11:09,IP Address,128.91.96.143,100,56,TRUE,3/22/2017 11:09,R_2DYNOauVoK9Yudc,,,,,39.95970154,-75.19680023,anonymous,45908,I Approve,,6,530,1,9,6,,,10,10,1,0
+3/22/2017 11:07,3/22/2017 11:09,IP Address,128.91.97.110,100,107,TRUE,3/22/2017 11:09,R_d4piL0sVVuhTN0R,,,,,39.95970154,-75.19680023,anonymous,39996,I Approve,,1,537,4,8,9,,,3,2,1,0
+3/22/2017 11:07,3/22/2017 11:09,IP Address,128.91.96.190,100,118,TRUE,3/22/2017 11:09,R_1kIf27t54rMpCZp,,,,,39.95970154,-75.19680023,anonymous,47582,I Approve,1,,563,1,9,9,,,8,7,1,1
+3/22/2017 11:07,3/22/2017 11:09,IP Address,128.91.97.64,100,120,TRUE,3/22/2017 11:09,R_1oqiS0bYHU0K6Ki,,,,,39.95970154,-75.19680023,anonymous,45701,I Approve,3,,531,2,8,8,,,9,8,1,1
+3/22/2017 11:07,3/22/2017 11:09,IP Address,128.91.97.10,100,123,TRUE,3/22/2017 11:09,R_pyeweKj4PdTVn0J,,,,,39.95970154,-75.19680023,anonymous,46970,I Approve,,4,833,0,10,10,,,7,10,1,0
+3/22/2017 11:07,3/22/2017 11:09,IP Address,128.91.96.127,100,147,TRUE,3/22/2017 11:09,R_3HC7zc2hPYVoQr6,,,,,39.95970154,-75.19680023,anonymous,40327,I Approve,,3,522,2,4,4,,,7,7,1,0
+3/22/2017 11:07,3/22/2017 11:10,IP Address,128.91.97.136,100,167,TRUE,3/22/2017 11:10,R_2U9PDNMRXjBNnNe,,,,,39.95970154,-75.19680023,anonymous,45752,I Approve,,3,534,4,2,5,,,6,6,1,0
+3/22/2017 11:07,3/22/2017 11:10,IP Address,128.91.96.134,100,167,TRUE,3/22/2017 11:10,R_1lrXxI15VT0LMe9,,,,,39.95970154,-75.19680023,anonymous,38304,I Approve,,,,,,,3,,6,8,0,1
+3/22/2017 11:07,3/22/2017 11:10,IP Address,128.91.96.193,100,187,TRUE,3/22/2017 11:10,R_UZ0C3X7uIWBfjPj,,,,,39.95970154,-75.19680023,anonymous,47702,I Approve,1,,513,5,6,7,,,8,8,1,1
+3/22/2017 11:07,3/22/2017 11:10,IP Address,128.91.97.22,100,202,TRUE,3/22/2017 11:10,R_sLOYjSnN42lSjO9,,,,,39.95970154,-75.19680023,anonymous,44578,I Approve,5,,525,2,7,7,,,7,2,1,1
+3/22/2017 12:06,3/22/2017 12:06,IP Address,128.91.96.77,100,42,TRUE,3/22/2017 12:06,R_2rrq3zZqKuDOfBe,,,,,39.95970154,-75.19680023,anonymous,43667,I Approve,,,,,,,0,,0,0,0,1
+3/22/2017 12:06,3/22/2017 12:06,IP Address,128.91.97.10,100,44,TRUE,3/22/2017 12:06,R_ZsmK5aAk34JHc5P,,,,,39.95970154,-75.19680023,anonymous,40414,I Approve,,,,,,,,2,6,10,0,0
+3/22/2017 12:06,3/22/2017 12:06,IP Address,128.91.96.143,100,47,TRUE,3/22/2017 12:07,R_3LjbJk0Q5181tL6,,,,,39.95970154,-75.19680023,anonymous,45754,I Approve,,,,,,,,2,3,4,0,0
+3/22/2017 12:06,3/22/2017 12:07,IP Address,128.91.96.91,100,53,TRUE,3/22/2017 12:07,R_oZcuhzBJhDe5K01,,,,,39.95970154,-75.19680023,anonymous,42340,I Approve,,,,,,,,6,10,10,0,0
+3/22/2017 12:06,3/22/2017 12:07,IP Address,128.91.97.64,100,59,TRUE,3/22/2017 12:07,R_1DZRdx0uc3x7bm9,,,,,39.95970154,-75.19680023,anonymous,45953,I Approve,,,,,,,1,,10,10,0,1
+3/22/2017 12:06,3/22/2017 12:07,IP Address,128.91.97.136,100,55,TRUE,3/22/2017 12:07,R_pGj9rTqSbC9jGvL,,,,,39.95970154,-75.19680023,anonymous,38956,I Approve,,,,,,,0,,10,10,0,1
+3/22/2017 12:06,3/22/2017 12:07,IP Address,128.91.96.127,100,69,TRUE,3/22/2017 12:07,R_3CWpQ2ANjq6Gt55,,,,,39.95970154,-75.19680023,anonymous,39487,I Approve,,,,,,,7,,9,9,0,1
+3/22/2017 12:06,3/22/2017 12:07,IP Address,128.91.96.190,100,76,TRUE,3/22/2017 12:07,R_1FFXd0fXLw4eJka,,,,,39.95970154,-75.19680023,anonymous,46738,I Approve,,,,,,,,5,3,8,0,0
+3/22/2017 12:06,3/22/2017 12:07,IP Address,128.91.96.105,100,69,TRUE,3/22/2017 12:07,R_1f8Zam3oa9ZzD6Y,,,,,39.95970154,-75.19680023,anonymous,45851,I Approve,,,,,,,,2,8,10,0,0
+3/22/2017 12:06,3/22/2017 12:08,IP Address,128.91.97.39,100,109,TRUE,3/22/2017 12:08,R_Ovb7kSiYJmfWhmp,,,,,39.95970154,-75.19680023,anonymous,37989,I Approve,4,,555,1,6,7,,,8,6,1,1
+3/22/2017 12:06,3/22/2017 12:08,IP Address,128.91.97.1,100,121,TRUE,3/22/2017 12:08,R_25Xjbk8wjzOqmz3,,,,,39.95970154,-75.19680023,anonymous,44027,I Approve,,2,492,3,8,7,,,8,9,1,0
+3/22/2017 12:06,3/22/2017 12:08,IP Address,128.91.96.242,100,121,TRUE,3/22/2017 12:08,R_2i4HDwec52Fbcop,,,,,39.95970154,-75.19680023,anonymous,46430,I Approve,,3,538,2,5,7,,,5,6,1,0
+3/22/2017 12:06,3/22/2017 12:08,IP Address,128.91.97.110,100,134,TRUE,3/22/2017 12:08,R_O6VnB0M8jktMguZ,,,,,39.95970154,-75.19680023,anonymous,45877,I Approve,2,,540,4,8,8,,,7,7,1,1
+3/22/2017 12:06,3/22/2017 12:08,IP Address,128.91.97.143,100,162,TRUE,3/22/2017 12:08,R_PCd3j9zdMLbfqW5,,,,,39.95970154,-75.19680023,anonymous,46554,I Approve,1,,552,2,8,8,,,2,2,1,1
+3/22/2017 12:06,3/22/2017 12:09,IP Address,128.91.97.22,100,172,TRUE,3/22/2017 12:09,R_qxVm8BuGVbRadpL,,,,,39.95970154,-75.19680023,anonymous,42698,I Approve,1,,528,2,9,5,,,3,6,1,1
+3/22/2017 12:06,3/22/2017 12:09,IP Address,128.91.96.204,100,175,TRUE,3/22/2017 12:09,R_3J7TvAqWqEVFbPC,,,,,39.95970154,-75.19680023,anonymous,43132,I Approve,,2,334,3,8,8,,,8,6,1,0
+3/22/2017 12:06,3/22/2017 12:09,IP Address,128.91.96.134,100,166,TRUE,3/22/2017 12:09,R_9Y1SB2oJUgCb86R,,,,,39.95970154,-75.19680023,anonymous,47569,I Approve,,6,531,0,10,10,,,8,9,1,0
+3/22/2017 12:06,3/22/2017 12:09,IP Address,128.91.96.137,100,219,TRUE,3/22/2017 12:09,R_1d522hFIh7dGgWv,,,,,39.95970154,-75.19680023,anonymous,45727,I Approve,,6,544,2,10,10,,,6,7,1,0
+3/22/2017 12:06,3/22/2017 12:10,IP Address,128.91.97.134,100,227,TRUE,3/22/2017 12:10,R_22QifqIBBfOsgZl,,,,,39.95970154,-75.19680023,anonymous,39489,I Approve,5,,558,1,3,5,,,9,8,1,1
+3/22/2017 13:02,3/22/2017 13:03,IP Address,128.91.96.77,100,79,TRUE,3/22/2017 13:03,R_3sJ8fjHSOV3jyMN,,,,,39.95970154,-75.19680023,anonymous,43994,I Approve,,,,,,,7,,10,8,0,1
+3/22/2017 13:06,3/22/2017 13:06,IP Address,128.91.96.137,100,40,TRUE,3/22/2017 13:06,R_3g653etBmUxH1Rc,,,,,39.95970154,-75.19680023,anonymous,41288,I Approve,,,,,,,1,,7,7,0,1
+3/22/2017 13:05,3/22/2017 13:06,IP Address,128.91.96.242,100,55,TRUE,3/22/2017 13:06,R_2f34W8EDcaCvD8U,,,,,39.95970154,-75.19680023,anonymous,38244,I Approve,,,,,,,,2,8,10,0,0
+3/22/2017 13:06,3/22/2017 13:06,IP Address,128.91.96.127,100,33,TRUE,3/22/2017 13:06,R_QlJ76wUE7OtVQch,,,,,39.95970154,-75.19680023,anonymous,42447,I Approve,,,,,,,,5,5,5,0,0
+3/22/2017 13:06,3/22/2017 13:06,IP Address,128.91.97.110,100,52,TRUE,3/22/2017 13:06,R_33qA7ICUTcH3pWZ,,,,,39.95970154,-75.19680023,anonymous,38020,I Approve,,,,,,,,3,6,5,0,0
+3/22/2017 13:06,3/22/2017 13:07,IP Address,128.91.97.22,100,62,TRUE,3/22/2017 13:07,R_2ZHU2zwb3qzLLSm,,,,,39.95970154,-75.19680023,anonymous,46586,I Approve,,,,,,,1,,8,10,0,1
+3/22/2017 13:06,3/22/2017 13:07,IP Address,128.91.96.105,100,62,TRUE,3/22/2017 13:07,R_suSZQHKC4NuzNkd,,,,,39.95970154,-75.19680023,anonymous,47421,I Approve,,,,,,,,0,0,7,0,0
+3/22/2017 13:06,3/22/2017 13:07,IP Address,128.91.96.91,100,63,TRUE,3/22/2017 13:07,R_XmPcRlO2sFDNKIF,,,,,39.95970154,-75.19680023,anonymous,46733,I Approve,,,,,,,,3,8,10,0,0
+3/22/2017 13:06,3/22/2017 13:07,IP Address,128.91.96.204,100,67,TRUE,3/22/2017 13:07,R_8ixbwvps2cwoVln,,,,,39.95970154,-75.19680023,anonymous,41221,I Approve,,,,,,,1,,9,9,0,1
+3/22/2017 13:06,3/22/2017 13:07,IP Address,128.91.97.1,100,77,TRUE,3/22/2017 13:07,R_5ooKKPqeRt81aW5,,,,,39.95970154,-75.19680023,anonymous,47527,I Approve,,,,,,,3,,10,10,0,1
+3/22/2017 13:06,3/22/2017 13:07,IP Address,128.91.97.10,100,98,TRUE,3/22/2017 13:07,R_yBJMKb09T9FKYh3,,,,,39.95970154,-75.19680023,anonymous,40486,I Approve,,3,540,4,4,6,,,5,8,1,0
+3/22/2017 13:06,3/22/2017 13:07,IP Address,128.91.96.134,100,97,TRUE,3/22/2017 13:07,R_3dFhTQfybGPVG0L,,,,,39.95970154,-75.19680023,anonymous,44470,I Approve,,0,56,5,3,6,,,5,5,1,0
+3/22/2017 13:06,3/22/2017 13:08,IP Address,128.91.96.190,100,117,TRUE,3/22/2017 13:08,R_XXihY70MWntgcdb,,,,,39.95970154,-75.19680023,anonymous,42994,I Approve,2,,546,5,7,7,,,8,7,1,1
+3/22/2017 13:06,3/22/2017 13:08,IP Address,128.91.97.64,100,112,TRUE,3/22/2017 13:08,R_8bNUomsx8w9E31T,,,,,39.95970154,-75.19680023,anonymous,43423,I Approve,7,,402,5,0,7,,,6,4,1,1
+3/22/2017 13:06,3/22/2017 13:08,IP Address,128.91.97.134,100,122,TRUE,3/22/2017 13:08,R_1NmEnJdA3pjtPPs,,,,,39.95970154,-75.19680023,anonymous,38535,I Approve,6,,546,6,9,9,,,9,9,1,1
+3/22/2017 13:06,3/22/2017 13:08,IP Address,128.91.97.39,100,122,TRUE,3/22/2017 13:08,R_02oekRshP8UvnOh,,,,,39.95970154,-75.19680023,anonymous,46059,I Approve,6,,561,1,9,10,,,5,9,1,1
+3/22/2017 13:06,3/22/2017 13:08,IP Address,128.91.97.136,100,148,TRUE,3/22/2017 13:08,R_1Kg8pvvC9yNgqbB,,,,,39.95970154,-75.19680023,anonymous,47505,I Approve,,4,518,3,6,6,,,9,8,1,0
+3/22/2017 13:06,3/22/2017 13:08,IP Address,128.91.96.143,100,152,TRUE,3/22/2017 13:08,R_cx0ihRVEqNo4RUJ,,,,,39.95970154,-75.19680023,anonymous,42915,I Approve,,5,535,4,6,8,,,7,10,1,0
+3/22/2017 13:06,3/22/2017 13:10,IP Address,128.91.97.143,100,234,TRUE,3/22/2017 13:10,R_1Iua6h9enBu6sBC,,,,,39.95970154,-75.19680023,anonymous,47448,I Approve,1,,171,3,10,10,,,6,8,1,1
+4/10/2017 10:05,4/10/2017 10:06,IP Address,128.91.114.57,100,59,TRUE,4/10/2017 10:06,R_1QnZj7uYSNey9L5,,,,,39.95970154,-75.19680023,anonymous,37774,I Approve,,,,,,,,3,8,5,0,0
+4/10/2017 10:05,4/10/2017 10:07,IP Address,128.91.114.22,100,85,TRUE,4/10/2017 10:07,R_2D8lOMgCFgm0bXF,,,,,39.95970154,-75.19680023,anonymous,47209,I Approve,,,,,,,2,,8,0,0,1
+4/10/2017 10:05,4/10/2017 10:07,IP Address,128.91.113.96,100,94,TRUE,4/10/2017 10:07,R_3NwlgoS9YGEoRfr,,,,,39.95970154,-75.19680023,anonymous,43638,I Approve,,4,540,3,7,8,,,6,9,1,0
+4/10/2017 10:05,4/10/2017 10:07,IP Address,128.91.113.105,100,100,TRUE,4/10/2017 10:07,R_2w6VBvTFfFUu6Ix,,,,,39.95970154,-75.19680023,anonymous,47002,I Approve,,,,,,,,3,7,7,0,0
+4/10/2017 10:05,4/10/2017 10:08,IP Address,128.91.113.12,100,143,TRUE,4/10/2017 10:08,R_3GrAKfYIQOB6aro,,,,,39.95970154,-75.19680023,anonymous,44003,I Approve,2,,552,1,8,5,,,5,7,1,1
+4/10/2017 10:05,4/10/2017 10:08,IP Address,128.91.114.128,100,181,TRUE,4/10/2017 10:08,R_3MRadZLC7oAP9L6,,,,,39.95970154,-75.19680023,anonymous,44576,I Approve,,1,543,2,8,8,,,7,10,1,0
+4/10/2017 10:05,4/10/2017 10:09,IP Address,128.91.113.48,100,218,TRUE,4/10/2017 10:09,R_2xOUvm2vzWLZhVs,,,,,39.95970154,-75.19680023,anonymous,45807,I Approve,3,,548,1,10,10,,,5,2,1,1
+4/10/2017 11:01,4/10/2017 11:06,IP Address,128.91.114.128,100,336,TRUE,4/10/2017 11:06,R_2upQEvJsh8q4Zeu,,,,,39.95970154,-75.19680023,anonymous,47601,I Approve,,,,,,,1,,10,7,0,1
+4/10/2017 11:06,4/10/2017 11:06,IP Address,128.91.113.12,100,39,TRUE,4/10/2017 11:06,R_3pumdtoqj0a1bpw,,,,,39.95970154,-75.19680023,anonymous,45624,I Approve,3,,0,3,3,6,,,6,4,1,1
+4/10/2017 11:06,4/10/2017 11:07,IP Address,128.91.113.105,100,56,TRUE,4/10/2017 11:07,R_2OJSLjq11H7t0ob,,,,,39.95970154,-75.19680023,anonymous,44036,I Approve,,,,,,,,3,0,2,0,0
+4/10/2017 11:06,4/10/2017 11:07,IP Address,128.91.114.57,100,60,TRUE,4/10/2017 11:07,R_2f1bcxunuUyca50,,,,,39.95970154,-75.19680023,anonymous,42219,I Approve,,,,,,,3,,8,7,0,1
+4/10/2017 11:06,4/10/2017 11:07,IP Address,128.91.113.30,100,65,TRUE,4/10/2017 11:07,R_3PZfrtdExAkuwT2,,,,,39.95970154,-75.19680023,anonymous,47695,I Approve,,,,,,,0,,8,10,0,1
+4/10/2017 11:06,4/10/2017 11:07,IP Address,128.91.114.117,100,98,TRUE,4/10/2017 11:07,R_ebwfac3s5Rzdqz7,,,,,39.95970154,-75.19680023,anonymous,45878,I Approve,,6,566,2,6,6,,,10,9,1,0
+4/10/2017 11:06,4/10/2017 11:08,IP Address,128.91.113.80,100,111,TRUE,4/10/2017 11:08,R_80NgNHEtyM0vc4x,,,,,39.95970154,-75.19680023,anonymous,37994,I Approve,6,,527,4,5,8,,,4,6,1,1
+4/10/2017 11:06,4/10/2017 11:08,IP Address,128.91.114.82,100,114,TRUE,4/10/2017 11:08,R_2viaEGoho41HqFE,,,,,39.95970154,-75.19680023,anonymous,4.70E+74,I Approve,,,,,,,,1,4,4,0,0
+4/10/2017 11:06,4/10/2017 11:08,IP Address,128.91.113.48,100,158,TRUE,4/10/2017 11:08,R_bacZeHzUXil0aqd,,,,,39.95970154,-75.19680023,anonymous,40227,I Approve,4,,540,5,8,6,,,6,8,1,1
+4/10/2017 11:06,4/10/2017 11:08,IP Address,128.91.114.22,100,152,TRUE,4/10/2017 11:08,R_3e808aVxcEL36vY,,,,,39.95970154,-75.19680023,anonymous,41154,I Approve,,8,546,2,7,10,,,10,10,1,0
+4/10/2017 11:06,4/10/2017 11:08,IP Address,128.91.113.237,100,165,TRUE,4/10/2017 11:08,R_UDtUrnILmbLus13,,,,,39.95970154,-75.19680023,anonymous,38914,I Approve,,5,534,4,8,8,,,7,6,1,0
+4/10/2017 12:05,4/10/2017 12:06,IP Address,128.91.113.30,100,107,TRUE,4/10/2017 12:06,R_1NxAa6Z4oTesbpv,,,,,39.95970154,-75.19680023,anonymous,47550,I Approve,,,,,,,,1,10,9,0,0
+4/10/2017 12:06,4/10/2017 12:07,IP Address,128.91.113.96,100,50,TRUE,4/10/2017 12:07,R_UZ72gWzAgFBlYVb,,,,,39.95970154,-75.19680023,anonymous,44637,I Approve,,,,,,,0,,3,10,0,1
+4/10/2017 12:06,4/10/2017 12:07,IP Address,128.91.113.237,100,77,TRUE,4/10/2017 12:07,R_2VEoBMIsNHjvkk7,,,,,39.95970154,-75.19680023,anonymous,42830,I Approve,,,,,,,,8,10,0,0,0
+4/10/2017 12:06,4/10/2017 12:08,IP Address,128.91.114.117,100,122,TRUE,4/10/2017 12:08,R_3yNv07QLk1LW1nX,,,,,39.95970154,-75.19680023,anonymous,45882,I Approve,,5,528,4,7,8,,,7,2,1,0
+4/10/2017 12:06,4/10/2017 12:08,IP Address,128.91.114.128,100,125,TRUE,4/10/2017 12:08,R_2TYQOtEUIXOmtCb,,,,,39.95970154,-75.19680023,anonymous,47741,I Approve,,1,547,5,9,8,,,8,8,1,0
+4/10/2017 12:06,4/10/2017 12:09,IP Address,128.91.114.22,100,198,TRUE,4/10/2017 12:09,R_3HYsJCjD27U04FR,,,,,39.95970154,-75.19680023,anonymous,47881,I Approve,,2,543,4,9,6,,,4,10,1,0
+4/10/2017 13:05,4/10/2017 13:06,IP Address,128.91.113.30,100,48,TRUE,4/10/2017 13:06,R_2CUiCBs1g3IR2af,,,,,39.95970154,-75.19680023,anonymous,46165,I Approve,,,,,,,1,,7,9,0,1
+4/10/2017 13:05,4/10/2017 13:06,IP Address,128.91.114.82,100,50,TRUE,4/10/2017 13:06,R_2ziN3mytGPpOh3t,,,,,39.95970154,-75.19680023,anonymous,39214,I Approve,,,,,,,,0,8,7,0,0
+4/10/2017 13:05,4/10/2017 13:06,IP Address,128.91.114.128,100,49,TRUE,4/10/2017 13:06,R_efzmFgrAWO2AhfH,,,,,39.95970154,-75.19680023,anonymous,43112,I Approve,,,,,,,,4,8,10,0,0
+4/10/2017 13:05,4/10/2017 13:06,IP Address,128.91.113.105,100,53,TRUE,4/10/2017 13:06,R_1n15w5KCapA2kVS,,,,,39.95970154,-75.19680023,anonymous,39590,I Approve,,,,,,,,4,9,10,0,0
+4/10/2017 13:05,4/10/2017 13:07,IP Address,128.91.113.80,100,76,TRUE,4/10/2017 13:07,R_2P6WwltMgsmvRWZ,,,,,39.95970154,-75.19680023,anonymous,46925,I Approve,,,,,,,1,,3,8,0,1
+4/10/2017 13:05,4/10/2017 13:08,IP Address,128.91.113.12,100,139,TRUE,4/10/2017 13:08,R_1jE8CPKM3B3DuaW,,,,,39.95970154,-75.19680023,anonymous,46304,I Approve,2,,534,2,10,8,,,4,7,1,1
+4/10/2017 13:05,4/10/2017 13:08,IP Address,128.91.114.22,100,154,TRUE,4/10/2017 13:08,R_2w5I3BaWxxfliW7,,,,,39.95970154,-75.19680023,anonymous,45956,I Approve,2,,510,4,4,5,,,4,5,1,1
+4/10/2017 13:05,4/10/2017 13:08,IP Address,128.91.114.57,100,179,TRUE,4/10/2017 13:08,R_RwpaOtLrqtHI921,,,,,39.95970154,-75.19680023,anonymous,44134,I Approve,,1,524,2,4,6,,,3,0,1,0
+4/10/2017 13:05,4/10/2017 13:09,IP Address,128.91.114.117,100,191,TRUE,4/10/2017 13:09,R_9vNbt92MdalnMZP,,,,,39.95970154,-75.19680023,anonymous,42306,I Approve,,4,545,1,8,6,,,8,6,1,0
+4/10/2017 13:05,4/10/2017 13:09,IP Address,128.91.113.237,100,208,TRUE,4/10/2017 13:09,R_1kOMti4QSA1SgjS,,,,,39.95970154,-75.19680023,anonymous,41726,I Approve,5,,546,5,6,8,,,9,8,1,1
+4/11/2017 10:05,4/11/2017 10:06,IP Address,128.91.114.128,100,52,TRUE,4/11/2017 10:06,R_2V7SeYcKW2pOETS,,,,,39.95970154,-75.19680023,anonymous,43155,I Approve,,,,,,,2,,9,10,0,1
+4/11/2017 10:06,4/11/2017 10:06,IP Address,128.91.114.22,100,49,TRUE,4/11/2017 10:06,R_1jPA2YlqIrBp6rG,,,,,39.95970154,-75.19680023,anonymous,42081,I Approve,,,,,,,,1,9,10,0,0
+4/11/2017 10:06,4/11/2017 10:07,IP Address,128.91.113.12,100,68,TRUE,4/11/2017 10:07,R_cTltq3xQ8JelgHf,,,,,39.95970154,-75.19680023,anonymous,42300,I Approve,,,,,,,1,,7,8,0,1
+4/11/2017 10:06,4/11/2017 10:07,IP Address,128.91.113.96,100,69,TRUE,4/11/2017 10:07,R_1158fLz2KPyzCkH,,,,,39.95970154,-75.19680023,anonymous,47644,I Approve,,,,,,,,1,0,6,0,0
+4/11/2017 10:06,4/11/2017 10:07,IP Address,128.91.113.80,100,81,TRUE,4/11/2017 10:07,R_1jwXCNJlRnTuYYc,,,,,39.95970154,-75.19680023,anonymous,43767,I Approve,,,,,,,,1,7,6,0,0
+4/11/2017 10:06,4/11/2017 10:07,IP Address,128.91.114.82,100,96,TRUE,4/11/2017 10:07,R_1E42rAVzAgRnIgr,,,,,39.95970154,-75.19680023,anonymous,41642,I Approve,,7,540,3,5,6,,,7,8,1,0
+4/11/2017 10:06,4/11/2017 10:08,IP Address,128.91.113.48,100,137,TRUE,4/11/2017 10:08,R_2XjvaqmjgcZdRle,,,,,39.95970154,-75.19680023,anonymous,38243,I Approve,,1,530,3,7,5,,,8,8,1,0
+4/11/2017 10:06,4/11/2017 10:08,IP Address,128.91.114.57,100,138,TRUE,4/11/2017 10:08,R_55NfhjhDikR9FxD,,,,,39.95970154,-75.19680023,anonymous,44247,I Approve,8,,549,2,8,8,,,10,10,1,1
+4/11/2017 10:06,4/11/2017 10:08,IP Address,128.91.113.105,100,142,TRUE,4/11/2017 10:08,R_3fqOAlph6wtr4uJ,,,,,39.95970154,-75.19680023,anonymous,44692,I Approve,,5,548,1,8,10,,,7,10,1,0
+4/11/2017 10:06,4/11/2017 10:08,IP Address,128.91.113.30,100,165,TRUE,4/11/2017 10:08,R_SZeWYmnFJ52Gqch,,,,,39.95970154,-75.19680023,anonymous,39836,I Approve,2,,523,5,8,8,,,4,7,1,1
+4/11/2017 10:06,4/11/2017 10:09,IP Address,128.91.113.237,100,176,TRUE,4/11/2017 10:09,R_3MaQY55UT8A6c8K,,,,,39.95970154,-75.19680023,anonymous,47888,I Approve,,6,560,1,9,10,,,8,9,1,0
+4/11/2017 11:08,4/11/2017 11:08,IP Address,128.91.113.96,100,48,TRUE,4/11/2017 11:08,R_26gcg9pqbEV3xAt,,,,,39.95970154,-75.19680023,anonymous,45905,I Approve,,,,,,,,3,4,6,0,0
+4/11/2017 11:08,4/11/2017 11:09,IP Address,128.91.113.30,100,58,TRUE,4/11/2017 11:09,R_3kL1zU08qJyTV3v,,,,,39.95970154,-75.19680023,anonymous,41910,I Approve,,,,,,,,1,8,7,0,0
+4/11/2017 11:08,4/11/2017 11:09,IP Address,128.91.113.12,100,71,TRUE,4/11/2017 11:09,R_3MEEIz2yaMSxMx4,,,,,39.95970154,-75.19680023,anonymous,45886,I Approve,,,,,,,4,,10,10,0,1
+4/11/2017 11:08,4/11/2017 11:09,IP Address,128.91.114.82,100,82,TRUE,4/11/2017 11:09,R_TpYGIFK9ldhE0P7,,,,,39.95970154,-75.19680023,anonymous,47682,I Approve,,,,,,,3,,9,8,0,1
+4/11/2017 11:08,4/11/2017 11:09,IP Address,128.91.113.48,100,101,TRUE,4/11/2017 11:09,R_31bjR1GeP5ER8vV,,,,,39.95970154,-75.19680023,anonymous,43115,I Approve,,2,552,2,5,5,,,9,9,1,0
+4/11/2017 11:08,4/11/2017 11:10,IP Address,128.91.113.80,100,155,TRUE,4/11/2017 11:10,R_1FKcesuId63NJu6,,,,,39.95970154,-75.19680023,anonymous,37968,I Approve,,1,546,2,8,8,,,3,6,1,0
+4/11/2017 11:08,4/11/2017 11:10,IP Address,128.91.114.117,100,163,TRUE,4/11/2017 11:10,R_2rM9rPMPgljZKes,,,,,39.95970154,-75.19680023,anonymous,47911,I Approve,,,,,,,6,,10,8,0,1
+4/11/2017 11:08,4/11/2017 11:11,IP Address,128.91.113.105,100,184,TRUE,4/11/2017 11:11,R_1gvkMNFVelcvhr7,,,,,39.95970154,-75.19680023,anonymous,47624,I Approve,3,,534,3,8,7,,,2,8,1,1
+4/11/2017 11:08,4/11/2017 11:11,IP Address,128.91.114.128,100,210,TRUE,4/11/2017 11:11,R_1jwh6m8iHhIZyJe,,,,,39.95970154,-75.19680023,anonymous,44853,I Approve,,5,525,4,4,7,,,9,9,1,0
+4/11/2017 12:04,4/11/2017 12:07,IP Address,128.91.114.128,100,197,TRUE,4/11/2017 12:07,R_CkTWVlcrfnOArap,,,,,39.95970154,-75.19680023,anonymous,46700,I Approve,3,,546,5,8,7,,,6,9,1,1
+4/11/2017 12:06,4/11/2017 12:07,IP Address,128.91.113.105,100,69,TRUE,4/11/2017 12:07,R_3fiVebESm0hDR3U,,,,,39.95970154,-75.19680023,anonymous,41830,I Approve,,,,,,,,1,6,6,0,0
+4/11/2017 12:05,4/11/2017 12:08,IP Address,128.91.114.104,100,135,TRUE,4/11/2017 12:08,R_2xKt8Mmg7dozaw9,,,,,39.95970154,-75.19680023,anonymous,44672,I Approve,3,,555,1,5,6,,,3,7,1,1
+4/11/2017 12:06,4/11/2017 12:08,IP Address,128.91.114.82,100,78,TRUE,4/11/2017 12:08,R_2fwInOAMQXVcXaM,,,,,39.95970154,-75.19680023,anonymous,42952,I Approve,,,,,,,1,,9,9,0,1
+4/11/2017 12:06,4/11/2017 12:08,IP Address,128.91.113.96,100,99,TRUE,4/11/2017 12:08,R_3ndyVcDmrriCItf,,,,,39.95970154,-75.19680023,anonymous,44632,I Approve,7,,543,1,9,8,,,7,10,1,1
+4/11/2017 12:06,4/11/2017 12:09,IP Address,128.91.114.57,100,142,TRUE,4/11/2017 12:09,R_24vcpMH7wrIp8x0,,,,,39.95970154,-75.19680023,anonymous,47876,I Approve,,,,,,,,1,7,7,0,0
+4/11/2017 12:06,4/11/2017 12:09,IP Address,128.91.113.80,100,183,TRUE,4/11/2017 12:09,R_2tmXdruG7KgDw5Z,,,,,39.95970154,-75.19680023,anonymous,42188,I Approve,,6,537,4,7,8,,,5,8,1,0
+4/11/2017 12:06,4/11/2017 12:10,IP Address,128.91.114.22,100,209,TRUE,4/11/2017 12:10,R_1rdp44ohUfpyzIc,,,,,39.95970154,-75.19680023,anonymous,42572,I Approve,,3,540,2,7,9,,,9,10,1,0
+4/11/2017 12:06,4/11/2017 12:10,IP Address,128.91.113.12,100,227,TRUE,4/11/2017 12:10,R_2zkEHHmVtsEMMRD,,,,,39.95970154,-75.19680023,anonymous,41392,I Approve,0,,507,4,6,8,,,4,7,1,1
+4/11/2017 12:06,4/11/2017 12:11,IP Address,128.91.114.141,100,259,TRUE,4/11/2017 12:11,R_3pnIXXFS7PvO5O4,,,,,39.95970154,-75.19680023,anonymous,44940,I Approve,,5,534,2,6,7,,,6,7,1,0
+4/11/2017 13:06,4/11/2017 13:06,IP Address,128.91.113.30,100,49,TRUE,4/11/2017 13:06,R_2EiuHheLZZAMS6a,,,,,39.95970154,-75.19680023,anonymous,40237,I Approve,,,,,,,3,,9,10,0,1
+4/11/2017 13:06,4/11/2017 13:07,IP Address,128.91.113.12,100,62,TRUE,4/11/2017 13:07,R_3GrL9nku8lrhekz,,,,,39.95970154,-75.19680023,anonymous,45627,I Approve,,,,,,,,3,7,9,0,0
+4/11/2017 13:06,4/11/2017 13:07,IP Address,128.91.113.48,100,75,TRUE,4/11/2017 13:07,R_V511BOLOKw2I3oR,,,,,39.95970154,-75.19680023,anonymous,47689,I Approve,,,,,,,,1,2,3,0,0
+4/11/2017 13:06,4/11/2017 13:07,IP Address,128.91.114.128,100,73,TRUE,4/11/2017 13:07,R_2ZJu7prEgjdoK0h,,,,,39.95970154,-75.19680023,anonymous,47030,I Approve,,,,,,,8,,7,9,0,1
+4/11/2017 13:06,4/11/2017 13:08,IP Address,128.91.114.141,100,111,TRUE,4/11/2017 13:08,R_TpjTjcJZqqLQ013,,,,,39.95970154,-75.19680023,anonymous,45625,I Approve,2,,541,4,6,6,,,5,7,1,1
+4/11/2017 13:06,4/11/2017 13:08,IP Address,128.91.113.96,100,157,TRUE,4/11/2017 13:08,R_3dM2BvHxBF0fWkc,,,,,39.95970154,-75.19680023,anonymous,37897,I Approve,,2,486,6,9,10,,,3,10,1,0
+4/11/2017 13:06,4/11/2017 13:09,IP Address,128.91.113.80,100,173,TRUE,4/11/2017 13:09,R_6hQHs5fP3LTDWIF,,,,,39.95970154,-75.19680023,anonymous,44212,I Approve,,,,,,,2,,6,8,0,1
+4/11/2017 13:06,4/11/2017 13:09,IP Address,128.91.114.57,100,192,TRUE,4/11/2017 13:09,R_vCYuC369HlINelH,,,,,39.95970154,-75.19680023,anonymous,46863,I Approve,,4,510,4,5,5,,,5,6,1,0
+4/11/2017 13:06,4/11/2017 13:09,IP Address,128.91.114.82,100,207,TRUE,4/11/2017 13:09,R_x4vdaFI2PCHxUQN,,,,,39.95970154,-75.19680023,anonymous,47487,I Approve,7,,555,4,7,10,,,6,9,1,1
+4/12/2017 10:03,4/12/2017 10:04,IP Address,128.91.114.22,100,56,TRUE,4/12/2017 10:04,R_pL4vEG6TEU1DLOx,,,,,39.95970154,-75.19680023,anonymous,47726,I Approve,,,,,,,4,,3,8,0,1
+4/12/2017 10:06,4/12/2017 10:07,IP Address,128.91.114.117,100,56,TRUE,4/12/2017 10:07,R_ddtFDMcGYSutjIB,,,,,39.95970154,-75.19680023,anonymous,46174,I Approve,,,,,,,2,,7,6,0,1
+4/12/2017 10:06,4/12/2017 10:07,IP Address,128.91.113.48,100,70,TRUE,4/12/2017 10:07,R_Rz8ZLd5ebjFAVDH,,,,,39.95970154,-75.19680023,anonymous,44715,I Approve,,,,,,,,1,6,7,0,0
+4/12/2017 10:06,4/12/2017 10:07,IP Address,128.91.114.57,100,86,TRUE,4/12/2017 10:07,R_1NfYj7XSNuA3Iv2,,,,,39.95970154,-75.19680023,anonymous,40447,I Approve,,5,571,2,8,8,,,10,7,1,0
+4/12/2017 10:06,4/12/2017 10:08,IP Address,128.91.114.104,100,137,TRUE,4/12/2017 10:08,R_3EKbLZggevpNF3M,,,,,39.95970154,-75.19680023,anonymous,38000,I Approve,5,,561,0,9,9,,,9,9,1,1
+4/12/2017 10:06,4/12/2017 10:08,IP Address,128.91.113.237,100,138,TRUE,4/12/2017 10:08,R_2TGLCOuOSrofIYg,,,,,39.95970154,-75.19680023,anonymous,44181,I Approve,7,,852,1,6,9,,,7,6,1,1
+4/12/2017 10:06,4/12/2017 10:08,IP Address,128.91.113.80,100,138,TRUE,4/12/2017 10:08,R_2CDNhTf6AVcOdyO,,,,,39.95970154,-75.19680023,anonymous,47502,I Approve,,6,531,5,8,8,,,6,8,1,0
+4/12/2017 10:08,4/12/2017 10:08,IP Address,128.91.114.141,100,47,TRUE,4/12/2017 10:08,R_2qxAag2OIVrPl4s,,,,,39.95970154,-75.19680023,anonymous,47663,I Approve,,,,,,,,1,7,10,0,0
+4/12/2017 10:09,4/12/2017 10:11,IP Address,128.91.114.82,100,136,TRUE,4/12/2017 10:11,R_24hGT6BTwelBT0M,,,,,39.95970154,-75.19680023,anonymous,47084,I Approve,7,,825,4,6,8,,,7,8,1,1
+4/12/2017 11:06,4/12/2017 11:07,IP Address,128.91.114.117,100,45,TRUE,4/12/2017 11:07,R_28YbdMKelsd0mKX,,,,,39.95970154,-75.19680023,anonymous,43995,I Approve,,,,,,,1,,8,9,0,1
+4/12/2017 11:06,4/12/2017 11:07,IP Address,128.91.114.128,100,57,TRUE,4/12/2017 11:07,R_e8WCZpie7Mx8Uwx,,,,,39.95970154,-75.19680023,anonymous,46549,I Approve,,,,,,,4,,9,10,0,1
+4/12/2017 11:06,4/12/2017 11:08,IP Address,128.91.114.22,100,99,TRUE,4/12/2017 11:08,R_3Dd01WjXNjISEzw,,,,,39.95970154,-75.19680023,anonymous,47762,I Approve,,,,,,,,0,7,5,0,0
+4/12/2017 11:07,4/12/2017 11:08,IP Address,128.91.113.96,100,93,TRUE,4/12/2017 11:08,R_3Rlubvrkf6iBsbs,,,,,39.95970154,-75.19680023,anonymous,47849,I Approve,,,,,,,3,,1,6,0,1
+4/12/2017 11:06,4/12/2017 11:08,IP Address,128.91.113.12,100,115,TRUE,4/12/2017 11:08,R_2AHxsPIePlWNSOa,,,,,39.95970154,-75.19680023,anonymous,42945,I Approve,5,,548,4,10,10,,,6,6,1,1
+4/12/2017 11:06,4/12/2017 11:08,IP Address,128.91.114.57,100,124,TRUE,4/12/2017 11:08,R_3NyWaXxKTTi6ygn,,,,,39.95970154,-75.19680023,anonymous,46207,I Approve,,2,564,1,10,10,,,8,10,1,0
+4/12/2017 11:07,4/12/2017 11:09,IP Address,128.91.113.105,100,150,TRUE,4/12/2017 11:09,R_1OHNAKA5AHtbyJM,,,,,39.95970154,-75.19680023,anonymous,47925,I Approve,6,,537,1,3,7,,,6,9,1,1
+4/12/2017 11:07,4/12/2017 11:10,IP Address,128.91.114.82,100,176,TRUE,4/12/2017 11:10,R_2WI66Pf0a8txCPu,,,,,39.95970154,-75.19680023,anonymous,47784,I Approve,,1,561,2,2,3,,,3,6,1,0
+4/12/2017 11:06,4/12/2017 11:10,IP Address,128.91.113.48,100,237,TRUE,4/12/2017 11:10,R_2uHYAmKMzkruUsr,,,,,39.95970154,-75.19680023,anonymous,17053,I Approve,3,,526,5,8,8,,,7,6,1,1
+4/12/2017 12:06,4/12/2017 12:07,IP Address,128.91.113.96,100,77,TRUE,4/12/2017 12:07,R_1Ig8N34WAE5E68T,,,,,39.95970154,-75.19680023,anonymous,41452,I Approve,,,,,,,,1,8,9,0,0
+4/12/2017 12:06,4/12/2017 12:07,IP Address,128.91.114.117,100,84,TRUE,4/12/2017 12:07,R_sXYBsFHhXRVN3Q5,,,,,39.95970154,-75.19680023,anonymous,47917,I Approve,,,,,,,,5,8,7,0,0
+4/12/2017 12:06,4/12/2017 12:08,IP Address,128.91.113.105,100,110,TRUE,4/12/2017 12:08,R_3HO1odZlYR3b4MO,,,,,39.95970154,-75.19680023,anonymous,39044,I Approve,,,,,,,3,,2,8,0,1
+4/12/2017 12:06,4/12/2017 12:08,IP Address,128.91.114.141,100,131,TRUE,4/12/2017 12:08,R_12qZlXoUuVAYm3a,,,,,39.95970154,-75.19680023,anonymous,47705,I Approve,,,,,,,1,,8,10,0,1
+4/12/2017 12:06,4/12/2017 12:08,IP Address,128.91.114.128,100,122,TRUE,4/12/2017 12:08,R_1N5056fD5vmQJor,,,,,39.95970154,-75.19680023,anonymous,46145,I Approve,,,,,,,1,,2,4,0,1
+4/12/2017 12:06,4/12/2017 12:08,IP Address,128.91.113.80,100,161,TRUE,4/12/2017 12:08,R_306Is9lNJtQvoDK,,,,,39.95970154,-75.19680023,anonymous,47883,I Approve,5,,534,5,8,7,,,5,8,1,1
+4/12/2017 12:06,4/12/2017 12:09,IP Address,128.91.114.82,100,166,TRUE,4/12/2017 12:09,R_2Bgmfpe2Gw0AG90,,,,,39.95970154,-75.19680023,anonymous,47769,I Approve,5,,540,2,6,5,,,7,8,1,1
+4/12/2017 12:06,4/12/2017 12:09,IP Address,128.91.113.48,100,166,TRUE,4/12/2017 12:09,R_1Gwx0fKOU8HmUqY,,,,,39.95970154,-75.19680023,anonymous,40304,I Approve,,5,535,3,5,7,,,8,9,1,0
+4/12/2017 12:06,4/12/2017 12:09,IP Address,128.91.113.12,100,191,TRUE,4/12/2017 12:09,R_pSH3dmTKhCpbhGF,,,,,39.95970154,-75.19680023,anonymous,40357,I Approve,2,,516,4,8,8,,,2,10,1,1
+4/12/2017 12:06,4/12/2017 12:10,IP Address,128.91.114.57,100,233,TRUE,4/12/2017 12:10,R_9TaGt6iJdlyB7FL,,,,,39.95970154,-75.19680023,anonymous,47484,I Approve,,3,540,4,4,3,,,6,4,1,0
+4/12/2017 13:05,4/12/2017 13:05,IP Address,128.91.114.104,100,55,TRUE,4/12/2017 13:05,R_SDGuTukCeCTLm9j,,,,,39.95970154,-75.19680023,anonymous,47668,I Approve,,,,,,,,0,1,3,0,0
+4/12/2017 13:05,4/12/2017 13:06,IP Address,128.91.113.96,100,61,TRUE,4/12/2017 13:06,R_2wGN3N8jM1yZtXz,,,,,39.95970154,-75.19680023,anonymous,47616,I Approve,,,,,,,4,,8,9,0,1
+4/12/2017 13:05,4/12/2017 13:06,IP Address,128.91.114.82,100,78,TRUE,4/12/2017 13:06,R_3QF80ieyGcZijo4,,,,,39.95970154,-75.19680023,anonymous,45763,I Approve,,,,,,,1,,6,10,0,1
+4/12/2017 13:05,4/12/2017 13:06,IP Address,128.91.114.22,100,84,TRUE,4/12/2017 13:06,R_1DB91cgA4qzeHXQ,,,,,39.95970154,-75.19680023,anonymous,45448,I Approve,,,,,,,1,,9,9,0,1
+4/12/2017 13:05,4/12/2017 13:06,IP Address,128.91.114.128,100,85,TRUE,4/12/2017 13:06,R_A0vZzuRRNzFoks9,,,,,39.95970154,-75.19680023,anonymous,47026,I Approve,,,,,,,,7,5,8,0,0
+4/12/2017 13:05,4/12/2017 13:06,IP Address,128.91.113.80,100,92,TRUE,4/12/2017 13:06,R_z6AyPoEfr1Tm1yN,,,,,39.95970154,-75.19680023,anonymous,47844,I Approve,,,,,,,1,,3,3,0,1
+4/12/2017 13:05,4/12/2017 13:06,IP Address,128.91.113.105,100,95,TRUE,4/12/2017 13:06,R_2qxWUPfqmalBBVG,,,,,39.95970154,-75.19680023,anonymous,47890,I Approve,,,,,,,,1,9,10,0,0
+4/12/2017 13:05,4/12/2017 13:07,IP Address,128.91.114.141,100,139,TRUE,4/12/2017 13:07,R_SVjYnlFaR2sXLUt,,,,,39.95970154,-75.19680023,anonymous,47343,I Approve,1,,550,3,9,8,,,3,8,1,1
+4/12/2017 13:05,4/12/2017 13:07,IP Address,128.91.114.57,100,158,TRUE,4/12/2017 13:07,R_reRR5Cinl3NwKtz,,,,,39.95970154,-75.19680023,anonymous,47707,I Approve,2,,474,3,6,7,,,6,8,1,1
+4/12/2017 13:05,4/12/2017 13:07,IP Address,128.91.113.48,100,160,TRUE,4/12/2017 13:07,R_1GTwix6Fd5rleAu,,,,,39.95970154,-75.19680023,anonymous,45682,I Approve,,4,547,2,9,8,,,8,10,1,0
+4/12/2017 13:05,4/12/2017 13:08,IP Address,128.91.114.117,100,198,TRUE,4/12/2017 13:08,R_2ceJvoajZAt7SJR,,,,,39.95970154,-75.19680023,anonymous,47626,I Approve,,0,522,4,5,5,,,7,5,1,0
+4/13/2017 10:06,4/13/2017 10:06,IP Address,128.91.113.48,100,46,TRUE,4/13/2017 10:06,R_2BkBtn9vS379exw,,,,,39.95970154,-75.19680023,anonymous,43285,I Approve,,,,,,,,4,9,10,0,0
+4/13/2017 10:06,4/13/2017 10:07,IP Address,128.91.114.128,100,66,TRUE,4/13/2017 10:07,R_21of6xzqu5iKxSM,,,,,39.95970154,-75.19680023,anonymous,44143,I Approve,,,,,,,0,,10,10,0,1
+4/13/2017 10:06,4/13/2017 10:07,IP Address,128.91.113.96,100,66,TRUE,4/13/2017 10:07,R_24DdU2YyqQTGuvs,,,,,39.95970154,-75.19680023,anonymous,47578,I Approve,,,,,,,4,,2,8,0,1
+4/13/2017 10:06,4/13/2017 10:07,IP Address,128.91.114.2,100,87,TRUE,4/13/2017 10:07,R_3P4ziR9LUIert7O,,,,,39.95970154,-75.19680023,anonymous,44098,I Approve,,,,,,,,2,9,10,0,0
+4/13/2017 10:06,4/13/2017 10:07,IP Address,128.91.114.82,100,111,TRUE,4/13/2017 10:07,R_BJ5oBy5VCKTzPot,,,,,39.95970154,-75.19680023,anonymous,47896,I Approve,,6,4,2,2,5,,,9,10,1,0
+4/13/2017 10:06,4/13/2017 10:08,IP Address,128.91.114.57,100,113,TRUE,4/13/2017 10:08,R_3ikHGSnheu9dcAg,,,,,39.95970154,-75.19680023,anonymous,47576,I Approve,,,,,,,0,,8,8,0,1
+4/13/2017 10:06,4/13/2017 10:08,IP Address,128.91.114.117,100,124,TRUE,4/13/2017 10:08,R_1dhJmMXBUL9YPqx,,,,,39.95970154,-75.19680023,anonymous,47510,I Approve,,,,,,,,1,5,8,0,0
+4/13/2017 10:06,4/13/2017 10:08,IP Address,128.91.113.80,100,127,TRUE,4/13/2017 10:08,R_ToSsCs5Sx0Nhamd,,,,,39.95970154,-75.19680023,anonymous,47288,I Approve,,5,545,1,8,9,,,10,9,1,0
+4/13/2017 10:05,4/13/2017 10:08,IP Address,128.91.113.30,100,168,TRUE,4/13/2017 10:08,R_OJSosAz4O18PwDn,,,,,39.95970154,-75.19680023,anonymous,46701,I Approve,2,,552,2,9,8,,,10,8,1,1
+4/13/2017 10:06,4/13/2017 10:09,IP Address,128.91.114.22,100,223,TRUE,4/13/2017 10:09,R_1zXEB80SRlKU1LH,,,,,39.95970154,-75.19680023,anonymous,46979,I Approve,4,,508,3,10,9,,,8,9,1,1
+4/13/2017 11:06,4/13/2017 11:07,IP Address,128.91.114.82,100,99,TRUE,4/13/2017 11:07,R_1GZa5gcY8FCFsmU,,,,,39.95970154,-75.19680023,anonymous,42927,I Approve,,5,457,3,7,10,,,5,1,1,0
+4/13/2017 11:06,4/13/2017 11:08,IP Address,128.91.113.96,100,113,TRUE,4/13/2017 11:08,R_3Msp8aA4p532O4q,,,,,39.95970154,-75.19680023,anonymous,45739,I Approve,2,,546,5,7,6,,,8,9,1,1
+4/13/2017 11:06,4/13/2017 11:08,IP Address,128.91.114.57,100,124,TRUE,4/13/2017 11:08,R_3IRbhZTDXbKvQQU,,,,,39.95970154,-75.19680023,anonymous,47839,I Approve,,,,,,,,2,4,7,0,0
+4/13/2017 11:06,4/13/2017 11:09,IP Address,128.91.113.237,100,146,TRUE,4/13/2017 11:09,R_1f2iE63qUAIamMl,,,,,39.95970154,-75.19680023,anonymous,47886,I Approve,,,,,,,,1,6,4,0,0
+4/13/2017 11:06,4/13/2017 11:10,IP Address,128.91.113.12,100,209,TRUE,4/13/2017 11:10,R_31bawkuqNv9RqQo,,,,,39.95970154,-75.19680023,anonymous,47897,I Approve,4,,568,5,9,8,,,2,9,1,1
+4/13/2017 11:06,4/13/2017 11:10,IP Address,128.91.113.30,100,234,TRUE,4/13/2017 11:10,R_ex4i5znwIHKjxER,,,,,39.95970154,-75.19680023,anonymous,45676,I Approve,,4,524,1,7,7,,,4,8,1,0
+4/13/2017 12:07,4/13/2017 12:08,IP Address,128.91.113.105,100,55,TRUE,4/13/2017 12:08,R_3O0Rk8uI8LQrvPr,,,,,39.95970154,-75.19680023,anonymous,47083,I Approve,,,,,,,,3,1,9,0,0
+4/13/2017 12:07,4/13/2017 12:08,IP Address,128.91.113.237,100,64,TRUE,4/13/2017 12:08,R_1n9iRhgNVWL0oqz,,,,,39.95970154,-75.19680023,anonymous,47895,I Approve,,,,,,,6,,8,8,0,1
+4/13/2017 12:07,4/13/2017 12:08,IP Address,128.91.113.48,100,94,TRUE,4/13/2017 12:08,R_1q8abNj5taSF6tK,,,,,39.95970154,-75.19680023,anonymous,46988,I Approve,,3,537,4,5,6,,,10,10,1,0
+4/13/2017 12:07,4/13/2017 12:09,IP Address,128.91.114.117,100,159,TRUE,4/13/2017 12:09,R_2tywrDVPK7XyTEA,,,,,39.95970154,-75.19680023,anonymous,46497,I Approve,5,,540,3,4,6,,,7,8,1,1
+4/13/2017 12:07,4/13/2017 12:09,IP Address,128.91.114.82,100,161,TRUE,4/13/2017 12:09,R_3hlrmcmLPr7jVsB,,,,,39.95970154,-75.19680023,anonymous,47894,I Approve,5,,534,2,7,6,,,9,10,1,1
+4/13/2017 12:02,4/13/2017 12:09,IP Address,128.91.114.128,100,470,TRUE,4/13/2017 12:09,R_5zgbXh9RCXywNMJ,,,,,39.95970154,-75.19680023,anonymous,47926,I Approve,2,,558,1,4,2,,,9,9,1,1
+4/13/2017 12:07,4/13/2017 12:10,IP Address,128.91.113.12,100,188,TRUE,4/13/2017 12:10,R_3PHuMpg68RarkiV,,,,,39.95970154,-75.19680023,anonymous,46418,I Approve,,3,522,4,6,8,,,3,6,1,0
+4/13/2017 13:06,4/13/2017 13:08,IP Address,128.91.113.105,100,82,TRUE,4/13/2017 13:08,R_2YleN4IzCsQ3Cf2,,,,,39.95970154,-75.19680023,anonymous,44079,I Approve,,,,,,,3,,6,8,0,1
+4/13/2017 13:06,4/13/2017 13:08,IP Address,128.91.114.117,100,94,TRUE,4/13/2017 13:08,R_3rOhcWMFNgoBCvv,,,,,39.95970154,-75.19680023,anonymous,47200,I Approve,,,,,,,,3,9,7,0,0
+4/13/2017 13:06,4/13/2017 13:08,IP Address,128.91.113.80,100,104,TRUE,4/13/2017 13:08,R_33g6kzvYvjlnfBB,,,,,39.95970154,-75.19680023,anonymous,47880,I Approve,,,,,,,,3,4,3,0,0
+4/13/2017 13:07,4/13/2017 13:08,IP Address,128.91.114.22,100,92,TRUE,4/13/2017 13:08,R_2WBWaISdYPBG3mq,,,,,39.95970154,-75.19680023,anonymous,45691,I Approve,,,,,,,2,,8,6,0,1
+4/13/2017 13:06,4/13/2017 13:09,IP Address,128.91.113.12,100,165,TRUE,4/13/2017 13:09,R_1E0BhIJY6Pyh8XS,,,,,39.95970154,-75.19680023,anonymous,47489,I Approve,2,,541,2,3,5,,,5,8,1,1
+4/13/2017 13:07,4/13/2017 13:09,IP Address,128.91.114.82,100,153,TRUE,4/13/2017 13:09,R_3FXOV15Dry4t31p,,,,,39.95970154,-75.19680023,anonymous,47325,I Approve,,2,521,5,7,8,,,7,9,1,0
+4/13/2017 13:06,4/13/2017 13:09,IP Address,128.91.113.30,100,185,TRUE,4/13/2017 13:09,R_3JynwPUfTf8i8tQ,,,,,39.95970154,-75.19680023,anonymous,46793,I Approve,2,,384,2,8,8,,,7,9,1,1
+4/13/2017 13:06,4/13/2017 13:09,IP Address,128.91.114.128,100,188,TRUE,4/13/2017 13:09,R_Y0lEZbD4PhEmTND,,,,,39.95970154,-75.19680023,anonymous,47790,I Approve,4,,519,5,6,8,,,8,8,1,1
+4/13/2017 13:06,4/13/2017 13:10,IP Address,128.91.114.57,100,224,TRUE,4/13/2017 13:10,R_3qJYWuXUoizfhoT,,,,,39.95970154,-75.19680023,anonymous,47830,I Approve,,1,534,0,9,9,,,3,0,1,0
+4/13/2017 13:07,4/13/2017 13:10,IP Address,128.91.114.141,100,211,TRUE,4/13/2017 13:10,R_1mXBaoFQXNdjk1j,,,,,39.95970154,-75.19680023,anonymous,47669,I Approve,,1,549,3,3,6,,,7,4,1,0
