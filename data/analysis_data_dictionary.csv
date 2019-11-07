@@ -18,3 +18,5 @@
 "pval.no.load","P-value for t-test of tempt effect on lkl within load = 0 subjects"
 "d.load","Cohen's d for tempt effect on lkl within load = 1 subjects"
 "d.no.load","Cohen's d for tempt effect on lkl within load = 0 subjects"
+"g.int","Hedges' g for tempt*load interaction within site"
+"g.int.se","SE of Hedges' g for tempt*load interaction within site"

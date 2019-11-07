@@ -1,0 +1,414 @@
+---
+title: "ML5 Risen & Gilovich Data Preparation"
+author: "Contact: Maya Mathur (mmathur@stanford.edu)"
+date: "June 4, 2017"
+output: pdf_document
+---
+
+# Site-Level Data Preparation
+
+Overview: A central script is called to prep each site's data automatically (merging various columns, producing standardized names, and excluding subjects per the a priori attention criterion) while outputting results of sanity checks and producing a within-site interaction plot. The script writes separate files with each site's prepped data. Lastly, all sites' prepped data are stitched into a single analysis dataset.
+
+Plots show standard boxplots (quartiles) with lines overlaying group means. 
+
+```{r, echo=FALSE}
+library(knitr)
+opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
+
+library(tidyverse)
+library(tableone)
+library(devtools)
+```
+
+## Brigham Young
+
+First manually add the `had.read` and `load` variables:
+
+```{r}
+source("data_prep_functions.R")
+
+d = read.csv("data/raw/Brigham Young/raw_byu.csv", header=TRUE)
+
+# remove additional header rows
+d = d[ -c(1:2), ]
+
+library(dplyr)
+
+# variable names here are sometimes exactly the same
+# rename them to avoid problems
+names(d)[ 18: ( length( names(d) ) - 1 ) ] = c( "lkl1", "imp1", "bad1",
+                                                "lkl2", "endnum1", "eff.split1", "count.hard1", "count.eff1", "imp2", "bad2",
+                                                "lkl3", "endnum2", "eff.split2", "count.hard2", "count.eff2", "imp3", "bad3",
+                                                "lkl4", "imp4", "bad4" )
+
+# make had.read variable
+d$had.read = NA
+d$had.read[ !is.na( as.numeric(as.character( d$lkl1 ) ) ) |
+              !is.na( as.numeric(as.character( d$lkl3 ) ) ) ] = 0
+
+d$had.read[ !is.na( as.numeric(as.character( d$lkl2 ) ) ) |
+              !is.na( as.numeric(as.character( d$lkl4 ) ) ) ] = 1
+
+# merge end-number columns
+# warning about "NAs introduced by coercion", but is correct
+d$end.num = coalesce( as.numeric( as.character( d$endnum1 ) ),
+                      as.numeric( as.character( d$endnum2 ) ) )
+
+# make load variable based on end-number column
+d$load = 0
+d$load[ !is.na( as.numeric(as.character( d$end.num ) ) ) ] = 1
+
+
+# merge effort-split columns
+# warning about "NAs introduced by coercion", but is correct
+d$eff.split = coalesce( as.numeric( as.character( d$eff.split1 ) ),
+                        as.numeric( as.character( d$eff.split2 ) ) )
+
+# merge badness columns
+# warning about "NAs introduced by coercion", but is correct
+d$badness = coalesce( as.numeric( as.character( d$bad1 ) ),
+                      as.numeric( as.character( d$bad2 ) ),
+                      as.numeric( as.character( d$bad3 ) ),
+                      as.numeric( as.character( d$bad4 ) )
+)
+
+# merge importance columns
+# warning about "NAs introduced by coercion", but is correct
+d$importance = coalesce( as.numeric( as.character( d$imp1 ) ),
+                         as.numeric( as.character( d$imp2 ) ),
+                         as.numeric( as.character( d$imp3 ) ),
+                         as.numeric( as.character( d$imp4 ) )
+)
+
+# merge counting effort columns
+# warning about "NAs introduced by coercion", but is correct
+d$count.eff = coalesce( as.numeric( as.character( d$count.eff1 ) ),
+                        as.numeric( as.character( d$count.eff2 ) )
+)
+
+# merge counting effort columns
+# warning about "NAs introduced by coercion", but is correct
+d$count.hard = coalesce( as.numeric( as.character( d$count.hard1 ) ),
+                         as.numeric( as.character( d$count.hard2 ) )
+)
+
+write.csv(d, "data/raw/Brigham Young/manualprep_byu.csv")
+```
+
+
+Automatic data prep:
+```{r}
+start.path = "data/raw/Brigham Young/manualprep_byu.csv"
+end.path = "data/prepped"
+
+prep_site_data( start.path = start.path, end.path = end.path, 
+                lkl.names = c("lkl1", "lkl2",
+                              "lkl3", "lkl4"),
+                had.read.name = "had.read",
+                load.name = "load",
+                end.num.name = "end.num",
+                eff.split.name = "eff.split",
+                count.eff.name = "count.eff",
+                count.hard.name = "count.hard",
+                badness.name = "badness",
+                importance.name = "importance",
+                .site.name = "BYUI", .group = "c.dissimilar",
+                .n.extra.header.rows = 0 )
+```
+
+
+
+## Eotvos Lorand
+
+First manually exclude 7 subjects who may have completed the experiment twice (note: these 7 are on top of any "bad subjects" excluded by the prep script):
+```{r}
+
+d = read_csv("data/raw/Eotvos Lorand/raw_eotvos.csv")
+
+d = d[ !d$ResponseId %in% c( "R_1H76w6p0V7mQW3T", "R_12mU6WnhCkSe5LH", "R_3ReInhemqnhITwd", "R_2tqY0auQ9EUmWCf", "R_Z4tlLy5HCyAXhRf", "R_28BCOFVHOcgVquF",
+                             "R_1LwH5vC3QBq4uFG" ), ]
+
+write_csv(d, "data/raw/Eotvos Lorand/manualprep_eotvos.csv")
+```
+
+Automatic data prep:
+```{r}
+start.path = "data/raw/Eotvos Lorand/manualprep_eotvos.csv"
+end.path = "data/prepped"
+
+prep_site_data( start.path = start.path, end.path = end.path, 
+                lkl.names = c("L1.R1.scenario_1", "L1.R0.scenario_1",
+                              "L0.R1.text_1", "L0.R0.text_1"),
+                had.read.name = "had.read",
+                load.name = "load",
+                end.num.name = "Q28",
+                eff.split.name = "Q29_1",
+                count.eff.name = "Q22_1",
+                count.hard.name = "Q21_1",
+                badness.name = "Q14_1",
+                importance.name = "Q26_1",
+                .site.name = "Eotvos", .group = "c.dissimilar",
+                .n.extra.header.rows = 2 )
+```
+
+## KU Leuven
+
+```{r}
+start.path = "data/raw/KU Leuven/raw_kul.csv"
+end.path = "data/prepped"
+
+prep_site_data( start.path = start.path, end.path = end.path, 
+                lkl.names = c("L1.R1.scenario_1", "L1.R0.scenario_1",
+                              "L0.R1.text_1", "L0.R0.text_1"),
+                had.read.name = "had.read",
+                load.name = "load",
+                end.num.name = "Q28",
+                eff.split.name = "Q29_1",
+                count.eff.name = "Q22_1",
+                count.hard.name = "Q21_1",
+                badness.name = "Q14_1",
+                importance.name = "Q26_1",
+                .site.name = "KUL", .group = "c.dissimilar",
+                .n.extra.header.rows = 1 )
+```
+
+## University of Porto
+
+
+```{r}
+start.path = "data/raw/PUC Rio/raw_puc.csv"
+end.path = "data/prepped"
+
+prep_site_data( start.path = start.path, end.path = end.path, 
+                lkl.names = c("L1.R1.scenario_1", "L1.R0.scenario_1",
+                              "L0.R1.text_1", "L0.R0.text_1"),
+                had.read.name = "had.read",
+                load.name = "load",
+                end.num.name = "Q28",
+                eff.split.name = "Q29_1",
+                count.eff.name = "Q22_1",
+                count.hard.name = "Q21_1",
+                badness.name = "Q14_1",
+                importance.name = "Q26_1",
+                .site.name = "UP", .group = "c.dissimilar",
+                .n.extra.header.rows = 1 )
+```
+
+
+
+## Rose-Hulman IT
+
+```{r}
+start.path = "data/raw/Rose-Hulman IT/raw_rose.csv"
+end.path = "data/prepped"
+
+d = prep_site_data( start.path = start.path, end.path = end.path, 
+                    lkl.names = c("likelihood_1", "likelihood_1_1",
+                                  "likelihood_1_2", "likelihood_1_3"),
+                    had.read.name = "had.read",
+                    load.name = "load",
+                    end.num.name = "end.num",
+                    eff.split.name = "effort.split_1",
+                    count.eff.name = "effort.count_1",
+                    count.hard.name = "difficulty_1",
+                    badness.name = "negativity_1",
+                    importance.name = "academic.pressure_1",
+                    .site.name = "RHIT", .group = "c.dissimilar",
+                    .n.extra.header.rows = 2 )
+```
+
+## Stanford
+
+```{r}
+start.path = "data/raw/Stanford/raw_stanford.csv"
+end.path = "data/prepped"
+
+prep_site_data( start.path = start.path, end.path = end.path, 
+                lkl.names = c("likelihood_1", "likelihood_1_1",
+                              "likelihood_1_2", "likelihood_1_3"),
+                had.read.name = "had.read",
+                load.name = "load",
+                end.num.name = "end.num",
+                eff.split.name = "effort.split_1",
+                count.eff.name = "effort.count_1",
+                count.hard.name = "difficulty_1",
+                badness.name = "negativity_1",
+                importance.name = "academic.pressure_1",
+                .site.name = "Stanford", .group = "b.similar",
+                .n.extra.header.rows = 2 )
+```
+
+
+## University of Rhode Island
+
+```{r}
+start.path = "data/raw/U Rhode Island/raw_uri.csv"
+end.path = "data/prepped"
+
+prep_site_data( start.path = start.path, end.path = end.path, 
+                lkl.names = c("L1.R1.scenario_1", "L1.R0.scenario_1",
+                              "L0.R1.text_1", "L0.R0.text_1"),
+                had.read.name = "had.read",
+                load.name = "load",
+                end.num.name = "Q28",
+                eff.split.name = "Q29_1",
+                count.eff.name = "Q22_1",
+                count.hard.name = "Q21_1",
+                badness.name = "Q14_1",
+                importance.name = "Q26_1",
+                .site.name = "URI", .group = "c.dissimilar",
+                .n.extra.header.rows = 2 )
+```
+
+## UC Berkeley
+
+This site used the RPP Qualtrics file instead of the updated ML5 one. The RPP file had exactly the same wording for the main questions but did not have the new "mechanistic" questions; hence all the missing data that the function complains about. 
+
+```{r}
+d = read_csv("data/raw/UC Berkeley/raw_ucb.csv")
+
+# merge end-number columns
+# warning about "NAs introduced by coercion", but is correct
+d$end.num = coalesce( as.numeric( as.character( d$Q3 ) ),
+                      as.numeric( as.character( d$Q8 ) ) )
+
+# merge effort-split columns
+# warning about "NAs introduced by coercion", but is correct
+d$eff.split = coalesce( as.numeric( as.character( d$Q4_1 ) ),
+                        as.numeric( as.character( d$Q9_1 ) ) )
+
+# placeholders for vars not collected
+d$badness = NA
+d$importance = NA
+d$count.eff = NA
+d$count.hard = NA
+
+write.csv(d, "data/raw/UC Berkeley/manualprep_ucb.csv")
+```
+
+
+Automatic prep:
+```{r}
+start.path = "data/raw/UC Berkeley/manualprep_ucb.csv"
+end.path = "data/prepped"
+
+prep_site_data( start.path = start.path, end.path = end.path, 
+                lkl.names = c("Q2_1", "Q7_1",
+                              "Q11_1", "Q14_1"),
+                had.read.name = "Had read",
+                load.name = "Cognitive load",
+                end.num.name = "end.num",
+                eff.split.name = "eff.split",
+                count.eff.name = "count.eff",
+                count.hard.name = "count.hard",
+                badness.name = "badness",
+                importance.name = "badness",
+                .site.name = "UCB", .group = "b.similar",
+                .n.extra.header.rows = 1 )
+```
+
+
+## University of Pennsylvania
+
+```{r}
+start.path = "data/raw/UPenn/raw_upenn.csv"
+end.path = "data/prepped"
+
+prep_site_data( start.path = start.path, end.path = end.path, 
+                lkl.names = c("L1.R1.scenario_1", "L1.R0.scenario_1",
+                              "L0.R1.text_1", "L0.R0.text_1"),
+                had.read.name = "had.read",
+                load.name = "load",
+                end.num.name = "Q28",
+                eff.split.name = "Q29_1",
+                count.eff.name = "Q22_1",
+                count.hard.name = "Q21_1",
+                badness.name = "Q14_1",
+                importance.name = "Q26_1",
+                .site.name = "U Penn", .group = "b.similar",
+                .n.extra.header.rows = 2 )
+```
+
+
+
+## Mechanical Turk 
+
+```{r}
+start.path = "data/raw/MTurk/raw_mturk.csv"
+end.path = "data/prepped"
+
+prep_site_data( start.path = start.path, end.path = end.path, 
+                lkl.names = c("L1.R1.scenario_1", "L1.R0.scenario_1",
+                              "L0.R1.text_1", "L0.R0.text_1"),
+                had.read.name = "had.read",
+                load.name = "load",
+                end.num.name = "Q28",
+                eff.split.name = "Q29_1",
+                count.eff.name = "Q22_1",
+                count.hard.name = "Q21_1",
+                badness.name = "Q14_1",
+                importance.name = "Q26_1",
+                .site.name = "MTurk", .group = "a.mturk",
+                .n.extra.header.rows = 2 )
+```
+
+
+
+
+## University of Virginia (UVA)
+
+```{r}
+start.path = "data/raw/U Virginia/raw_uva.csv"
+end.path = "data/prepped"
+
+d = prep_site_data( start.path = start.path, end.path = end.path, 
+                    lkl.names = c("likelihood_1", "likelihood_1_1",
+                                  "likelihood_1_2", "likelihood_1_3"),
+                    had.read.name = "had.read",
+                    load.name = "load",
+                    end.num.name = "end.num",
+                    eff.split.name = "effort.split_1",
+                    count.eff.name = "effort.count_1",
+                    count.hard.name = "difficulty_1",
+                    badness.name = "negativity_1",
+                    importance.name = "academic.pressure_1",
+                    .site.name = "UVA", .group = "b.similar",
+                    .n.extra.header.rows = 2 )
+```
+
+
+# Aggregated Data Preparation
+
+Stitch datasets:
+
+```{r}
+# rbind all the datasets into one
+b <- list.files(path = "data/prepped", pattern = "*.csv") %>%
+  map_df(function(x) read_csv(paste0("data/prepped/",x))) %>%
+  rename(site = .site.name, 
+         group = .group) %>%
+  mutate(is.mturk = ifelse(group == "a.mturk", 1, 0))
+
+# add median SAT score for secondary analyses (estimated for 2018)
+# per discussion with Dan Simons
+# site of original study (Cornell): 2134
+# data from https://www.collegeraptor.com/college-rankings/details/MedianSAT
+b$SAT[ b$site == "Stanford" ] = 2162
+b$SAT[ b$site == "U Penn" ] = 2178 
+b$SAT[ b$site == "UCB" ] = 2092
+b$SAT[ b$site == "UVA" ] = 2032
+b$SAT[ b$site == "RHIT" ] = 1951
+b$SAT[ b$site == "BYUI" ] = 1943
+b$SAT[ b$site == "URI" ] = 1182  # from their admissions website because not on College Raptor
+b$SAT[ b$site %in% c( "MTurk", "Eotvos", "KUL", "UP" ) ] = NA  # foreign or online sites
+
+# write data
+write_csv(b, "data/full_prepped_dataset.csv")
+```
+
+Session info for reproducibility. 
+
+```{r}
+devtools::session_info()
+```
+

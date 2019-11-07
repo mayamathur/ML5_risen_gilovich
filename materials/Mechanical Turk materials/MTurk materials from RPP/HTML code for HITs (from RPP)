@@ -1,0 +1,46 @@
+<h1><span style="font-family: Tahoma;"><b>*** PLEASE DO THIS HIT ONLY ONCE. MULTIPLE SUBMISSIONS WILL BE REJECTED. ***</b></span></h1>
+
+<p>&nbsp;</p>
+
+<h2><span style="font-family: Tahoma;"><u><b>Consent</b></u></span></h2>
+
+<p><span style="font-family: Tahoma;">By answering the following questions, you are participating in a study being performed by cognitive scientists in the Stanford Department of Psychology. If you have questions about this research, please contact us at stanfordpsych254@gmail.com. Your participation in this research is voluntary. You may decline to answer any or all of the following questions. You may decline further participation, at any time, without adverse consequences. Your anonymity is assured; the researchers who have requested your participation will not receive any personal information about you.</span></p>
+
+<p>&nbsp;</p>
+
+<h2><span style="font-family: Tahoma;"><u>Your task</u></span></h2>
+
+<p><span style="font-family: Tahoma;">Go to </span><a href="https://stanforduniversity.qualtrics.com/SE/?SID=SV_eJbIBe4ysiC0vys" onclick="addId()" target="_blank"><span style="font-family: Tahoma;">this website and work on the task there</span></a><span style="font-family: Tahoma;">. The password you will be prompted to enter is <i><b>mturk</b></i>.</span></p>
+
+<p><span style="font-family: Tahoma;">At the end, you will get a confirmation number. Copy that number and paste it into the field below, and then submit the HIT.</span></p>
+
+<p><span style="font-family: Tahoma;"><script type="text/javascript">
+//from here on leave everything as it is
+function addId(){
+    //setting default values. If the parsing of the workerId fails,
+    //99999 will be transmitted.
+    var workerId="99999";
+    var iFrameURL=document.location.toString();
+    var temp="";
+    //parsing and extracting the workerId
+    if (iFrameURL.indexOf("workerId") > 0){
+        if (iFrameURL.indexOf("?") > 0){
+            temp=iFrameURL.split("?")[1];
+            if (temp.indexOf("&") > 0){
+                temp=temp.split("&")[2];
+                if (temp.indexOf("=") > 0){
+                    workerId=temp.split("=")[1];
+                }
+            }
+        }
+    }
+    //appending the workerId to the link
+    document.links[0].href+="&mtwid=" + workerId;
+}
+</script> </span></p>
+
+<p><span style="font-family: Tahoma;">&nbsp;</span></p>
+
+<p><span style="font-family: Tahoma;">confirmation number:</span></p>
+
+<p><span style="font-family: Tahoma;"><textarea cols="80" name="answer" rows="3"></textarea></span></p>
