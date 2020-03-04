@@ -684,13 +684,15 @@ m.sat = lmer( lkl ~ tempt * load * SATc + (tempt * load | site), data = b )
 CI.SAT = confint(m.sat, method = "Wald")
 
 
+
+
 ############################# STATS FOR CHARLIE'S OVERARCHING MANUSCRIPT ##############################
 
 protocol.rmd = fixef(m1)["tempt:load:groupb.similar"]
 protocol.rmd.se = sqrt( vcov(m1)["tempt:load:groupb.similar", "tempt:load:groupb.similar"] )
 
 # residual (aka conditional) variance
-# will be very close to the marginal SD(b$lkl) since basically no effect
+# will be very close to the marginal SD(b$lkl) since basically no non-null effects in the model
 sd.pool = sigma(m1)
 
 protocol.d = protocol.rmd / sd.pool

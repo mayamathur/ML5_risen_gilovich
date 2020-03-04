@@ -18,6 +18,9 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
 library(tidyverse)
 library(tableone)
 library(devtools)
+
+setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/main_code/data_prep")
+source("data_prep_functions.R")
 ```
 
 ## Brigham Young
@@ -25,8 +28,7 @@ library(devtools)
 First manually add the `had.read` and `load` variables:
 
 ```{r}
-source("data_prep_functions.R")
-
+setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/data/raw")
 d = read.csv("data/raw/Brigham Young/raw_byu.csv", header=TRUE)
 
 # remove additional header rows

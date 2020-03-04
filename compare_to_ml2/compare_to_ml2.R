@@ -41,7 +41,7 @@ notNA = function(x) {
 ############################# READ IN DATA ##############################
 
 # read in saved objects from my ML5 analyses
-path.root = "~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich"
+path.root = "~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git"
 setwd(path.root)
 load( "main_code/analysis_objects.rds" )
 
@@ -51,7 +51,7 @@ setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/Many La
 d0 = read.csv("ML2_RawData_S2 (1).csv")
 
 # site-level t-tests for all sites
-setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich/compare_to_ml2/prepped_datasets")
+setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/compare_to_ml2/prepped_datasets")
 agg = read.csv( "ML2_all_site_summary.csv", header = TRUE )
 
 # site-level t-tests for all sites
