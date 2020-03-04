@@ -147,18 +147,26 @@ site_cohen = function( .d, .load ) {
 # Fn: compute Hedges' g for interaction within site
 # load: 1 or 0 for which subset to use
 site_hedges = function( .d ) {
-  # difference corresponding to the interaction (equal to a - b - c + d because
+  # difference on raw mean difference scale corresponding to the interaction (equal to a - b - c + d because
   #  saturated model)
   mod = lm(formula = lkl ~ tempt * load, data = .d)
-  diff = coef(mod)[["tempt:load"]]
-  V = vcov(mod)
-  
   # residual (aka conditional) variance
   sd.pool = sigma(mod)
   
-  # Cohen's d (not yet bias-corrected)
-  d = diff / sd.pool
+  # rescale the outcome by sd.pool, treated as known
+  .d$lkl.std = .d$lkl/sd.pool
+  # refit the model to get the standardized mean difference
   
+  mod.std = lm(formula = lkl.std ~ tempt * load, data = .d)
+  d = coef(mod.std)[["tempt:load"]]
+  var.d = vcov(mod.std)[["tempt:load", "tempt:load"]]
+  
+  # sanity check vs. raw model: matches
+  # coef(mod)[["tempt:load"]] / sd.pool; d
+  # vcov(mod)[["tempt:load", "tempt:load"]] * (1/sd.pool)^2; var.d
+
+  
+    
   # get its SE from lm() because usual SE for Cohen's d assumes 2 groups
   #  so doesn't work for interaction contrasts
   var.d = vcov(mod)[["tempt:load", "tempt:load"]]
@@ -227,3 +235,26 @@ pretty_spaces = function(x, use.NA = FALSE){
   x2 = append( x2, ifelse( use.NA, NA, "" ), after = 3)
   x2 = append( x2, ifelse( use.NA, NA, "" ), after = 8)
 }
+
+
+# Fn: variance of SMD
+# e.g., https://stats.stackexchange.com/questions/144084/variance-of-cohens-d-statistic
+smd_var = function(N = NULL,
+                   n1 = NULL, 
+                   n0 = NULL, 
+                   smd) {
+  if ( is.null(n1) | is.null(n0) ) {
+    # assume equal sample sizes in each group
+    n1 = N/2
+    n0 = N/2
+  }
+  
+  term1 = (n1 + n0) / (n1 * n0)
+  term2 = smd^2 / ( 2 * (n1 + n0) )
+  
+  return( term1 + term2 )
+}
+
+
+
+

@@ -169,6 +169,10 @@ vyi.orig.int = ( 1.42^2 / orig.cell.n ) + ( 2.16^2 / orig.cell.n ) + ( 2.17^2 / 
 SMD.orig.int = yi.orig.int / sqrt( vyi.orig.int )  
 F.stat = SMD.orig.int^2  # square a t-stat to get F-stat
 # appears within rounding error (reported: F = 4.15)
+SMD.orig.SE = smd_var(n1 = 60,
+                      n0 = 60,
+                      smd = SMD.orig.int
+                        )
 
 orig.total.n = orig.cell.n * cells
 pval.orig.int = 2 * ( 1 - pt( q = abs( SMD.orig.int ), df = orig.total.n - cells ) )
