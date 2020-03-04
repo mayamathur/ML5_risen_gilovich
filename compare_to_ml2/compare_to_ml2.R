@@ -92,7 +92,7 @@ agg.u$string = paste( round( agg.u$site.main, 2 ),
                       round( agg.u$hi, 2 ), "]", sep="" )
 agg.u$pval = round( agg.u$pval, 2)
 
-setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich/compare_to_ml2")
+setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/compare_to_ml2")
 source("awesome_forest_plot_v2.R")
 awesome_forest( data = agg.u,
                 est.name = "site.main",

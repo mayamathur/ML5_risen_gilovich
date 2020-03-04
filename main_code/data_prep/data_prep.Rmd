@@ -28,7 +28,7 @@ source("data_prep_functions.R")
 First manually add the `had.read` and `load` variables:
 
 ```{r}
-setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/data/raw")
+setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git")
 d = read.csv("data/raw/Brigham Young/raw_byu.csv", header=TRUE)
 
 # remove additional header rows
