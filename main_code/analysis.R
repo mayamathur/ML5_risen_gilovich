@@ -161,7 +161,7 @@ orig.main.hi = yi.orig.main + t.crit * sqrt(vyi.orig.main)
 # stats on SMD scale
 SD.pool.main = sqrt( (1.42^2 + 2.16^2) / 2 )  # because equal sample sizes per cell
 ( SMD.orig.main = yi.orig.main / SD.pool.main ) # reported: 0.58; similar :)
-( SE.SMD.orig.main = sqrt(vyi.orig.main) * (1/SD.pool.main) )  # treat SD as known
+( SE.SMD.orig.main = sqrt(vyi.orig.main) * (1/SD.pool.main) )  # treat SD as known constant
 ( CI.SMD.orig.main = SMD.orig.main + c(-1,1) * SE.SMD.orig.main * t.crit )
 # sanity check:
 # yi.orig.main / sqrt( vyi.orig.main )
@@ -208,7 +208,7 @@ rpp = rpp[ ( as.numeric( rpp$End.num ) <= 561 | is.na( rpp$End.num) ) &
 # summary(aov(Likelihood ~ Load * tempt, data = rpp))
 lm.rpp = lm(Likelihood ~ Load * tempt, data = rpp)
 
-#dim(rpp)  # should be 226
+#nrow(rpp)  # should be 226
 
 
 ##### Main effect in RPP #####
@@ -421,6 +421,7 @@ label.row[ names(temp) == "site.n"] = "Analyzed n"
 label.row[ names(temp) == "string.main"] = "Estimate and 95% CI"
 label.row[ names(temp) == "string.int"] = "Estimate and 95% CI"
 label.row[ names(temp) == "site.int.pval"] = "p-value"
+label.row[ names(temp) == "site.main.pval"] = "p-value"
 temp = insert_at( row = label.row,
                   df = temp,
                   position = 1 )
@@ -477,7 +478,7 @@ name = c("Tempt main effect within MTurk",
           "Effect of similar site vs. MTurk on tempt-load interaction"
           )
 
-value = as.numeric( c( fixef(m1)["tempt"], 
+value = as.numeric( c( fixef(m1)["tempt"], # because MTurk is the reference level 
            main.sim$est, 
            fixef(m1)["tempt:groupb.similar"],   
            fixef(m1)["tempt:load"], 
@@ -600,18 +601,21 @@ Vhat.main = VarCorr(m.sim)$site["tempt", "tempt"]
 Mhat.main = fixef(m.sim)[["tempt"]]
 SE.Mhat = sqrt(vcov(m.sim)["tempt", "tempt"])
 
-( p.orig.main.sim = p_orig( orig.y = yi.orig.main, orig.vy = vyi.orig.main,
-                      yr = Mhat.main, t2 = Vhat.main, vyr = SE.Mhat^2 ) )
+( p.orig.main.sim = p_orig( orig.y = yi.orig.main,
+                            orig.vy = vyi.orig.main,
+                            yr = Mhat.main,
+                            t2 = Vhat.main,
+                            vyr = SE.Mhat^2 ) )
 
 # manual sanity check - yes :) 
 # 2 * ( 1 - pnorm( abs( yi.orig.main - Mhat.main ) / sqrt( Vhat.main + vyi.orig.main + SE.Mhat^2 ) ) )
 
-# note that the diagnostic plots use the meta-analytic MLE for heterogeneity rather than that of mixed model
-#  since not sure we have a closed-form expression for the latter
-plots = diag_plots( yi = sites$site.main.est[ sites$group == "b.similar" ],
-                    vi = sites$site.main.SE[ sites$group == "b.similar" ]^2,
-                    yi.orig = yi.orig.main,
-                    vi.orig = vyi.orig.main)
+# # note that the diagnostic plots use the meta-analytic MLE for heterogeneity rather than that of mixed model
+# #  since not sure we have a closed-form expression for the latter
+# plots = diag_plots( yi = sites$site.main.est[ sites$group == "b.similar" ],
+#                     vi = sites$site.main.SE[ sites$group == "b.similar" ]^2,
+#                     yi.orig = yi.orig.main,
+#                     vi.orig = vyi.orig.main)
 
 
 ######## P_orig For Interaction Effect (Similar Sites) ######## 
@@ -620,15 +624,18 @@ Vhat.int = VarCorr(m.sim)$site["tempt:load", "tempt:load"]  # variance of random
 Mhat.int = fixef(m.sim)[["tempt:load"]]
 SE.Mhat = sqrt(vcov(m.sim)["tempt:load", "tempt:load"])
 
-( p.orig.int.sim = p_orig( orig.y = yi.orig.int, orig.vy = vyi.orig.int,
-                      yr = Mhat.int, t2 = Vhat.int, vyr = SE.Mhat^2) )
+( p.orig.int.sim = p_orig( orig.y = yi.orig.int,
+                           orig.vy = vyi.orig.int,
+                           yr = Mhat.int,
+                           t2 = Vhat.int,
+                           vyr = SE.Mhat^2) )
 
-# note that the diagnostic plots use the meta-analytic MLE for heterogeneity rather than that of mixed model
-#  since not sure we have a closed-form expression for the latter
-plots = diag_plots( yi = sites$site.int.est[ sites$group == "b.similar" ],
-                    vi = sites$site.int.SE[ sites$group == "b.similar" ]^2,
-                    yi.orig = yi.orig.int,
-                    vi.orig = vyi.orig.int)
+# # note that the diagnostic plots use the meta-analytic MLE for heterogeneity rather than that of mixed model
+# #  since not sure we have a closed-form expression for the latter
+# plots = diag_plots( yi = sites$site.int.est[ sites$group == "b.similar" ],
+#                     vi = sites$site.int.SE[ sites$group == "b.similar" ]^2,
+#                     yi.orig = yi.orig.int,
+#                     vi.orig = vyi.orig.int)
 
 
 ######## P_orig For Main Effect (All Universities) ########
@@ -639,13 +646,16 @@ Vhat = VarCorr(m.all)$site["tempt", "tempt"]  # variance of random slopes of tem
 Mhat = fixef(m.all)[["tempt"]]
 SE.Mhat = sqrt(vcov(m.all)["tempt", "tempt"])
 
-( p.orig.main.uni = p_orig( orig.y = yi.orig.main, orig.vy = vyi.orig.main,
-                      yr = Mhat, t2 = Vhat, vyr = SE.Mhat^2) )
+( p.orig.main.uni = p_orig( orig.y = yi.orig.main,
+                            orig.vy = vyi.orig.main,
+                            yr = Mhat,
+                            t2 = Vhat,
+                            vyr = SE.Mhat^2) )
 
-plots = diag_plots( yi = sites$site.main.est[ sites$group != "a.mturk" ],
-                    vi = sites$site.main.SE[ sites$group == "a.mturk" ]^2,
-                    yi.orig = yi.orig.main,
-                    vi.orig = vyi.orig.main)
+# plots = diag_plots( yi = sites$site.main.est[ sites$group != "a.mturk" ],
+#                     vi = sites$site.main.SE[ sites$group == "a.mturk" ]^2,
+#                     yi.orig = yi.orig.main,
+#                     vi.orig = vyi.orig.main)
 
 
 ######## P_orig For Main Effect (All Universities) ########
@@ -655,13 +665,16 @@ Vhat = VarCorr(m.all)$site["tempt:load", "tempt:load"]   # variance of random sl
 Mhat = fixef(m.all)[["tempt:load"]]
 SE.Mhat = sqrt(vcov(m.all)["tempt:load", "tempt:load"])
 
-( p.orig.int.uni = p_orig( orig.y = yi.orig.int, orig.vy = vyi.orig.int,
-                      yr = Mhat, t2 = Vhat, vyr = SE.Mhat^2) )
+( p.orig.int.uni = p_orig( orig.y = yi.orig.int,
+                           orig.vy = vyi.orig.int,
+                           yr = Mhat,
+                           t2 = Vhat,
+                           vyr = SE.Mhat^2) )
 
-plots = diag_plots( yi = sites$site.int.est[ sites$group != "a.mturk" ],
-                    vi = sites$site.int.SE[ sites$group == "a.mturk" ]^2,
-                    yi.orig = yi.orig.int,
-                    vi.orig = vyi.orig.int)
+# plots = diag_plots( yi = sites$site.int.est[ sites$group != "a.mturk" ],
+#                     vi = sites$site.int.SE[ sites$group == "a.mturk" ]^2,
+#                     yi.orig = yi.orig.int,
+#                     vi.orig = vyi.orig.int)
 
 
 ############################# SECONDARY: MECHANISMS FOR REPLICATION FAILURE ##############################
@@ -742,6 +755,8 @@ protocol.d.se = sqrt( (1/sd.pool)^2 * protocol.rmd.se^2 )
 ############################# SAVE OBJECTS ##############################
 
 # save R objects for Markdown manuscript
+setwd(path.root)
+setwd( "main_code" )
 save.image( file = "analysis_objects.rds" )
 
 # site-specific dataset

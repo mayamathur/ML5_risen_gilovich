@@ -124,9 +124,10 @@ awesome_forest = function( data,
     xlim(0, 4) +
     ylim(0, max(data$yval))
 
-  
   png(filename = file.name, width = 16, height = 6, units = "in", res = 300)
-  grid.draw( gridExtra:::cbind_gtable( ggplotGrob(LHS), ggplotGrob(RHS), size = "last" ) )
+  
+  grid.arrange(LHS, RHS, ncol=2)
+  #grid.draw( gridExtra:::cbind.gtable( ggplotGrob(LHS), ggplotGrob(RHS), size = "last" ) )
   dev.off()
 }
 

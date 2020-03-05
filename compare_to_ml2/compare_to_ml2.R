@@ -1,7 +1,12 @@
 
+# important to clear all objects since we're going to save the entire image
+#  so we don't want any old things to be saved and overwrite the new ones
+rm(list=ls())
+
 library(grid)
 library(ggplot2)
 library(gridExtra)
+library(effsize)
 
 ############################# HELPER FNS ##############################
 
@@ -69,6 +74,14 @@ bs = read.csv( "both_short_data.csv", header = TRUE )
 u = read.csv( "ML2_undergrad_data.csv", header = TRUE )
 
 
+############################# HOW MUCH MISSING DATA DID THEY HAVE? ##############################
+
+# how many subjects skipped the study completely?
+d0$skipped = is.na(d0$rise1.3) & is.na(d0$rise2.3)
+perc.missing.ml2 = round( mean(d0$skipped) * 100, 1 )
+
+
+
 ############################# META-ANALYZE ML2 ##############################
 
 library(metafor)
@@ -84,34 +97,34 @@ summary(m)
 # very similar to naive Cohen's d on undergrads because no heterogeneity
 
 
-####### Forest Plot ####### 
-# for plotting joy
-agg.u$yval = 1:nrow(agg.u)
-
-# color-code the elite schools
-agg.u$is.pooled = FALSE
-agg.u$is.pooled[ agg.u$source %in% c("yale", "umich", "carleton", "kenyon") ] = TRUE
-
-# build plot-friendly string with point estimate and CI
-agg.u$string = paste( round( agg.u$site.main, 2 ),
-                      " [", round( agg.u$lo, 2 ), ", ",
-                      round( agg.u$hi, 2 ), "]", sep="" )
-agg.u$pval = round( agg.u$pval, 2)
-
-setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/compare_to_ml2")
-source("awesome_forest_plot_v2.R")
-awesome_forest( data = agg.u,
-                est.name = "site.main",
-                lo.name = "lo",
-                hi.name = "hi",
-                site.name = "source",
-                file.name = "ml2_undergrads_forest.png",
-                n.name = "N",
-                string.name = "string",
-                pval.name = "pval",
-                xlab = "Mean difference", 
-                min.x = -1.5,
-                max.x = 2.5 )
+# ####### Forest Plot ####### 
+# # for plotting joy
+# agg.u$yval = 1:nrow(agg.u)
+# 
+# # color-code the elite schools
+# agg.u$is.pooled = FALSE
+# agg.u$is.pooled[ agg.u$source %in% c("yale", "umich", "carleton", "kenyon") ] = TRUE
+# 
+# # build plot-friendly string with point estimate and CI
+# agg.u$string = paste( round( agg.u$site.main, 2 ),
+#                       " [", round( agg.u$lo, 2 ), ", ",
+#                       round( agg.u$hi, 2 ), "]", sep="" )
+# agg.u$pval = round( agg.u$pval, 2)
+# 
+# setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/compare_to_ml2")
+# source("awesome_forest_plot_v2.R")
+# awesome_forest( data = agg.u,
+#                 est.name = "site.main",
+#                 lo.name = "lo",
+#                 hi.name = "hi",
+#                 site.name = "source",
+#                 file.name = "ml2_undergrads_forest.png",
+#                 n.name = "N",
+#                 string.name = "string",
+#                 pval.name = "pval",
+#                 xlab = "Mean difference", 
+#                 min.x = -1.5,
+#                 max.x = 2.5 )
 
 
 
@@ -124,7 +137,7 @@ agg$pval[ agg$source=="mturk" ]
 
 # ML5
 ( ml5.turk.est = sites$site.main.est[ sites$site == "MTurk" ] )
-( ml5.turk.n = sites$site.n[ sites$site == "MTurk" ] )
+( ml5.turk.n = sum( bl$site == "MTurk" ) )  # don't use sites$site.n because that includes loaded subjects
 sites$site.main.pval[ sites$site == "MTurk" ]
 
 # point estimates almost exactly the same
@@ -136,7 +149,7 @@ sites$site.main.pval[ sites$site == "MTurk" ]
 
 # nearly identical results for LMM vs. GEE
 
-######## With Mixed Model on IPD ######## 
+######## LMM Comparison ######## 
 
 library(lme4)
 
@@ -148,7 +161,7 @@ lmm2 = lmer( lkl ~ tempt + (1|site) + (tempt|site), data=bl )
 summary(lmm2)
 
 
-######## With GEE on IPD ######## 
+######## GEE Comparison ######## 
 
 # put in a study covariate
 # working independence
@@ -164,7 +177,7 @@ gee2 = gee(lkl ~ tempt, id=site, data=bl,
 summary(gee2)
 
 
-######## With Test Stats Only ######## 
+######## RMD Comparison ########
 
 # ML5 main analysis sites
 res = t.test( lkl ~ (tempt == 0), data = bl[ bl$study == "ML5", ] )
@@ -175,7 +188,7 @@ df5 = res$parameter
 # back-calculate the SE from the test stat and CI limit
 se5 = as.numeric( (hi5 - diff5) / qt( .975, df = df5 ) ) # denom will be very close to 1.96
 diff5/se5; t5  # sanity check
-n5 = sum(bl2$study == "ML5")
+n5 = sum(bl$study == "ML5")
 
 # ML2 main analysis sites
 res = t.test( lkl ~ (tempt == 0), data = bl[ bl$study == "ML2", ] )
@@ -185,7 +198,7 @@ hi2 = res$conf.int[2]
 df2 = res$parameter
 se2 = as.numeric( (hi2 - diff2) / qt( .975, df = df2 ) ) # denom will be very close to 1.96
 diff2/se2; t2  # sanity check
-n2 = sum(bl2$study == "ML2")
+n2 = sum(bl$study == "ML2")
 
 # difference in differences
 se.diff = sqrt( se2^2 + se5^2 )
@@ -194,7 +207,6 @@ z = abs( diff5 - diff2 ) / se.diff
 
 ######## Cohen's d Combining All Sites ######## 
 d.all = cohen.d( bl$lkl ~ bl$tempt )
-# 0.17 and significant
 
 
 ######## Save Objects for Manuscript ######## 
@@ -239,10 +251,11 @@ bl2 = bl2[ bl2$study == "ML5" | ( bl2$study == "ML2" & bl2$undergrads == "Yes" )
 
 # how many from each study?
 table(bl2$study)
-# should be 4599 and 754 (main analysis sample sizes)
+# should be 4599 for ML2
+#  will be less than 754 (main analysis sample size) for ML5 because we've excluded subjects under cognitive load
 
 
-######## With Mixed Model on IPD ######## 
+######## LMM Comparison ######## 
 
 lmm3 = lmer( lkl ~ tempt * study + (1|site) + (tempt|site), data=bl2 )
 summary(lmm3)
@@ -252,7 +265,7 @@ lmm4 = lmer( lkl ~ tempt + (1|site) + (tempt|site), data=bl2 )
 summary(lmm4)
 
 
-######## With GEE on IPD ######## 
+######## GEE Comparison ######## 
 
 # put in a study covariate
 # working independence
@@ -267,7 +280,7 @@ gee4 = gee(lkl ~ tempt, id=site, data=bl2,
 summary(gee4)
 
 
-######## With Test Stats Only ######## 
+######## RMD Comparison ######## 
 
 # ML5 main analysis sites
 res = t.test( lkl ~ (tempt == 0), data = bl2[ bl2$study == "ML5", ] )
@@ -327,7 +340,6 @@ sim.table = data.frame( Name = c("LMM", "GEE", "RMD"),
 ######## Cohen's d With Only Main Analysis Sites From Each Study ######## 
 library(effsize)
 d.sim = cohen.d( bl2$lkl ~ bl2$tempt )
-# 0.20 and significant
 
 
 
@@ -357,9 +369,6 @@ library(Replicate)
 p.orig.agg.sim = p_orig( orig.y = yi.orig.main, orig.vy = vyi.orig.main,
                          yr = Mhat.sim, t2 = Vhat.sim, vyr = SE.Mhat.sim^2 )
 
-# look at Normality
-hist(bs$est)
-
 
 ######### Primary Analysis Sites ######### 
 Vhat.all = VarCorr(lmm4)$site.1["tempt", "tempt"]
@@ -372,23 +381,12 @@ p.orig.agg.all = p_orig( orig.y = yi.orig.main, orig.vy = vyi.orig.main,
                          yr = Mhat.all, t2 = Vhat.all, vyr = SE.Mhat.all^2 )
 
 
-# look at Normality
-# sites used in main analyses
-main.sites = unique(bl2$site)
-bs$main.analysis = bs$site %in% main.sites
-hist(bs$est[ bs$main.analysis == 1 ])  # not great
 
 
 
-############################# HOW MUCH MISSING DATA DID THEY HAVE? ##############################
+############################# FOREST PLOT WITH ALL SITES ##############################
 
-# how many subjects skipped the study completely?
-d0$skipped = is.na(d0$rise1.3) & is.na(d0$rise2.3)
-perc.missing.ml2 = round( mean(d0$skipped) * 100, 1 )
-
-
-
-############################# SIMPLIFIED FOREST PLOT WITH ALL SITES ##############################
+# bm
 
 # rearrange the both-short dataframe
 dp1 = bs[ order(bs$main.analysis, bs$est, decreasing=TRUE), ]

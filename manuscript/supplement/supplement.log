@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.6)  5 MAR 2020 06:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.6)  5 MAR 2020 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -889,82 +889,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--212
 t_files/figure-latex/unnamed-chunk-3-2.pdf>] [5 <./supplement_files/figure-late
 x/unnamed-chunk-3-3.pdf>] [6 <./supplement_files/figure-latex/unnamed-chunk-3-4
 .pdf>] [7]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 28
-8.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 36
+0.
 (/Users/mmathur/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 289.
-[8]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 409.
-LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 4
-23.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 361.
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 364.
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 3
+76.
 (/Users/mmathur/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [9]
-<summary_table/supplement_table.pdf, id=177, 498.86375pt x 248.93pt>
+) [8]
+<summary_table/supplement_table.pdf, id=173, 498.86375pt x 248.93pt>
 File: summary_table/supplement_table.pdf Graphic file (type pdf)
 <use summary_table/supplement_table.pdf>
 Package pdftex.def Info: summary_table/supplement_table.pdf  used on input line
- 494.
+ 447.
 (pdftex.def)             Requested size: 469.76932pt x 234.41203pt.
-[10 <./summary_table/supplement_table.pdf>]
-Overfull \hbox (40.45pt too wide) in alignment at lines 526--534
+[9 <./summary_table/supplement_table.pdf>]
+Overfull \hbox (40.45pt too wide) in alignment at lines 480--488
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (40.45pt too wide) in alignment at lines 534--539
+Overfull \hbox (40.45pt too wide) in alignment at lines 488--493
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (40.45pt too wide) in alignment at lines 539--546
+Overfull \hbox (40.45pt too wide) in alignment at lines 493--500
+ [] [] [] [] [] [] 
+ []
+
+[10]
+Overfull \hbox (40.45pt too wide) in alignment at lines 522--530
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (40.45pt too wide) in alignment at lines 566--574
+Overfull \hbox (40.45pt too wide) in alignment at lines 530--535
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (40.45pt too wide) in alignment at lines 574--579
+Overfull \hbox (40.45pt too wide) in alignment at lines 535--542
  [] [] [] [] [] [] 
  []
 
-
-Overfull \hbox (40.45pt too wide) in alignment at lines 579--586
- [] [] [] [] [] [] 
- []
-
-[11]
-<all_ml2_ml5_forest.png, id=224, 3914.625pt x 3914.625pt>
+<all_ml2_ml5_forest.png, id=219, 3914.625pt x 3914.625pt>
 File: all_ml2_ml5_forest.png Graphic file (type png)
 <use all_ml2_ml5_forest.png>
-Package pdftex.def Info: all_ml2_ml5_forest.png  used on input line 601.
+Package pdftex.def Info: all_ml2_ml5_forest.png  used on input line 557.
 (pdftex.def)             Requested size: 469.73474pt x 469.73474pt.
-[12] [13 <./all_ml2_ml5_forest.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 671.
-[14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 671.
+[11] [12 <./all_ml2_ml5_forest.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 625.
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 625.
 (./supplement.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 671.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 671.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 625.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 625.
 Package rerunfilecheck Info: File `supplement.out' has not changed.
 (rerunfilecheck)             Checksum: C8F5ABAE2F6337E2B70FB4C56FCF85BB;4145.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 671.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 625.
  ) 
 Here is how much of TeX's memory you used:
- 15640 strings out of 494108
- 232640 string characters out of 6172785
- 338228 words of memory out of 5000000
- 19281 multiletter control sequences out of 15000+600000
- 52224 words of font info for 139 fonts, out of 8000000 for 9000
+ 15648 strings out of 494108
+ 232730 string characters out of 6172785
+ 335228 words of memory out of 5000000
+ 19282 multiletter control sequences out of 15000+600000
+ 52776 words of font info for 146 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,12n,49p,973b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,49p,973b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -995,10 +993,10 @@ er/ucrro8a.pfb></Users/mmathur/Library/TinyTeX/texmf-dist/fonts/type1/urw/palat
 ino/uplb8a.pfb></Users/mmathur/Library/TinyTeX/texmf-dist/fonts/type1/urw/palat
 ino/uplr8a.pfb></Users/mmathur/Library/TinyTeX/texmf-dist/fonts/type1/urw/palat
 ino/uplri8a.pfb>
-Output written on supplement.pdf (14 pages, 727492 bytes).
+Output written on supplement.pdf (13 pages, 720461 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 272 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
+ 315 PDF objects out of 1000 (max. 8388607)
+ 266 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
  14503 words of extra memory for PDF output out of 17280 (max. 10000000)
 

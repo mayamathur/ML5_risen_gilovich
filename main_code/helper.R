@@ -158,8 +158,8 @@ site_hedges = function( .d,
     
     # rescale the outcome by sd.pool, treated as known
     .d$lkl.std = .d$lkl/sd.pool
-    # refit the model to get the standardized mean difference
     
+    # refit the model to easily get the standardized mean difference
     mod.std = lm(formula = lkl.std ~ tempt * load, data = .d)
     d = coef(mod.std)[["tempt:load"]]
     var.d = vcov(mod.std)[["tempt:load", "tempt:load"]]

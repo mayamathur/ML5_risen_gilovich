@@ -116,6 +116,9 @@ write.csv( agg.u, "ML2_undergrads_site_summary.csv")
 
 ############################# BOTH-LONG DATASET (IPD FOR BOTH ML2 AND ML5) ##############################
 
+# keep only subjects without load from ML5
+b = b[ b$load == 0, ]
+
 # includes all sites for both studies
 bl = data.frame( study = c( rep( "ML2", nrow(d) ), rep( "ML5", nrow(b) ) ),
                  site = c( as.character(d$source), as.character(b$site) ), 
@@ -123,7 +126,7 @@ bl = data.frame( study = c( rep( "ML2", nrow(d) ), rep( "ML5", nrow(b) ) ),
                  tempt = c( d$tempt, b$tempt),
                  undergrads = c( as.character(d$SubjectPool), rep( "Yes", nrow(b) ) ) )
 
-setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich/compare_to_ml2/prepped_datasets")
+setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/compare_to_ml2/prepped_datasets")
 write.csv(bl, "both_long_data.csv")
 
 
@@ -135,10 +138,17 @@ bs = bl %>% group_by(study, site) %>%
   summarize( est = coef( lm(lkl ~ tempt) )[ "tempt" ],
              lo = confint( lm(lkl ~ tempt) )[ "tempt", 1],
              hi = confint( lm(lkl ~ tempt) )[ "tempt", 2],
-             se = sqrt( vcov( lm(lkl ~ tempt) )["tempt", "tempt"] ) )
+             se = sqrt( vcov( lm(lkl ~ tempt) )["tempt", "tempt"] ),
+             undergrads = undergrads[1] )
+
+bs$main.analysis = FALSE
+bs$main.analysis[ bs$study == "ML5" & bs$site %in% c("Stanford", "U Penn", "UCB", "UVA") ] = TRUE
+bs$main.analysis[ bs$study == "ML2" & bs$undergrads == "Yes" ] = TRUE
+
+table(bs$main.analysis, bs$study)
 
 
-setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich/compare_to_ml2/prepped_datasets")
+setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/compare_to_ml2/prepped_datasets")
 write.csv(bs, "both_short_data.csv")
 
 
