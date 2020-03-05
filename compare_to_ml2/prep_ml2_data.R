@@ -11,11 +11,10 @@ notNA = function(x) {
 
 
 # read in saved objects from my ML5 analyses
-path.root = "~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich/main_code"
+path.root = "~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/main_code"
 setwd(path.root)
 load( "analysis_objects.rds" )
 
-# ~~~ CHANGE DATA PATH ONCE IT CAN BE PUBLICLY AVAILABLE
 # this is all of ML2's Slate 2 studies, not just Risen & Gilovich
 setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/Many Labs 2 materials")
 d0 = read.csv("ML2_RawData_S2 (1).csv"); dim(d0)

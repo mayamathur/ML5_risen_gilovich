@@ -1,6 +1,5 @@
 ---
-title: 'Supplementary Analyses for: "Registered Multisite Replication of Tempting-Fate
-  Effects in Risen & Gilovich (2008)" '
+title: 'Supplementary Analyses for: "Registered Multisite Replication of the Tempting-Fate Effects in Risen and Gilovich (2008)" '
 citation_package: natbib
 header-includes:
 - \usepackage[T1]{fontenc}
@@ -32,14 +31,14 @@ output:
 bibliography: refs_ml5.bib
 ---
 
-<!-- remove automatic table labels because Fig 1 is actually a table -->
+<!-- remove automatic table labels because one of the figures is actually a table -->
 \captionsetup[table]{labelformat=empty}
 \captionsetup[figure]{labelformat=empty}
 
 ```{r echo=FALSE, message=FALSE, results='hide', warning=FALSE}
 # load all packages
 library(tidyverse)
-library(papaja)
+#library(papaja)
 library(knitr)
 library(lme4)
 library(stargazer)
@@ -55,14 +54,16 @@ rm( list = ls() )
 # source("analysis.R")
 
 # Option 2: use saved output from previous analysis run
-path.root = "~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich"
+
+path.root = "~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git"
 setwd(path.root)
 load( "main_code/analysis_objects.rds" )
 
-setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich/compare_to_ml2")
+setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/compare_to_ml2")
 load( "ml2_comparison_objects.rds" )
 
 opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
+#opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE,fig.cap=TRUE)
 ```
 
 \tableofcontents
@@ -71,7 +72,7 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
 
 # Descriptive Statistics and Plots
 
-## Cohen's $d$ and $t$-tests within each site
+## Standardized mean differences and $t$-tests within each site
 
 Per the preregistration, here we conduct additional within-site analyses that reproduce the original study's stratified analyses and effect sizes of tempting fate. 
 
@@ -85,11 +86,11 @@ temp = data.frame( sites$site,
   temp[ , -1 ] = round( temp[ , -1 ], 2 )
 
 kable( temp, col.names = c("Site", 
-                           "Cohen's d (no load)",
+                           "SMD (no load)",
                            "p-value (no load)",
-                           "Cohen's d (load)",
+                           "SMD (load)",
                            "p-value (load)"  ),
-       caption = "Supplementary Table 1: Cohen's d and p-values for t-tests of the effect of tempting fate on perceived likelihood, stratified by cognitive load within each site.")
+       caption = "Table S1: Standardized mean difference (SMD) and p-values for t-tests of the effect of tempting fate on perceived likelihood, stratified by cognitive load within each site.")
 ```
 
 ## Interaction plots by site type
@@ -119,10 +120,10 @@ int_plot = function( dat, ggtitle ) {
 }
 
 ##### Plot By Subset #####
-int_plot(b, ggtitle = "All sites (including MTurk)")  # all sites
-int_plot(b[ b$group=="b.similar", ], ggtitle = "Similar sites")
-int_plot(b[ b$group=="c.dissimilar", ], ggtitle = "Dissimilar sites")
-int_plot(b[ b$group=="a.mturk", ], ggtitle = "Mechanical Turk")
+int_plot(b, ggtitle = "Figure S1: All sites (including MTurk)")  # all sites
+int_plot(b[ b$group=="b.similar", ], ggtitle = "Figure S2: Similar sites")
+int_plot(b[ b$group=="c.dissimilar", ], ggtitle = "Figure S3: Dissimilar sites")
+int_plot(b[ b$group=="a.mturk", ], ggtitle = "Figure S4: Mechanical Turk")
 ```  
 
 
@@ -131,15 +132,21 @@ int_plot(b[ b$group=="a.mturk", ], ggtitle = "Mechanical Turk")
 
 
 ```{r, echo=FALSE, results='asis'}
-agg.means = aggregate( lkl ~ tempt + load + group, b, mean)
-agg.sds = aggregate( lkl ~ tempt + load + group, b, sd)
+b$Group = NA
+b$Group[ b$group == "a.mturk" ] = "MTurk"
+b$Group[ b$group == "b.similar" ] = "Similar"
+b$Group[ b$group == "c.dissimilar" ] = "Dissimilar"
+
+agg.means = aggregate( lkl ~ tempt + load + Group, b, mean)
+agg.sds = aggregate( lkl ~ tempt + load + Group, b, sd)
 
 agg = data.frame( cbind( agg.means, agg.sds$lkl) )
 names(agg)[4:5] = c("mean", "SD")
 agg[ , 4:5] = round( agg[ , 4:5], 2 )
 
-kable( agg, caption = "Supplementary Table 2: Means and SDs of perceived likelihood across all subjects
-           within each site type (naively pooling all sites)" )
+kable( agg, caption = "Table S2: Means and SDs of perceived likelihood across all subjects
+           within each site type (naively pooling all sites)",
+       col.names = c("Tempt fate", "Cognitive load", "Group", "Mean", "SD"))
 ``` 
 
 
@@ -313,14 +320,14 @@ Additionally, the two studies used slightly different statistical analyses to ag
 
 \begin{enumerate}
 \item To reproduce the analysis approach in ML5, we used a linear mixed model (\textbf{LMM}) to regress perceived likelihood on fixed effects of tempting fate, the interaction of tempting fate with study (ML5 vs. ML2), exchangeable random intercepts and slopes by site, and with normal errors. Inference used model-based standard errors, so assumed homoskedasticity.
-\item To avoid parametric assumptions\footnote{Although GEE is in general semiparametric rather than nonparametric, here the model is saturated due to the categorical predictors, so is effectively nonparametric.}, we used generalized estimating equations (\textbf{GEE}) with a working independent correlation structure to regress perceived likelihood on tempting fate. Inference used robust standard errors, so made no assumptions about how subjects were correlated within sites or otherwise.
+\item To avoid parametric assumptions\footnote{Although GEE is in general semiparametric rather than nonparametric, here the model is saturated due to the categorical predictors, so is effectively nonparametric.}, we used generalized estimating equations (\textbf{GEE}) with a working independent correlation structure to regress perceived likelihood on tempting fate. Inference used robust standard errors, so yields asymptotically correct inference regardless of how subjects were correlated within sites or otherwise.
 \item{ To reproduce the analysis approach in ML2, we computed raw mean differences (\textbf{RMD}) between tempting-fate conditions for each study separately, ignoring correlation of subjects within sites. We estimated standard errors for each as in the independent-samples Welch $t$-test conducted for ML2. We then tested the null hypothesis that the RMDs reflected the same population difference in both studies using the fact that, under the null: 
 $$\frac{ \widehat{\Delta}_{ML2} - \widehat{\Delta}_{ML5}}{ \sqrt{ \widehat{SE}^2_{\widehat{\Delta}_{ML2}} + \widehat{SE}^2_{\widehat{\Delta}_{ML5}} } } \approx N(0,1)$$
 where $\widehat{\Delta}_{ML2}$ and $\widehat{\Delta}_{ML5}$ denote the estimated RMDs in ML2 and ML5 respectively.
 }
 \end{enumerate}
 
-All three approaches yielded strong evidence for a smaller average main effect size in ML5 versus ML2 (Supplementary Table 5).
+All three approaches yielded strong evidence for a smaller average main effect size in ML5 versus ML2 (Table S5).
 
 
 ```{r, echo=FALSE, results="asis"}
@@ -331,7 +338,7 @@ kable( sim.table,
                         "Estimate",
                         "95\\% CI",
                         "p-value"),
-caption = "Supplementary Table 5: Difference between ML5 and ML2 in average main effect estimates (as raw mean differences) in primary analysis sites under varying statistical assumptions"
+caption = "Table S5: Difference between ML5 and ML2 in average main effect estimates (as raw mean differences) in primary analysis sites under varying statistical assumptions"
 )
 # apa_table(sim.table,
 #           col.names = c("Method",
@@ -374,9 +381,9 @@ Lastly, we investigated whether outlying sites might have strongly influenced re
 
 ## Combined estimates of tempting-fate effects
 
-We combined all data from both studies to arrive at an updated estimate of the average effect of tempting fate across the diverse samples included in both studies. We again fit LMM and GEE models to primary analysis sites from both studies, omitting the interaction of tempting fate with study to estimate an average effect. The LMM model estimated a tempting-fate effect of `r round( lmm_output(lmm4, "tempt")$est, 2 )` on the raw mean difference scale (95% CI: [`r round( lmm_output(lmm4, "tempt")$lo, 2 )`, `r round( lmm_output(lmm4, "tempt")$hi, 2 )`]; $p$ = `r round( 10^12 * lmm_output(lmm4, "tempt")$pval, 0 )` $\times 10^{-12}$). As expected, the GEE yielded a similar estimate (`r round( gee_output(gee4, "tempt")$est, 2 )`) with more conservative inference (95% CI: [`r round( gee_output(gee4, "tempt")$lo, 2 )`, `r round( gee_output(gee4, "tempt")$hi, 2 )`]; $p$ = `r round( 10^10 * gee_output(gee4, "tempt")$pval, 0 )` $\times 10^{-10}$). The naïve Cohen's $d$ effect size was an estimated `r abs( round( d.sim$est, 2) )` (95% CI `r abs( round( d.sim$conf.int[2], 2 ) )`, `r abs( round( d.sim$conf.int[1], 2 ) )`). To assess consistency between this pooled estimate and the estimate of the original study, we estimated that, if the original study were consistent with all replications, then the probability of observing a point estimate in the original study at least as extreme as that actually observed would be approximately $P_{orig}=$ `r my_round(p.orig.agg.all,2)` [@mathur_rrr]. This method assumes normally distributed true effects, which appeared reasonable here.
+We combined all data from both studies to arrive at an updated estimate of the average effect of tempting fate across the diverse samples included in both studies. We again fit LMM and GEE models to primary analysis sites from both studies, omitting the interaction of tempting fate with study to estimate an average effect. The LMM model estimated a tempting-fate effect of `r round( lmm_output(lmm4, "tempt")$est, 2 )` on the raw mean difference scale (95% CI: [`r round( lmm_output(lmm4, "tempt")$lo, 2 )`, `r round( lmm_output(lmm4, "tempt")$hi, 2 )`]; $p$ = `r round( 10^11 * lmm_output(lmm4, "tempt")$pval, 0 )` $\times 10^{-11}$). As expected, the GEE yielded a similar estimate (`r round( gee_output(gee4, "tempt")$est, 2 )`) with more conservative inference (95% CI: [`r round( gee_output(gee4, "tempt")$lo, 2 )`, `r round( gee_output(gee4, "tempt")$hi, 2 )`]; $p$ = `r round( 10^10 * gee_output(gee4, "tempt")$pval, 0 )` $\times 10^{-10}$). The naïve standardized mean difference effect size was an estimated `r abs( round( d.sim$est, 2) )` (95% CI `r abs( round( d.sim$conf.int[2], 2 ) )`, `r abs( round( d.sim$conf.int[1], 2 ) )`). To assess consistency between this pooled estimate and the estimate of the original study, we estimated that, if the original study were consistent with all replications, then the probability of observing a point estimate in the original study at least as extreme as that actually observed would be approximately $P_{orig}=$ `r my_round(p.orig.agg.all,2)` [@mathur_rrr]. This method assumes normally distributed true effects, which appeared reasonable here.
 
-Alternatively, including all sites that collected data for either study had little effect on point estimates or inference. The LMM model estimated a tempting-fate effect of `r round( lmm_output(lmm2, "tempt")$est, 2 )` on the raw mean difference scale (95% CI: [`r round( lmm_output(lmm2, "tempt")$lo, 2 )`, `r round( lmm_output(lmm2, "tempt")$hi, 2 )`]; $p$ = `r round( 10^13 * lmm_output(lmm2, "tempt")$pval, 0 )` $\times 10^{-13}$). The GEE estimated a tempting-fate effect of `r round( gee_output(gee2, "tempt")$est, 2 )` (95% CI: [`r round( gee_output(gee2, "tempt")$lo, 2 )`, `r round( gee_output(gee2, "tempt")$hi, 2 )`]; $p$ = `r round( 10^6 * gee_output(gee2, "tempt")$pval, 0 )` $\times 10^{-6}$). The naïve Cohen's $d$ effect size was an estimated `r my_round( abs(d.all$est), 2)` (95% CI `r abs( round( d.all$conf.int[2], 2 ) )`, `r abs( round( d.all$conf.int[1], 2 ) )`). As a metric of consistency with the original study, we estimated $P_{orig}=$ `r my_round(p.orig.agg.sim,2)`; however, this must be interpreted cautiously in light of possible departure from normality.
+Alternatively, including all sites that collected data for either study had little effect on point estimates or inference. The LMM model estimated a tempting-fate effect of `r round( lmm_output(lmm2, "tempt")$est, 2 )` on the raw mean difference scale (95% CI: [`r round( lmm_output(lmm2, "tempt")$lo, 2 )`, `r round( lmm_output(lmm2, "tempt")$hi, 2 )`]; $p$ = `r round( 10^13 * lmm_output(lmm2, "tempt")$pval, 0 )` $\times 10^{-13}$). The GEE estimated a tempting-fate effect of `r round( gee_output(gee2, "tempt")$est, 2 )` (95% CI: [`r round( gee_output(gee2, "tempt")$lo, 2 )`, `r round( gee_output(gee2, "tempt")$hi, 2 )`]; $p$ = `r round( 10^6 * gee_output(gee2, "tempt")$pval, 0 )` $\times 10^{-6}$). The naïve standardized mean difference effect size was an estimated `r my_round( abs(d.all$est), 2)` (95% CI `r abs( round( d.all$conf.int[2], 2 ) )`, `r abs( round( d.all$conf.int[1], 2 ) )`). As a metric of consistency with the original study, we estimated $P_{orig}=$ `r my_round(p.orig.agg.sim,2)`; however, this must be interpreted cautiously in light of possible departure from normality.
 
 ## Discussion
 

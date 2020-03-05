@@ -1,4 +1,7 @@
 
+library(grid)
+library(ggplot2)
+library(gridExtra)
 
 ############################# HELPER FNS ##############################
 
@@ -45,7 +48,6 @@ path.root = "~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/M
 setwd(path.root)
 load( "main_code/analysis_objects.rds" )
 
-# ~~~ CHANGE DATA PATH ONCE IT CAN BE PUBLICLY AVAILABLE
 # all ML2 data for Slate 2 studies
 setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/Many Labs 2 materials")
 d0 = read.csv("ML2_RawData_S2 (1).csv")
@@ -54,7 +56,7 @@ d0 = read.csv("ML2_RawData_S2 (1).csv")
 setwd("~/Dropbox/Personal computer/Independent studies/Many Labs 5 (ML5)/ML5_risen_gilovich_git/compare_to_ml2/prepped_datasets")
 agg = read.csv( "ML2_all_site_summary.csv", header = TRUE )
 
-# site-level t-tests for all sites
+# site-level t-tests for sites with undergrads
 agg.u = read.csv( "ML2_undergrads_site_summary.csv", header = TRUE )
 
 # long data from both ML2 and ML5 (with all sites)
@@ -70,15 +72,19 @@ u = read.csv( "ML2_undergrad_data.csv", header = TRUE )
 ############################# META-ANALYZE ML2 ##############################
 
 library(metafor)
-ES = escalc( measure = "SMD", m2i = agg.u$m0, m1i = agg.u$m1,
-             sd2i = agg.u$sd0, sd1i = agg.u$sd1,
-             n2i = agg.u$n0, n1i = agg.u$n1)
+ES = escalc( measure = "SMD",
+             m2i = agg.u$m0,
+             m1i = agg.u$m1,
+             sd2i = agg.u$sd0,
+             sd1i = agg.u$sd1,
+             n2i = agg.u$n0,
+             n1i = agg.u$n1)
 m = rma.uni( ES, method="REML", knha = TRUE)
 summary(m)
 # very similar to naive Cohen's d on undergrads because no heterogeneity
 
 
-####### Forest Plot (Not in Paper) ####### 
+####### Forest Plot ####### 
 # for plotting joy
 agg.u$yval = 1:nrow(agg.u)
 
@@ -112,13 +118,13 @@ awesome_forest( data = agg.u,
 ############################# COMPARE ML2 RESULTS ON U.S. MTURKERS TO OURS ##############################
 
 # ML2
-ml2.turk.est = agg$site.main[ agg$source=="mturk" ]
-ml2.turk.n = agg$N[ agg$source=="mturk" ]
+( ml2.turk.est = agg$site.main[ agg$source=="mturk" ] )
+( ml2.turk.n = agg$N[ agg$source=="mturk" ] )
 agg$pval[ agg$source=="mturk" ]
 
 # ML5
-ml5.turk.est = sites$site.main.est[ sites$site == "MTurk" ]
-ml5.turk.n = sites$site.n[ sites$site == "MTurk" ]
+( ml5.turk.est = sites$site.main.est[ sites$site == "MTurk" ] )
+( ml5.turk.n = sites$site.n[ sites$site == "MTurk" ] )
 sites$site.main.pval[ sites$site == "MTurk" ]
 
 # point estimates almost exactly the same
@@ -378,7 +384,7 @@ hist(bs$est[ bs$main.analysis == 1 ])  # not great
 
 # how many subjects skipped the study completely?
 d0$skipped = is.na(d0$rise1.3) & is.na(d0$rise2.3)
-perc.missing.ml2 = round( prop.table( table(d0$skipped) )["TRUE"] * 100, 1 )
+perc.missing.ml2 = round( mean(d0$skipped) * 100, 1 )
 
 
 

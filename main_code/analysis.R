@@ -140,23 +140,33 @@ agg
 ############################# ORIGINAL STUDY EFFECT ESTIMATES ##############################
 
 ##### Main effect from original #####
+# stats from page 302
 orig.cell.n = 30
 cells = 4  # 2 X 2 factorial
+orig.total.n = orig.cell.n * cells
+main.n = orig.cell.n * (cells/2)  # main effect conditional on tempt = 0; uses half the subjects because balanced
 
+# raw mean difference and its variance
 yi.orig.main = 2.93 - 1.90  # raw mean difference
 var.mean0 = 1.42^2 / orig.cell.n
 var.mean1 = 2.16^2 / orig.cell.n
-vyi.orig.main = var.mean0 + var.mean1
+vyi.orig.main = var.mean0 + var.mean1 # cells are independent
 
-# sanity check: try to reproduce t-stat in original paper
-# standardized mean difference ~ t
-SMD.orig.main = yi.orig.main / sqrt( vyi.orig.main )
+# stats on raw scale
+t.crit = qt( 0.975, df = main.n - (cells/2)  )
+pval.orig.main = 2 * ( 1 - pt( q = abs( yi.orig.main / sqrt(vyi.orig.main) ), df = main.n - (cells/2) ) )
+orig.main.lo = yi.orig.main - t.crit * sqrt(vyi.orig.main)
+orig.main.hi = yi.orig.main + t.crit * sqrt(vyi.orig.main)
+
+# stats on SMD scale
+SD.pool.main = sqrt( (1.42^2 + 2.16^2) / 2 )  # because equal sample sizes per cell
+( SMD.orig.main = yi.orig.main / SD.pool.main ) # reported: 0.58; similar :)
+( SE.SMD.orig.main = sqrt(vyi.orig.main) * (1/SD.pool.main) )  # treat SD as known
+( CI.SMD.orig.main = SMD.orig.main + c(-1,1) * SE.SMD.orig.main * t.crit )
+# sanity check:
+# yi.orig.main / sqrt( vyi.orig.main )
 # matches their t = 2.19 (pg 302, column 2)
 
-main.n = orig.cell.n * (cells/2)  # main effect conditional on tempt = 0; uses half the subjects because balanced
-pval.orig.main = 2 * ( 1 - pt( q = abs( SMD.orig.main ), df = main.n - (cells/2) ) )
-orig.main.lo = yi.orig.main - qt( 0.975, df = main.n - (cells/2)  ) * sqrt(vyi.orig.main)
-orig.main.hi = yi.orig.main + qt( 0.975, df = main.n - (cells/2)  ) * sqrt(vyi.orig.main)
 
 
 ##### Interaction effect from original #####
@@ -166,15 +176,15 @@ vyi.orig.int = ( 1.42^2 / orig.cell.n ) + ( 2.16^2 / orig.cell.n ) + ( 2.17^2 / 
 # just add the variances that contribute to the linear combo by independence
 
 # sanity check: reproduce original paper's F-stat
-SMD.orig.int = yi.orig.int / sqrt( vyi.orig.int )  
-F.stat = SMD.orig.int^2  # square a t-stat to get F-stat
+SD.pool.int = sqrt( (1.42^2 + 2.16^2 + 2.36^2 + 2.17^2) / 4 )
+( SMD.orig.int = yi.orig.int / SD.pool.int ) # their reported 1.15 is NOT for the interaction, but for main effect within load = 1
+( SE.SMD.orig.int = sqrt( vyi.orig.int ) * (1/SD.pool.int) )
+( CI.SMD.orig.int = SMD.orig.int + c(-1,1) * SE.SMD.orig.int * qt(p = 0.975, df = orig.total.n - cells) )
+# sanity check:
+# F.stat = ( yi.orig.int^2 / vyi.orig.int )^2  # square a t-stat to get F-stat
 # appears within rounding error (reported: F = 4.15)
-SMD.orig.SE = smd_var(n1 = 60,
-                      n0 = 60,
-                      smd = SMD.orig.int
-                        )
 
-orig.total.n = orig.cell.n * cells
+# stats for interaction on raw scale
 pval.orig.int = 2 * ( 1 - pt( q = abs( SMD.orig.int ), df = orig.total.n - cells ) )
 orig.int.lo = yi.orig.int - qt( 0.975, df = orig.total.n - cells ) * sqrt(vyi.orig.int)
 orig.int.hi = yi.orig.int + qt( 0.975, df = orig.total.n - cells ) * sqrt(vyi.orig.int)
@@ -184,7 +194,9 @@ orig.int.hi = yi.orig.int + qt( 0.975, df = orig.total.n - cells ) * sqrt(vyi.or
 
 rpp = read.table("data/data_prepped_rpp.txt") %>%
   as_tibble %>%
-  mutate(tempt = ifelse(Had.read == 1, 0, 1 ))
+  mutate(tempt = ifelse(Had.read == 1, 0, 1 ),
+         lkl = Likelihood,  # rename for use in existing function
+         load = Load )
 
 # a priori exclusion criteria:
 #  exclude S who ended on too-high number
@@ -194,7 +206,6 @@ rpp = rpp[ ( as.numeric( rpp$End.num ) <= 561 | is.na( rpp$End.num) ) &
 
 # reproduce RPP main model - works :)
 # summary(aov(Likelihood ~ Load * tempt, data = rpp))
-
 lm.rpp = lm(Likelihood ~ Load * tempt, data = rpp)
 
 #dim(rpp)  # should be 226
@@ -216,7 +227,7 @@ pval.rpp.main = 2 * ( 1 - pt( yi.rpp.main / sqrt( vyi.rpp.main ), df = nrow(rpp[
 # indeed, this closely agrees with summary(lm.rpp) :) 
 
 
-##### SMD of interaction effect in RPP #####
+##### Interaction in RPP #####
 means = aggregate( Likelihood ~ tempt * Load, data = rpp, mean)
 vars = aggregate( Likelihood ~ tempt * Load, data = rpp, var)
 ns = aggregate( Likelihood ~ tempt * Load, data = rpp, length)
@@ -233,7 +244,9 @@ pval.rpp.int = 2 * ( 1 - pt( yi.rpp.int / sqrt( vyi.rpp.int ), df = nrow(rpp) - 
 # indeed, this closely agrees with summary(lm.rpp) :) 
 
 
-
+##### SMDs in RPP #####
+site_hedges(rpp, effect = "main")
+site_hedges(rpp, effect = "interaction")
 
 ############################# FIT ANALYSIS MODELS 1 AND 1' ##############################
 
@@ -587,11 +600,18 @@ Vhat.main = VarCorr(m.sim)$site["tempt", "tempt"]
 Mhat.main = fixef(m.sim)[["tempt"]]
 SE.Mhat = sqrt(vcov(m.sim)["tempt", "tempt"])
 
-p.orig.main.sim = p_orig( orig.y = yi.orig.main, orig.vy = vyi.orig.main,
-                      yr = Mhat.main, t2 = Vhat.main, vyr = SE.Mhat^2 )
+( p.orig.main.sim = p_orig( orig.y = yi.orig.main, orig.vy = vyi.orig.main,
+                      yr = Mhat.main, t2 = Vhat.main, vyr = SE.Mhat^2 ) )
 
 # manual sanity check - yes :) 
 # 2 * ( 1 - pnorm( abs( yi.orig.main - Mhat.main ) / sqrt( Vhat.main + vyi.orig.main + SE.Mhat^2 ) ) )
+
+# note that the diagnostic plots use the meta-analytic MLE for heterogeneity rather than that of mixed model
+#  since not sure we have a closed-form expression for the latter
+plots = diag_plots( yi = sites$site.main.est[ sites$group == "b.similar" ],
+                    vi = sites$site.main.SE[ sites$group == "b.similar" ]^2,
+                    yi.orig = yi.orig.main,
+                    vi.orig = vyi.orig.main)
 
 
 ######## P_orig For Interaction Effect (Similar Sites) ######## 
@@ -600,9 +620,15 @@ Vhat.int = VarCorr(m.sim)$site["tempt:load", "tempt:load"]  # variance of random
 Mhat.int = fixef(m.sim)[["tempt:load"]]
 SE.Mhat = sqrt(vcov(m.sim)["tempt:load", "tempt:load"])
 
-p.orig.int.sim = p_orig( orig.y = yi.orig.int, orig.vy = vyi.orig.int,
-                      yr = Mhat.int, t2 = Vhat.int, vyr = SE.Mhat^2)
+( p.orig.int.sim = p_orig( orig.y = yi.orig.int, orig.vy = vyi.orig.int,
+                      yr = Mhat.int, t2 = Vhat.int, vyr = SE.Mhat^2) )
 
+# note that the diagnostic plots use the meta-analytic MLE for heterogeneity rather than that of mixed model
+#  since not sure we have a closed-form expression for the latter
+plots = diag_plots( yi = sites$site.int.est[ sites$group == "b.similar" ],
+                    vi = sites$site.int.SE[ sites$group == "b.similar" ]^2,
+                    yi.orig = yi.orig.int,
+                    vi.orig = vyi.orig.int)
 
 
 ######## P_orig For Main Effect (All Universities) ########
@@ -613,8 +639,13 @@ Vhat = VarCorr(m.all)$site["tempt", "tempt"]  # variance of random slopes of tem
 Mhat = fixef(m.all)[["tempt"]]
 SE.Mhat = sqrt(vcov(m.all)["tempt", "tempt"])
 
-p.orig.main.uni = p_orig( orig.y = yi.orig.main, orig.vy = vyi.orig.main,
-                      yr = Mhat, t2 = Vhat, vyr = SE.Mhat^2)
+( p.orig.main.uni = p_orig( orig.y = yi.orig.main, orig.vy = vyi.orig.main,
+                      yr = Mhat, t2 = Vhat, vyr = SE.Mhat^2) )
+
+plots = diag_plots( yi = sites$site.main.est[ sites$group != "a.mturk" ],
+                    vi = sites$site.main.SE[ sites$group == "a.mturk" ]^2,
+                    yi.orig = yi.orig.main,
+                    vi.orig = vyi.orig.main)
 
 
 ######## P_orig For Main Effect (All Universities) ########
@@ -624,9 +655,13 @@ Vhat = VarCorr(m.all)$site["tempt:load", "tempt:load"]   # variance of random sl
 Mhat = fixef(m.all)[["tempt:load"]]
 SE.Mhat = sqrt(vcov(m.all)["tempt:load", "tempt:load"])
 
-p.orig.int.uni = p_orig( orig.y = yi.orig.int, orig.vy = vyi.orig.int,
-                      yr = Mhat, t2 = Vhat, vyr = SE.Mhat^2)
+( p.orig.int.uni = p_orig( orig.y = yi.orig.int, orig.vy = vyi.orig.int,
+                      yr = Mhat, t2 = Vhat, vyr = SE.Mhat^2) )
 
+plots = diag_plots( yi = sites$site.int.est[ sites$group != "a.mturk" ],
+                    vi = sites$site.int.SE[ sites$group == "a.mturk" ]^2,
+                    yi.orig = yi.orig.int,
+                    vi.orig = vyi.orig.int)
 
 
 ############################# SECONDARY: MECHANISMS FOR REPLICATION FAILURE ##############################

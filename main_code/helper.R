@@ -144,41 +144,79 @@ site_cohen = function( .d, .load ) {
   return( diff / sd.pool )
 }
 
-# Fn: compute Hedges' g for interaction within site
-# load: 1 or 0 for which subset to use
-site_hedges = function( .d ) {
-  # difference on raw mean difference scale corresponding to the interaction (equal to a - b - c + d because
-  #  saturated model)
-  mod = lm(formula = lkl ~ tempt * load, data = .d)
-  # residual (aka conditional) variance
-  sd.pool = sigma(mod)
+# Fn: compute Hedges' g within site
+# effect: compute for interaction or main effect?
+site_hedges = function( .d,
+                        effect = "interaction" ) {
   
-  # rescale the outcome by sd.pool, treated as known
-  .d$lkl.std = .d$lkl/sd.pool
-  # refit the model to get the standardized mean difference
-  
-  mod.std = lm(formula = lkl.std ~ tempt * load, data = .d)
-  d = coef(mod.std)[["tempt:load"]]
-  var.d = vcov(mod.std)[["tempt:load", "tempt:load"]]
-  
-  # sanity check vs. raw model: matches
-  # coef(mod)[["tempt:load"]] / sd.pool; d
-  # vcov(mod)[["tempt:load", "tempt:load"]] * (1/sd.pool)^2; var.d
-
-  
+  if ( effect == "interaction" ) {
+    # difference on raw mean difference scale corresponding to the interaction (equal to a - b - c + d because
+    #  saturated model)
+    mod = lm(formula = lkl ~ tempt * load, data = .d)
+    # residual (aka conditional) variance
+    sd.pool = sigma(mod)
     
-  # get its SE from lm() because usual SE for Cohen's d assumes 2 groups
-  #  so doesn't work for interaction contrasts
-  var.d = vcov(mod)[["tempt:load", "tempt:load"]]
+    # rescale the outcome by sd.pool, treated as known
+    .d$lkl.std = .d$lkl/sd.pool
+    # refit the model to get the standardized mean difference
+    
+    mod.std = lm(formula = lkl.std ~ tempt * load, data = .d)
+    d = coef(mod.std)[["tempt:load"]]
+    var.d = vcov(mod.std)[["tempt:load", "tempt:load"]]
+    
+    # sanity check vs. raw model: matches
+    # coef(mod)[["tempt:load"]] / sd.pool; d
+    # vcov(mod)[["tempt:load", "tempt:load"]] * (1/sd.pool)^2; var.d
+    
+    # Hedges' g (Borenstein pg. 27)
+    df = nrow(.d) - 4   # 4 instead of 2 because estimating an interaction (3 effects + intercept)
+    J = ( 1 - ( 3 / ( 4*df - 1 ) ) )  # this will be almost 1
+    g = J * d
+    se.g = sqrt( J^2 * var.d )
+    
+    t.crit = qt( 0.975, df = df)
+    
+    return( list( g = g, 
+                  se.g = se.g,
+                  lo = g - se.g * t.crit,
+                  hi = g + se.g * t.crit ) )
+  }
   
-  # Hedges' g (Borenstein pg. 27)
-  df = nrow(.d) - 4   # 4 instead of 2 because estimating an interaction (3 effects + intercept)
-  J = ( 1 - ( 3 / ( 4*df - 1 ) ) )  # this will be almost 1
-  g = J * d
-  se.g = sqrt( J^2 * var.d )
+  if ( effect == "main" ) {
+    # difference on raw mean difference scale corresponding to the interaction (equal to a - b - c + d because
+    #  saturated model)
+    
+    mod = lm(formula = lkl ~ tempt, data = .d[ .d$load == 0, ] )
+    # residual (aka conditional) variance
+    sd.pool = sigma(mod)
+    
+    # rescale the outcome by sd.pool, treated as known
+    .d$lkl.std = .d$lkl/sd.pool
+    # refit the model to get the standardized mean difference
+    
+    mod.std = lm(formula = lkl.std ~ tempt, data = .d[ .d$load == 0, ] )
+    d = coef(mod.std)[["tempt"]]
+    var.d = vcov(mod.std)[["tempt", "tempt"]]
+    
+    # sanity check vs. raw model: matches
+    # coef(mod)[["tempt:load"]] / sd.pool; d
+    # vcov(mod)[["tempt:load", "tempt:load"]] * (1/sd.pool)^2; var.d
+    
+    # Hedges' g (Borenstein pg. 27)
+    df = nrow(.d) - 2 
+    J = ( 1 - ( 3 / ( 4*df - 1 ) ) )  # this will be almost 1
+    g = J * d
+    se.g = sqrt( J^2 * var.d )
+    
+    t.crit = qt( 0.975, df = df)
+    
+    return( list( g = g, 
+                  se.g = se.g,
+                  lo = g - se.g * t.crit,
+                  hi = g + se.g * t.crit ) )
+  }
   
-  return( list( g = g, 
-                se.g = se.g ) )
+
 }
 
 # Fn: rounding function that keeps trailing zeroes
@@ -237,24 +275,146 @@ pretty_spaces = function(x, use.NA = FALSE){
 }
 
 
-# Fn: variance of SMD
-# e.g., https://stats.stackexchange.com/questions/144084/variance-of-cohens-d-statistic
-smd_var = function(N = NULL,
-                   n1 = NULL, 
-                   n0 = NULL, 
-                   smd) {
-  if ( is.null(n1) | is.null(n0) ) {
-    # assume equal sample sizes in each group
-    n1 = N/2
-    n0 = N/2
-  }
+
+################################ FNs FOR DIAGNOSTIC PLOTS ################################ 
+
+# see section 3.11 of Veroniki (from Raudenbush 2009)
+t2_lkl = function( yi, vi, t2, yi.orig, vi.orig ) {
+  k = length(yi)
+  wi = 1 / ( vi + t2 )
   
-  term1 = (n1 + n0) / (n1 * n0)
-  term2 = smd^2 / ( 2 * (n1 + n0) )
+  # calculate the RE Mhat based on this particular t2
+  Mhat = sum(yi * wi) / sum(wi)
   
-  return( term1 + term2 )
+  term1 = (k/2) * log(2*pi)
+  term2 = 0.5 * sum( log(vi + t2) )
+  term3 = 0.5 * sum( ( yi - Mhat )^2 / ( vi + t2 ) )
+  term4 = 0.5 * log( sum( 1 / ( vi + t2 ) ) )
+  
+  return( -term1 - term2 - term3 - term4 )
 }
 
 
+diag_plots = function(yi, vi, yi.orig, vi.orig) {
+  
+  # fit meta-analysis
+  .m = rma.uni( yi = yi,
+                vi = vi,
+                knha = TRUE ) 
+  
+  ##### Make Plotting Dataframe with Different Tau^2 #####
+  # here using 1 as upper limit since MLE is actually 0
+  t2.vec = seq(0, 1, .001)
+  t2l = as.list(t2.vec)
+  
+  temp = lapply( t2l,
+                 FUN = function(t2) {
+                   suppressMessages( p_orig( orig.y = yi.orig,
+                                             orig.vy = vi.orig,
+                                             yr = .m$b,
+                                             t2 = t2,
+                                             vyr = .m$vb ) )
+                 })
+  
+  # plotting df
+  dp = data.frame( tau = sqrt(t2.vec),
+                   V = t2.vec,
+                   Porig = unlist(temp) )
+  
+  
+  # fn: tau^2 vs. the estimated one
+  ( breaks.x1 = seq( 0, max(dp$V), .1 ) )
+  #g = function(x) x / .m$tau2
+  #( breaks.x2 = seq( 0, max( g(dp$V) ), 1 ) )
+  
+  ##### **Plot 1: Tau^2 vs. Porig #####
+  p1 = ggplot( data = dp,
+               aes(x = V, 
+                   y = Porig) ) +
+    
+    geom_vline(xintercept = .m$tau2,
+               lty = 2,
+               color = "red") +  # observed one
+    
+    geom_line(lwd = 1.2) +
+    theme_classic() +
+    xlab( bquote( tau["*"]^2 ) ) +
+    ylab( bquote(P[orig]) ) +
+    scale_x_continuous( limits = c(0, max(breaks.x1)),
+                        breaks = breaks.x1
+                        # sec.axis = sec_axis( ~ g(.),  # confounding strength axis
+                        #                      name = bquote( tau["*"]^2 / hat(tau)^2 ),
+                        #                      breaks=breaks.x2 )
+                        ) +
+    scale_y_continuous( breaks = seq(0,1,.05) )
+  # 6 x 4
+  
+  ##### **Plot 2: Tau^2 vs. Mhat/Tau^2 ##### 
+  p2 = ggplot( data = dp,
+               aes(x = V, 
+                   y = .m$b / V ) ) +
+    
+    geom_vline(xintercept = .m$tau2,
+               lty = 2,
+               color = "red") +  # observed one
+    
+    geom_line(lwd = 1.2) +
+    theme_classic() +
+    xlab( bquote( tau["*"]^2 ) ) +
+    ylab( bquote( hat(mu) / tau["*"]^2 ) ) +
+    scale_x_continuous( limits = c(0, max(breaks.x1)),
+                        breaks = breaks.x1
+                        # sec.axis = sec_axis( ~ g(.),  # confounding strength axis
+                        #                      name = bquote( tau["*"]^2 / hat(tau)^2 ),
+                        #                      breaks=breaks.x2 )
+                        ) +
+    scale_y_continuous( breaks = seq(0,80,10) )
+  # 6 x 4
+  
+  ##### **Plot 3: Marginal Log-Lkl of Tau^2 ##### 
+  temp = lapply( t2l,
+                 FUN = function(t2) {
+                   # log-lkl itself
+                   t2_lkl( yi = yi,
+                           vi = vi,
+                           t2 = t2 )
+                   
+                   # lkl ratio vs. the MLE
+                   exp( t2_lkl( yi = yi,
+                                vi = vi,
+                                t2 = t2 ) ) / exp( t2_lkl( yi = yi,
+                                                           vi = vi,
+                                                           t2 = .m$tau2 ) )
+                 })
+  
+  # plotting df
+  dp = data.frame( tau = sqrt(t2.vec),
+                   V = t2.vec,
+                   lkl = unlist(temp) )
+  
+  p3 = ggplot( data = dp,
+               aes(x = V, 
+                   y = lkl ) ) +
+    
+    geom_vline(xintercept = .m$tau2,
+               lty = 2,
+               color = "red") +  # observed one
+    
+    geom_line(lwd = 1.2) +
+    theme_classic() +
+    xlab( bquote( tau["*"]^2 ) ) +
+    ylab( "Marginal likelihood ratio of " ~ tau["*"]^2 ~ " vs. " ~ hat(tau)^2 ) +
+    scale_x_continuous( limits = c(0, max(breaks.x1)),
+                        breaks = breaks.x1
+                        # sec.axis = sec_axis( ~ g(.),  # confounding strength axis
+                        #                      name = bquote( tau["*"]^2 / hat(tau)^2 ),
+                        #                      breaks=breaks.x2 )
+                        ) +
+    scale_y_continuous( limits = c(0,1),
+                        breaks = seq(0,1,.1) )
+  
+  return( list(p1, p2, p3) )
+  
+}
 
 
